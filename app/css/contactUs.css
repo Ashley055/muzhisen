@@ -1,0 +1,150 @@
+.contact-us .contact-content {
+  margin-right: 120px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+.contact-us .contact-content .beauty-hole {
+  position: relative;
+  font-size: 0;
+}
+.contact-us .contact-content .beauty-hole .left {
+  position: relative;
+  width: 50%;
+}
+.contact-us .contact-content .beauty-hole .left .img img {
+  width: 100%;
+}
+.contact-us .contact-content .beauty-hole .left .info {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -145px;
+  text-align: center;
+}
+.contact-us .contact-content .beauty-hole .left .info h3 {
+  font-size: 32px;
+  color: #fff;
+}
+.contact-us .contact-content .beauty-hole .left .info .address {
+  margin-top: 15px;
+  margin-bottom: 60px;
+  font-size: 16px;
+  color: #fff;
+}
+.contact-us .contact-content .beauty-hole .left .info .person {
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+.contact-us .contact-content .beauty-hole .left .info .person .name {
+  margin-right: 15px;
+  font-size: 26px;
+  color: #fff;
+}
+.contact-us .contact-content .beauty-hole .left .info .person .phone {
+  font-size: 28px;
+  color: #fff;
+}
+.contact-us .contact-content .beauty-hole .left .info .time {
+  font-size: 16px;
+  color: #fff;
+}
+.contact-us .contact-content .beauty-hole .left .info .time span:first-child:after {
+  display: inline-block;
+  content: '';
+  width: 1px;
+  height: 14px;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #fff;
+}
+.contact-us .contact-content .beauty-hole .right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  right: 0;
+  top: 0;
+}
+.contact-us .contact-content .beauty-hole .right img {
+  width: 100%;
+}
+.contact-us .contact-content .outlets {
+  position: relative;
+}
+.contact-us .contact-content .outlets .left {
+  width: 50%;
+}
+.contact-us .contact-content .outlets .left img {
+  width: 100%;
+}
+.contact-us .contact-content .outlets .right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+}
+.contact-us .contact-content .outlets .right .img img {
+  width: 100%;
+}
+.contact-us .contact-content .outlets .right .info {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding-top: 60px;
+  margin-left: -200px;
+  text-align: center;
+  max-height: 465px;
+}
+.contact-us .contact-content .outlets .right .info li {
+  padding: 15px 10px;
+  background: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px dashed #fff;
+}
+.contact-us .contact-content .outlets .right .info li .name {
+  font-size: 26px;
+  color: #fff;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 40px;
+}
+.contact-us .contact-content .outlets .right .info li .address {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  color: #fff;
+  line-height: 30px;
+}
+.contact-us .contact-content .outlets .right .info li .phone {
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+}
+.contact-us .contact-content .outlets .right .control {
+  position: absolute;
+  right: 45px;
+  top: 50%;
+  width: 16px;
+  transform: translate(-50%, -50%);
+}
+.contact-us .contact-content .outlets .right .control li {
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.contact-us .contact-content .outlets .right .control li:last-child {
+  margin-bottom: 0;
+}
+.contact-us .contact-content .outlets .right .control li.active {
+  background: #fff;
+}

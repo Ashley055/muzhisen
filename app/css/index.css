@@ -1,0 +1,690 @@
+@charset "utf-8";
+/*公用样式*/
+/*基础颜色*/
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: none;
+  font-family: "微软雅黑", "microsoft yahei", Arial, sans-serif;
+}
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+/* HTML5 媒体文件跟 img 保持一致 */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+/* 要注意表单元素并不继承父级 font 的问题 */
+button,
+input,
+select,
+textarea {
+  font: 500 14px/1.8 "微软雅黑", "microsoft yahei", Arial, sans-serif;
+}
+/* IE6 Button 宽度自适应 */
+button,
+input {
+  *width: auto;
+  *overflow: visible;
+}
+/* 去掉各Table  cell 的边距并让其边重合 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* IE bug fixed: th 不继承 text-align*/
+th {
+  text-align: inherit;
+}
+/* 去除默认边框 */
+fieldset,
+img {
+  border: 0;
+}
+/* 解决 IE6-7 图片缩放锯齿问题 */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe {
+  display: block;
+}
+blockquote blockquote {
+  padding: 0 0 0 1em;
+  margin-left: 2em;
+  border-left: 0.4em solid #ddd;
+}
+/* Firefox 以外，元素没有下划线，需添加 */
+acronym,
+abbr {
+  border-bottom: 1px dotted;
+  font-variant: normal;
+}
+/* 添加鼠标问号，进一步确保应用的语义是正确的（要知道，交互他们也有洁癖，如果你不去掉，那得多花点口舌） */
+abbr {
+  cursor: help;
+}
+/* 一致的 del 样式 */
+del {
+  text-decoration: line-through;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+  font-style: normal;
+  font-weight: 400;
+}
+/* 去掉列表前的标识, li 会继承，大部分网站通常用列表来很多内容，所以应该当去 */
+ul,
+ol {
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption,
+th {
+  text-align: left;
+}
+q:before,
+q:after {
+  content: '';
+}
+/* 让链接在 hover 状态下显示下划线 */
+a:hover {
+  text-decoration: underline;
+}
+/* 默认不显示下划线，保持页面简洁 */
+ins,
+a {
+  text-decoration: none;
+  color: #333;
+}
+u,
+.typo-u {
+  text-decoration: underline;
+}
+/* 标记，类似于手写的荧光笔的作用 */
+mark {
+  background: #fffdd1;
+}
+/* 代码片断 */
+pre,
+code {
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+pre {
+  border: 1px solid #ddd;
+  border-left-width: 0.4em;
+  background: #fbfbfb;
+  padding: 10px;
+}
+/* 底部印刷体、版本等标记 */
+small {
+  font-size: 12px;
+  color: #888;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.clear {
+  display: block;
+  clear: both;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  font-weight: 800 \9;
+  color: #333;
+}
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  /* For some Androids */
+  outline: none;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #ccc;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #ccc;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #ccc;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="input"] {
+  -webkit-appearance: none;
+}
+select {
+  -webkit-appearance: none !important;
+  border-radius: 0;
+  -webkit-appearance: menulist;
+  -webkit-box-sizing: border-box;
+  -webkit-box-align: center;
+  border: 1px solid;
+  white-space: pre;
+  -webkit-rtl-ordering: logical;
+  background-color: white;
+  cursor: default;
+}
+body {
+  font-size: 12px;
+  color: #666;
+}
+.lunbo{
+  position: relative;
+}
+.flex-control-nav {
+  position: absolute;
+  bottom: 35px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+.shadow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 920px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.lunbo .logo{
+  position: absolute;
+  top: 55px;
+  left: 72px;
+  z-index: 100;
+}
+.lunbo .logo a{
+  display: block;
+  height: 61px;
+}
+.nav-bar{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: 120px;
+  height: 920px;
+  padding: 0 30px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  background: #fff;
+}
+.nav-bar p.menu-text{
+  margin-top: 14px;
+  margin-bottom: 97px;
+  font-size: 12px;
+  color: #999;
+}
+.nav-bar .label{
+  padding: 0 15px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #333;
+}
+.nav-bar .des{
+  padding: 0 21px;
+  font-size: 12px;
+  color: #999;
+}
+.nav-bar .des span{
+  transform:rotate(90deg);
+  -ms-transform:rotate(90deg); 	/* IE 9 */
+  -moz-transform:rotate(90deg); 	/* Firefox */
+  -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+  -o-transform:rotate(90deg); 
+}
+.nav-bar .menus{
+  position: absolute;
+  bottom: 65px;
+  width: 100%;
+  left: 0;
+  font-size: 12px;
+  color: #999;
+  z-index: 111;
+}
+.nav-bar .menus li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 11px 0;
+  padding-top: 52px;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  border-top: 1px solid #eee;
+  background: url(../images/menu-icon.png) 43px 10px no-repeat;
+}
+.nav-bar .menus li:last-child a{
+  background: url(../images/menu-icon2.png) 43px 10px no-repeat;
+}
+.nav-bar .web-link{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.nav-bar .web-link a{
+  display: block;
+  width: 100%;
+  height: 65px;
+  text-align: center;
+  color: #ddd;
+  font-size: 12px;
+  background-color: #000;
+  line-height: 65px;
+}
+.nav-bar .web-link a:hover, .nav-bar .menus li a:hover{
+  text-decoration: none;
+}
+.nav-bar .web-link a img{
+  margin: 5px;
+  vertical-align: middle;
+}
+.news{
+  position: absolute;
+  padding-right: 100px;
+  padding-left: 20px;
+  left: 0;
+  bottom: 45px;
+  height: 40px;
+  line-height: 40px;
+  z-index: 111;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+}
+.news span:first-child{
+  padding-right: 15px;
+  margin-right: 15px;
+  height: 16px;
+  border-right: 1px solid #fff;
+}
+.flex-control-nav li {
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 5px;
+}
+.flex-control-nav li a {
+  background: #a9a9a9;
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-size: 0;
+}
+.flex-control-nav .flex-active {
+  background: #ff6600;
+}
+.introduction{
+  width: 100%;
+  margin-top: 15px;
+  padding-left: 20px;
+  padding-right: 144px;
+  box-sizing: border-box;
+}
+.introduction .part{
+  position: relative;
+}
+.introduction img.h321{
+  height: 321px;
+}
+.introduction .part .text{
+  position: absolute;
+  width: 100%;
+  padding-right: 200px;
+  box-sizing: border-box;
+  top: 50%;
+  left: 0;
+  margin-top: -210px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  z-index: 999;
+}
+.introduction .part .text.top50{
+  top: 50px;
+}
+.introduction .part .text li{
+  display: inline-block;
+  width: 20px;
+  padding: 0 20px;
+  vertical-align: top;
+}
+.introduction .part .text li:first-child{
+  margin-right: 40px;
+  color: #de0606;
+}
+.introduction .part .text li:last-child{
+  margin-left: 50px;
+  padding: 15px;
+  border: 1px solid #fff;
+}
+.introduction .part .title {
+  margin-top: 50px;
+  margin-bottom: 68px;
+  text-align: center;
+}
+.introduction .part .title::before{
+  position: absolute;
+  display: block;
+  content: 0;
+  width: 5px;
+  height: 112px;
+  left: 50%;
+  top: 0;
+  background: #333;
+}
+.introduction .part .title h3{
+  color: #020202;
+  font-size: 32px;
+}
+.introduction .part .title .sub-til{
+  font-size: 14px;
+  color: #a3a3a3;
+}
+.scroll-wrap {
+  width: 1050px;
+  overflow-x: auto;
+  font-size: 0;
+  white-space: nowrap;
+}
+.scroll-wrap li{
+  display: inline-block;
+  width: 210px;
+  height: 128px;
+}
+.scroll-wrap li img{
+  width: 100%;
+  height: 100%;
+}
+.link{
+  margin: 35px 0;
+  text-align: center;
+}
+.link a{
+  padding: 12px 30px;
+  color: #111;
+  font-size: 14px;
+  border: 1px solid #333;
+}
+.link img{
+  width: 24px;
+  height: 7px;
+}
+.bottom{
+  width: 1080px;
+}
+.common-introduce{
+  padding-left: 60px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  background: -webkit-linear-gradient(#eee, #eee); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#eee, #eee); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#eee, #eee); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#eee, #eee); /* 标准的语法 */
+}
+.common-introduce .title{
+  font-size: 32px;
+  color: #020202;
+  letter-spacing: 0.3em;
+}
+.common-introduce .sub-title{
+  margin-top: 5px;
+  margin-bottom: 113px;
+  color: #989898;
+  font-size: 14px;
+}
+.common-introduce li{
+  display: inline-block;
+  vertical-align: top;
+}
+.common-introduce li.left{
+  margin-right: 48px;
+}
+.common-introduce li.left .link{
+  margin: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+.common-introduce li.right{
+  padding: 30px 0;
+  min-height: 325px;
+  box-sizing: border-box;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.common-introduce li.right li{
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #999;
+}
+.common-introduce li.left .link .tower{
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  vertical-align: bottom;
+}
+.common-introduce li.left .link .star{
+  width: 18px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: bottom;
+}
+.common-introduce li.left .link .bag{
+  width: 18px;
+  height: 19px;
+  margin-right: 6px;
+  vertical-align: bottom;
+}
+.common-introduce .right .divider{
+  display: inline-block;
+  margin: 0 45px;
+  height: 1px;
+  width: 30px;
+  background: #ccc;
+  vertical-align: middle;
+}
+.common-introduce .right .text{
+  color: #666;
+}
+.contact-info{
+  position: relative;
+  height: 586px;
+  background: url(../images/fp.jpg) left top no-repeat;
+  background-size: 100%;
+}
+.contact-info .bottom-top {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -51px;
+  text-align: center;
+}
+.contact-info .bottom-top a{
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.contact-info .bottom-top p{
+  line-height: 26px;
+  font-size: 12px;
+  color: #ccc;
+}
+.contact-info .bottom-left{
+  position: absolute;
+  bottom: 35px;
+  left: 15px;
+}
+.contact-info .bottom-left .logo{
+  margin-bottom: 15px;
+}
+.contact-info .bottom-left p{
+  color: #fff;
+  font-size: 14px;
+  line-height: 25px;
+}
+.contact-info .bottom-left p::before{
+  display: inline-block;
+  margin-right: 15px;
+  width: 20px;
+  height: 1px;
+  content: '';
+  background: #fff;
+}
+.contact-info .bottom-right{
+  position: absolute;
+  bottom: 35px;
+  right: 15px;
+}
+.contact-info .bottom-right li {
+  margin-right: 15px;
+}
+.contact-info .bottom-right li:last-child{
+  margin-right: 0;
+}
+.contact-info .bottom-right li img{
+  display: block;
+  margin: 0 auto;
+}
+.contact-info .bottom-right li span{
+  font-size: 14px;
+  color: #ccc;
+  line-height: 30px;
+}
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+/* 滚动图左右控制按钮样式 */
+.flex-direction-nav{
+  position: absolute;
+  top: 50%;
+  left: 263px;
+  right: 315px;
+}
+.flex-direction-nav li:nth-of-type(1) a{
+    display: inline-block;
+    width: 29px;
+    height: 51px;
+    background: url(../images/pre.png) center no-repeat;
+    background-size: 100%;
+}
+.flex-direction-nav li:nth-of-type(2){
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.flex-direction-nav li:nth-of-type(2) a{
+  display: inline-block;
+  width: 29px;
+  height: 51px;
+  background: url(../images/nexta.png) center no-repeat;
+  background-size: 100%;
+}
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+  .bottom{
+    margin-right: 120px;
+    width: auto;
+    background: url(../images/fp1920.jpg) left top no-repeat;
+    background-size: 100%;
+  }
+  .contact-info .bottom-left{
+    left: 50px;
+  }
+  .contact-info .bottom-right{
+    right: 70px;
+  }
+}

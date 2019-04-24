@@ -1,0 +1,294 @@
+.about-beauty{
+    .page-top{
+        position: relative;
+    }
+    .preview{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 120px;
+        padding-left: 200px;
+        margin-right: 120px;
+        box-sizing: border-box;
+        .left{
+            padding-top: 40px;
+            padding-bottom: 50px;
+            width: 420px;
+            text-align: center;
+            background: #000;
+            h3{
+                margin-bottom: 25px;
+                font-size: 36px;
+                color: #fff;
+            }
+            .new{
+                color: #fff;
+                font-size: 20px;
+                span:last-child{
+                  font-size: 16px;
+                  &::before{
+                      display: inline-block;
+                      content: '';
+                      width: 1px;
+                      height: 20px;
+                      margin-left: 5px;
+                      margin-right: 10px;
+                      vertical-align: middle;
+                      background: #fff;
+                  }
+                }
+            }
+        }
+        .right{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding-left: 420px;
+            box-sizing: border-box;
+            ul{
+                padding-top: 45px;
+                padding-left: 55px;
+                height: 190px;
+                background: #fff;
+                box-sizing: border-box;
+                li{
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                    color: #333;
+                    .date{
+                        margin-right: 45px;
+                    }
+                    &::last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    .beauty-content{
+        margin-right: 120px;
+        .beauty-hole{
+            position: relative;
+            padding-bottom: 200px;
+            padding-top: 110px;
+            height: 793px;
+            background: #edeef0;
+            .info{
+                position: absolute;
+                z-index: 99;
+                width: 630px;
+                margin-top: 105px;
+                padding: 55px 90px 90px 80px;
+                box-sizing: border-box;
+                background: #edeef0;
+                h3{
+                    font-size: 36px;
+                    color: #5f5f60;
+                }
+                .ads{
+                    font-size: 26px;
+                    color: #000;
+                }
+                .info-content{
+                    margin-top: 30px;
+                    height: 200px;
+                    overflow-y: auto;
+                    line-height: 30px;
+                    font-size: 14px;
+                    color: #000;
+                }
+                .tip{
+                    color: #ac793c;
+                    font-size: 14px;
+                }
+                .link{
+                    margin-top: 70px;
+                    text-align: left;
+                    a{
+                        background: url(../images/linkbg.png) center no-repeat;
+                        border: none;
+                        color: #fff;
+                        background-size: contain;
+                    }
+                    &.brown{
+                        a{
+                            background: url(../images/linkbgbr.png) center no-repeat;
+                            border: none;
+                            color: #fff;
+                            background-size: contain;
+                        }
+                    }
+                }
+            }
+            .pic{
+                position: absolute;
+                top: 110px;
+                right: 0;
+            }
+            &.dif{
+                padding-top: 130px;
+                padding-bottom: 0;
+                background: #fff;
+                height: 550px;
+                .info{
+                    padding-bottom: 0;
+                    padding-top: 38px;
+                    background: #fff;
+                    h3{
+                        color: #000;
+                        font-size: 26px;
+                    }
+                    .info-content{
+                        font-size: 16px;
+                        color: #666;
+                        height: auto;
+                    }
+                    .link{
+                        margin-top: 15px;
+                    }
+                }
+                .pic{
+                    padding-left: 370px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                &.right{
+                    padding-top: 0;
+                    height: 480px;
+                    box-sizing: border-box;
+                    .pic{
+                        left: 0;
+                        top: 0;
+                        padding-right: 350px;
+                        padding-left: 0;
+                    }
+                    .info{
+                        margin-top: 0;
+                        top: 80px;
+                        right: 0;
+                        .info-content{
+                            margin-top: 15px;
+                        }
+                    }
+                }
+                &.taiji{
+                    padding-top: 100px;
+                    .pic{
+                        padding-left: 508px;
+                    }
+                    .info{
+                        width: 508px;
+                        margin-top: 0;
+                        padding-left: 45px;
+                        padding-right: 30px;
+                        .info-content{
+                            max-height: 340px;
+                            overflow-y: auto;
+                        }
+                    }
+                }
+                &.train{
+                    padding-top: 100px;
+                    .pic{
+                        padding-right: 508px;
+                        padding-left: 0;
+                    }
+                    .info{
+                        width: 508px;
+                        right: 0;
+                        margin-top: 0;
+                        padding-left: 45px;
+                        padding-right: 30px;
+                        .info-content{
+                            max-height: 340px;
+                            overflow-y: auto;
+                        }
+                    }
+                }
+            }
+        }
+        .more-corse{
+            margin-top: 98px;
+            margin-bottom: 128px;
+        }
+        .club{
+            padding: 145px 0 145px 70px;
+            background: #edeef0;
+            font-size: 0;
+            text-align: center;
+            .left{
+                display: inline-block;
+                width: 50%;
+                img{
+                    width: 100%;
+                }
+            }
+            .right{
+                display: inline-block;
+                width: 50%;
+                padding: 0 15px;
+                box-sizing: border-box;
+                vertical-align: top;
+                font-size: 16px;
+                color: #333;
+                ul{
+                    max-width: 100%;
+                    overflow-x: auto;
+                    white-space: nowrap;
+                }
+                li{
+                    display: inline-block;
+                    width: 18px;
+                    height: 100%;
+                    margin-right: 26px;
+                    white-space: normal;
+                    vertical-align: top;
+                    &:first-child{
+                        margin-right: 30px;
+                        a{
+                            color: #de0606;
+                        }
+                    }
+                    &:last-child{
+                        width: 28px;
+                        padding: 10px 5px;
+                        margin-left: 40px;
+                        font-size: 26px;
+                        border: 1px solid #666;
+                    }
+                }
+            }
+        }
+        .shows-wrap{
+            margin-right: 70px;
+            margin-left: 70px;
+            padding: 125px 0;
+        }
+        .shows{
+            padding: 0 150px;
+            font-size: 0;
+            li{
+                display: inline-block;
+                width: 33%;
+                font-size: 14px;
+                padding: 0 20px;
+                box-sizing: border-box;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .actives{
+            .title{
+                text-align: center;
+                font-size: 26px;
+                color: #333;
+                span{
+                    padding: 10px 15px;
+                    color: #666;
+                }
+            }
+        }
+    }
+}
