@@ -263,7 +263,7 @@ body {
   box-sizing: border-box;
   padding-right: 10px;
 }
-.shadow{
+.lunbo .shadow{
   position: absolute;
   top: 0;
   left: 0;
@@ -365,7 +365,7 @@ body {
   margin: 5px;
   vertical-align: middle;
 }
-.news{
+.lunbo .news{
   position: absolute;
   padding-right: 100px;
   padding-left: 20px;
@@ -378,7 +378,7 @@ body {
   color: #fff;
   font-size: 14px;
 }
-.news span:first-child{
+.lunbo .news span:first-child{
   padding-right: 15px;
   margin-right: 15px;
   height: 16px;
@@ -406,27 +406,25 @@ body {
   width: 100%;
   margin-top: 15px;
   padding-left: 20px;
-  padding-right: 144px;
+  padding-right: 20px;
   box-sizing: border-box;
 }
 .introduction .part{
   position: relative;
+}
+.introduction .part>img {
+  width: 100%;
 }
 .introduction img.h321{
   height: 321px;
 }
 .introduction .part .text{
   position: absolute;
-  width: 100%;
-  padding-right: 200px;
-  box-sizing: border-box;
-  top: 50%;
-  left: 0;
-  margin-top: -210px;
-  text-align: center;
+  top: 5%;
+  left: 15%;
+  text-align: right;
   color: #fff;
   font-size: 16px;
-  z-index: 999;
 }
 .introduction .part .text.top50{
   top: 50px;
@@ -470,7 +468,7 @@ body {
   color: #a3a3a3;
 }
 .scroll-wrap {
-  width: 1050px;
+  width: 100%;
   overflow-x: auto;
   font-size: 0;
   white-space: nowrap;
@@ -498,10 +496,7 @@ body {
   width: 24px;
   height: 7px;
 }
-.bottom{
-  width: 1080px;
-}
-.common-introduce{
+.bottom .about-beauty{
   padding-left: 60px;
   padding-top: 55px;
   padding-bottom: 55px;
@@ -510,62 +505,63 @@ body {
   background: -moz-linear-gradient(#eee, #eee); /* Firefox 3.6 - 15 */
   background: linear-gradient(#eee, #eee); /* 标准的语法 */
 }
-.common-introduce .title{
+.bottom .title{
   font-size: 32px;
   color: #020202;
   letter-spacing: 0.3em;
 }
-.common-introduce .sub-title{
+.bottom .sub-title{
   margin-top: 5px;
   margin-bottom: 113px;
   color: #989898;
   font-size: 14px;
 }
-.common-introduce li{
+.bottom li{
   display: inline-block;
   vertical-align: top;
 }
-.common-introduce li.left{
+.bottom li.left{
   margin-right: 48px;
+  display: none;
 }
-.common-introduce li.left .link{
+.bottom li.left .link{
   margin: 0;
   padding: 15px 0;
   border-bottom: 1px solid #ccc;
   text-align: left;
 }
-.common-introduce li.right{
+.bottom li.right{
   padding: 30px 0;
   min-height: 325px;
   box-sizing: border-box;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
-.common-introduce li.right li{
+.bottom li.right li{
   height: 30px;
   line-height: 30px;
   font-size: 16px;
   color: #999;
 }
-.common-introduce li.left .link .tower{
+.bottom li.left .link .tower{
   width: 18px;
   height: 18px;
   margin-right: 6px;
   vertical-align: bottom;
 }
-.common-introduce li.left .link .star{
+.bottom li.left .link .star{
   width: 18px;
   height: 16px;
   margin-right: 6px;
   vertical-align: bottom;
 }
-.common-introduce li.left .link .bag{
+.bottom li.left .link .bag{
   width: 18px;
   height: 19px;
   margin-right: 6px;
   vertical-align: bottom;
 }
-.common-introduce .right .divider{
+.bottom .right .divider{
   display: inline-block;
   margin: 0 45px;
   height: 1px;
@@ -573,14 +569,14 @@ body {
   background: #ccc;
   vertical-align: middle;
 }
-.common-introduce .right .text{
+.bottom .right .text{
   color: #666;
 }
 .contact-info{
   position: relative;
-  height: 586px;
+  height: 486px;
   background: url(../images/fp.jpg) left top no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 .contact-info .bottom-top {
   position: absolute;
@@ -648,32 +644,180 @@ body {
 .text-right{
   text-align: right;
 }
-/* 滚动图左右控制按钮样式 */
-.flex-direction-nav{
-  position: absolute;
-  top: 50%;
-  left: 263px;
-  right: 315px;
+
+@media screen and (max-width: 980px) {
+  .nav-bar{
+    display: none;
+  }
+  .pop-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  .pop-menu .close{
+    width: 38px;
+    height: 28px;
+    background: url(../images/hanclose.png) no-repeat;
+    position: absolute;
+    top:30px;
+    right: 30px;
+    z-index: 1111;
+  }
+  .pop-menu ul{
+    color: #fff;
+  }
+  .pop-menu ul li{
+    width: 327px;
+    padding-top: 20px;
+    border-bottom: 1px dotted #fff;
+    min-height: 133px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  .pop-menu ul li:last-child{
+    border: none;
+  }
+  .pop-menu ul li>div{
+    float: left;
+    vertical-align: middle
+  }
+  .pop-menu ul li .text{
+    margin-left: 25px;
+  }
+  
+  /*icons*/
+  .han1{
+    width: 56px;
+    height: 45px;
+    background: url(../images/han1.png) no-repeat;
+    background-size: 56px 45px;
+  }
+  .han2{
+    width: 39px;
+    height: 43px;
+    background: url(../images/han2.png) no-repeat;
+    background-size: 39px 43px;
+  }
+  .han3{
+    width: 55px;
+    height: 44px;
+    background: url(../images/han3.png) no-repeat;
+    background-size: 55px 44px;
+  }
+  .han4{
+    width: 43px;
+    height: 45px;
+    background: url(../images/han4.png) no-repeat;
+    background-size: 43px 45px;
+  }
+  .han5{
+    width: 45px;
+    height: 42px;
+    background: url(../images/han5.png) no-repeat;
+    background-size: 45px 42px;
+  }
+  .han6{
+    width: 42px;
+    height: 50px;
+    background: url(../images/han6.png) no-repeat;
+    background-size: 42px 50px;
+  }
 }
-.flex-direction-nav li:nth-of-type(1) a{
-    display: inline-block;
-    width: 29px;
-    height: 51px;
-    background: url(../images/pre.png) center no-repeat;
-    background-size: 100%;
+
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+  .pop-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pop-menu .close{
+    width: 38px;
+    height: 28px;
+    background: url(../images/hanclose.png) no-repeat;
+    position: absolute;
+    top:30px;
+    right: 30px;
+    z-index: 1111;
+  }
+  .pop-menu ul{
+    color: #fff;
+  }
+  .pop-menu ul li{
+    float: left;
+    width: 150px;
+    text-align: center;
+    padding-top: 20px;
+    border-right: 1px dotted #fff;
+    min-height: 180px;
+  }
+  .pop-menu ul li:last-child{
+    border: none;
+  }
+  .pop-menu ul li>div{
+    margin: 0 auto;
+  }
+  .pop-menu ul li .text{
+    width: 20px;
+    margin-top: 27px;
+  }
+  
+  /*icons*/
+  .han1{
+    width: 56px;
+    height: 45px;
+    background: url(../images/han1.png) no-repeat;
+    background-size: 56px 45px;
+  }
+  .han2{
+    width: 39px;
+    height: 43px;
+    background: url(../images/han2.png) no-repeat;
+    background-size: 39px 43px;
+  }
+  .han3{
+    width: 55px;
+    height: 44px;
+    background: url(../images/han3.png) no-repeat;
+    background-size: 55px 44px;
+  }
+  .han4{
+    width: 43px;
+    height: 45px;
+    background: url(../images/han4.png) no-repeat;
+    background-size: 43px 45px;
+  }
+  .han5{
+    width: 45px;
+    height: 42px;
+    background: url(../images/han5.png) no-repeat;
+    background-size: 45px 42px;
+  }
+  .han6{
+    width: 42px;
+    height: 50px;
+    background: url(../images/han6.png) no-repeat;
+    background-size: 42px 50px;
+  }
 }
-.flex-direction-nav li:nth-of-type(2){
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.flex-direction-nav li:nth-of-type(2) a{
-  display: inline-block;
-  width: 29px;
-  height: 51px;
-  background: url(../images/nexta.png) center no-repeat;
-  background-size: 100%;
-}
+
 @media screen and (min-width: 1200px) and (max-width: 1920px) {
   .bottom{
     margin-right: 120px;
@@ -681,10 +825,182 @@ body {
     background: url(../images/fp1920.jpg) left top no-repeat;
     background-size: 100%;
   }
+  .contact-info{
+    height: 586px;
+  }
   .contact-info .bottom-left{
     left: 50px;
   }
   .contact-info .bottom-right{
     right: 70px;
+  }
+  .introduction {
+    width: 100%;
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-right: 144px;
+    box-sizing: border-box;
+  }
+  .bottom .left {
+    display: block;
+  }
+
+  .pop-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pop-menu .close{
+    width: 38px;
+    height: 28px;
+    background: url(../images/hanclose.png) no-repeat;
+    position: absolute;
+    top:30px;
+    right: 30px;
+    z-index: 1111;
+  }
+  .pop-menu ul{
+    color: #fff;
+  }
+  .pop-menu ul li{
+    float: left;
+    width: 180px;
+    text-align: center;
+    padding-top: 20px;
+    border-right: 1px dotted #fff;
+    min-height: 220px;
+  }
+  .pop-menu ul li:last-child{
+    border: none;
+  }
+  .pop-menu ul li>div{
+    margin: 0 auto;
+  }
+  .pop-menu ul li .text{
+    width: 20px;
+    margin-top: 45px;
+  }
+  
+  /*icons*/
+  .han1{
+    width: 77px;
+    height: 61px;
+    background: url(../images/han1.png) no-repeat;
+    background-size: 77px 61px;
+  }
+  .han2{
+    width: 57px;
+    height: 62px;
+    background: url(../images/han2.png) no-repeat;
+    background-size: 57px 62px;
+  }
+  .han3{
+    width: 76px;
+    height: 62px;
+    background: url(../images/han3.png) no-repeat;
+    background-size: 76px 62px;
+  }
+  .han4{
+    width: 57px;
+    height: 61px;
+    background: url(../images/han4.png) no-repeat;
+    background-size: 57px 61px;
+  }
+  .han5{
+    width: 67px;
+    height: 62px;
+    background: url(../images/han5.png) no-repeat;
+    background-size: 67px 62px;
+  }
+  .han6{
+    width: 55px;
+    height: 65px;
+    background: url(../images/han6.png) no-repeat;
+    background-size: 55px 65px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .pop-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pop-menu .close{
+    width: 38px;
+    height: 28px;
+    background: url(../images/hanclose.png) no-repeat;
+    position: absolute;
+    top:30px;
+    right: 30px;
+    z-index: 1111;
+  }
+  .pop-menu ul{
+    color: #fff;
+  }
+  .pop-menu ul li{
+    float: left;
+    width: 270px;
+    text-align: center;
+    padding-top: 20px;
+    border-right: 1px dotted #fff;
+    min-height: 286px;
+  }
+  .pop-menu ul li:last-child{
+    border: none;
+  }
+  .pop-menu ul li>div{
+    margin: 0 auto;
+  }
+  .pop-menu ul li .text{
+    width: 20px;
+    margin-top: 45px;
+  }
+  
+  /*icons*/
+  .han1{
+    width: 110px;
+    height: 87px;
+    background: url(../images/han1.png) no-repeat;
+  }
+  .han2{
+    width: 79px;
+    height: 87px;
+    background: url(../images/han2.png) no-repeat;
+  }
+  .han3{
+    width: 109px;
+    height: 89px;
+    background: url(../images/han3.png) no-repeat;
+  }
+  .han4{
+    width: 84px;
+    height: 90px;
+    background: url(../images/han4.png) no-repeat;
+  }
+  .han5{
+    width: 96px;
+    height: 89px;
+    background: url(../images/han5.png) no-repeat;
+  }
+  .han6{
+    width: 77px;
+    height: 91px;
+    background: url(../images/han6.png) no-repeat;
   }
 }
