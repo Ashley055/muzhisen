@@ -365,7 +365,7 @@ body {
   margin: 5px;
   vertical-align: middle;
 }
-.lunbo .news{
+.news{
   position: absolute;
   padding-right: 100px;
   padding-left: 20px;
@@ -378,7 +378,7 @@ body {
   color: #fff;
   font-size: 14px;
 }
-.lunbo .news span:first-child{
+.news span:first-child{
   padding-right: 15px;
   margin-right: 15px;
   height: 16px;
@@ -838,7 +838,7 @@ body {
     width: 100%;
     margin-top: 15px;
     padding-left: 20px;
-    padding-right: 144px;
+    padding-right: 120px;
     box-sizing: border-box;
   }
   .bottom .left {

@@ -1,36 +1,54 @@
+.about-chenxiang {
+  overflow: hidden;
+}
 .about-chenxiang .page-top {
   position: relative;
 }
 .about-chenxiang .top-info {
   height: 100%;
 }
+.about-chenxiang .introduction {
+  padding-left: 0;
+}
+.about-chenxiang .introduction .part {
+  padding-left: 110px;
+}
 .about-chenxiang .introduction .part.mt105 {
   margin-top: 105px;
 }
-.about-chenxiang .introduction .part.pb145 {
-  padding-bottom: 145px;
+.about-chenxiang .introduction .part.pb110 {
+  padding-bottom: 110px;
 }
 .about-chenxiang .introduction .part .shadow {
   width: 99%;
   height: 99%;
 }
 .about-chenxiang .introduction .part .left {
-  max-width: 55%;
-  margin-left: 110px;
+  max-width: 902px;
+  height: 721px;
+  margin-left: 60px;
+}
+.about-chenxiang .introduction .part .left img {
+  width: 100%;
 }
 .about-chenxiang .introduction .part .right {
   position: absolute;
   top: 0;
-  right: 95px;
+  width: 30.7%;
+  right: 70px;
 }
 .about-chenxiang .introduction .part .right .mt39 {
   margin-top: 39px;
+}
+.about-chenxiang .introduction .part .right img {
+  width: 556px;
+  height: 338px;
 }
 .about-chenxiang .introduction .part .gray {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 694px;
+  height: 460px;
   width: 100%;
   background: #eaeaea;
   z-index: -1;
@@ -40,24 +58,61 @@
   height: 340px;
   margin-right: 120px;
   padding-bottom: 160px;
+  padding-left: 75px;
   background: #f9f8f8;
 }
 .about-chenxiang .common-introduce li {
   display: block;
   margin-bottom: 15px;
 }
+.about-chenxiang .common-introduce .left {
+  padding-top: 86px;
+}
+.about-chenxiang .common-introduce .left .title {
+  position: relative;
+  padding-left: 25px;
+  font-size: 32px;
+  color: #020202;
+}
+.about-chenxiang .common-introduce .left .title::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 1px;
+  height: 180px;
+  background: #333;
+}
+.about-chenxiang .common-introduce .left .sub-title {
+  margin-top: 10px;
+  padding-left: 25px;
+  color: #adacac;
+  font-size: 14px;
+}
 .about-chenxiang .common-introduce .left .left-bottom {
   position: absolute;
   bottom: 160px;
+  font-size: 18px;
+  color: #666;
+  line-height: 40px;
 }
 .about-chenxiang .common-introduce .right {
   position: absolute;
-  top: 50px;
-  left: 520px;
+  top: 125px;
+  left: 0px;
+  padding-left: 520px;
+  width: 100%;
+  padding-right: 80px;
+  box-sizing: border-box;
   border-top: none;
   border-bottom: none;
   height: 340px;
   overflow-y: auto;
+}
+.about-chenxiang .common-introduce .right li {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .about-chenxiang .common-introduce .right .date {
   font-size: 20px;
@@ -87,6 +142,12 @@
   right: 0;
   top: 0;
   background: #edeef0;
+}
+.about-chenxiang .qulity .right ul {
+  white-space: nowrap;
+}
+.about-chenxiang .qulity .right ul li {
+  white-space: normal;
 }
 .about-chenxiang .qulity .right .lunbo {
   height: 100%;
@@ -126,8 +187,102 @@
 }
 .about-chenxiang .qulity .right .lunbo .lunbo-box a .text li {
   width: 35px;
+  height: 100%;
+  overflow: hidden;
   display: inline-block;
   font-size: 24px;
   color: #333;
   vertical-align: top;
+}
+@media screen and (max-width: 640px) {
+  .about-chenxiang .common-introduce {
+    height: 400px;
+    margin-right: 0;
+  }
+  .about-chenxiang .common-introduce .left .left-bottom {
+    display: none;
+  }
+  .about-chenxiang .common-introduce .right {
+    position: static;
+    padding-left: 0;
+    margin-top: 70px;
+  }
+  .about-chenxiang .qulity {
+    margin-right: 0;
+  }
+  .about-chenxiang .qulity .left {
+    width: 100%;
+  }
+  .about-chenxiang .qulity .left img {
+    width: 100%;
+  }
+  .about-chenxiang .qulity .right {
+    position: static;
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+  .about-chenxiang .introduction {
+    padding-right: 0;
+  }
+  .about-chenxiang .introduction .part {
+    padding-left: 20px;
+  }
+  .about-chenxiang .introduction .part.min-pr15 {
+    padding-right: 15px;
+  }
+  .about-chenxiang .introduction .part .left {
+    margin-left: 0;
+    height: 435px;
+  }
+  .about-chenxiang .introduction .part .left img {
+    width: 544px;
+    height: 435px;
+  }
+  .about-chenxiang .introduction .part .right .mt39 {
+    margin-top: 25px;
+  }
+  .about-chenxiang .introduction .part .right img {
+    width: 335px;
+    height: 204px;
+  }
+  .about-chenxiang .introduction .part .gray {
+    height: 430px;
+  }
+  .about-chenxiang .common-introduce {
+    height: 400px;
+    margin-right: 0;
+  }
+  .about-chenxiang .common-introduce .left .left-bottom {
+    display: none;
+  }
+  .about-chenxiang .common-introduce .right {
+    position: static;
+    padding-left: 0;
+    margin-top: 70px;
+  }
+  .about-chenxiang .qulity {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+  .about-chenxiang .introduction .part .left {
+    height: auto;
+  }
+  .about-chenxiang .introduction .part .left img {
+    width: 548px;
+    height: 439px;
+  }
+  .about-chenxiang .introduction .part .right img {
+    width: 338px;
+    height: 206px;
+  }
+  .about-chenxiang .introduction .part .right .mt39 {
+    margin-top: 25px;
+  }
+  .about-chenxiang .introduction .part .gray {
+    height: 416px;
+  }
 }
