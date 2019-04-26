@@ -1,0 +1,362 @@
+.about-us {
+  overflow: hidden;
+}
+.about-us .navs {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: 100px;
+  text-align: center;
+}
+.about-us .navs a {
+  display: inline-block;
+  margin-right: 40px;
+  color: #cfcfcf;
+  font-size: 20px;
+  text-align: center;
+}
+.about-us .navs a:last-child {
+  margin-right: 0;
+}
+.about-us .navs a span {
+  display: block;
+}
+.about-us .navs a em {
+  display: inline-block;
+  width: 17px;
+  height: 9px;
+  background: url(../images/down.png) center no-repeat;
+}
+.about-us .brand {
+  position: relative;
+  margin-left: 23px;
+  margin-right: 120px;
+  padding-top: 150px;
+}
+.about-us .brand .title {
+  text-align: center;
+  font-size: 32px;
+  color: #020202;
+  letter-spacing: 0.2em;
+}
+.about-us .brand .title:before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  content: '';
+  width: 1px;
+  height: 108px;
+  background: #333;
+}
+.about-us .brand .sub-title {
+  margin-top: 10px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 14px;
+  color: #a3a3a3;
+}
+.about-us .brand .brand-info {
+  position: relative;
+  height: 100%;
+}
+.about-us .brand .left {
+  width: 50%;
+  overflow: hidden;
+}
+.about-us .brand .left img {
+  width: 100%;
+}
+.about-us .brand .right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  padding-top: 125px;
+  padding-left: 85px;
+  padding-right: 155px;
+  box-sizing: border-box;
+  background: #f9f8f8;
+}
+.about-us .brand .right h3 {
+  font-size: 28px;
+  color: #bf9a64;
+}
+.about-us .brand .right .des {
+  margin-top: 7px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #bf9a64;
+}
+.about-us .brand .right .text-info {
+  height: 285px;
+  overflow-y: auto;
+}
+.about-us .brand .right p {
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #333;
+}
+.about-us .brand .right .signature {
+  margin-top: 70px;
+  margin-bottom: 112px;
+  text-align: right;
+}
+.about-us .brand-culture {
+  margin-top: 55px;
+  padding-top: 50px;
+  margin-right: 120px;
+  background: url(../images/culture.bg.png) left top no-repeat;
+}
+.about-us .brand-culture .title-wrap {
+  position: relative;
+  margin-left: 400px;
+}
+.about-us .brand-culture .title-wrap .img {
+  position: absolute;
+  top: 0;
+  left: -70px;
+}
+.about-us .brand-culture .title {
+  font-size: 32px;
+  color: #020202;
+}
+.about-us .brand-culture .title:after {
+  display: inline-block;
+  content: '';
+  width: 150px;
+  height: 1px;
+  margin-left: 35px;
+  background: #000;
+  vertical-align: bottom;
+}
+.about-us .brand-culture .en {
+  font-size: 18px;
+  color: #a3a3a3;
+  line-height: 30px;
+}
+.about-us .brand-culture .culture-content {
+  position: relative;
+  height: 595px;
+  font-size: 16px;
+  color: #020202;
+  line-height: 40px;
+}
+.about-us .brand-culture .culture-content .left .sub-title {
+  margin-top: 130px;
+  margin-left: 70px;
+  margin-bottom: 45px;
+  font-size: 26px;
+  color: #020202;
+}
+.about-us .brand-culture .culture-content .left .info {
+  width: 565px;
+  height: 260px;
+  margin-bottom: 120px;
+  margin-left: 70px;
+  overflow-y: auto;
+}
+.about-us .brand-culture .culture-content .right {
+  position: absolute;
+  top: -100px;
+  right: 0;
+}
+.about-us .masters {
+  margin-right: 120px;
+  margin-bottom: 30px;
+  font-size: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.about-us .masters .title {
+  text-align: center;
+  font-size: 32px;
+  color: #020202;
+  letter-spacing: 0.3em;
+}
+.about-us .masters .en {
+  margin-bottom: 50px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #bebebe;
+  text-align: center;
+}
+.about-us .masters li {
+  display: inline-block;
+  width: 25%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.about-us .masters li img {
+  width: 100%;
+}
+.about-us .masters li .acad-title {
+  position: relative;
+  margin-top: 33px;
+  font-size: 14px;
+  color: #ac793c;
+  line-height: 33px;
+}
+.about-us .masters li .acad-title::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  width: 20px;
+  height: 1px;
+  background: #ad793c;
+}
+.about-us .masters li .name {
+  margin-bottom: 30px;
+}
+.about-us .masters li .name .cn {
+  font-size: 26px;
+  color: #000;
+}
+.about-us .masters li .name .en {
+  font-size: 16px;
+  color: #999;
+}
+.about-us .masters li .name .family-name {
+  margin-right: 10px;
+}
+.about-us .link {
+  margin-bottom: 145px;
+}
+.about-us .common-introduce .culture {
+  padding-left: 32px;
+  background: url(../images/book.png) left center no-repeat;
+}
+.about-us .common-introduce .art {
+  padding-left: 32px;
+  background: url(../images/art.png) left center no-repeat;
+}
+.about-us .common-introduce .family {
+  padding-left: 32px;
+  background: url(../images/family.png) left top no-repeat;
+}
+.about-us .talent {
+  margin-top: 190px;
+  margin-left: 15px;
+  margin-right: 120px;
+  padding-left: 15px;
+  padding-right: 30px;
+  text-align: center;
+}
+.about-us .talent .title {
+  font-size: 32px;
+  color: #020202;
+  letter-spacing: 0.2em;
+}
+.about-us .talent .en {
+  margin-bottom: 60px;
+  line-height: 28px;
+  font-size: 14px;
+  color: #a3a3a3;
+}
+.about-us .talent .info {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-left: 15px;
+  margin-right: 30px;
+}
+.about-us .talent .info img.bg {
+  width: 100%;
+  height: 557px;
+}
+.about-us .talent .info ul {
+  position: absolute;
+  font-size: 0;
+  top: 0;
+  left: 25px;
+  right: 55px;
+  padding-top: 81px;
+  padding-bottom: 140px;
+}
+.about-us .talent .info ul li {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  padding-left: 25px;
+  padding-right: 20px;
+  height: 100%;
+  overflow: hidden;
+  font-size: 16px;
+  color: #fff;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: 28px;
+  vertical-align: middle;
+}
+.about-us .talent .info ul li .img {
+  padding-right: 20px;
+  text-align: center;
+}
+.about-us .talent .info ul li .title {
+  margin-top: 15px;
+  font-size: 30px;
+  color: #fff;
+}
+.about-us .talent .info ul li a {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+.about-us .talent .info ul li a .img {
+  padding-right: 0;
+  margin-bottom: 28px;
+}
+.about-us .talent .info ul li:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  content: '';
+  border-right: 1px dotted #fff;
+}
+.about-us .talent .info .link {
+  position: absolute;
+  bottom: 45px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.about-us .talent .info .link a {
+  color: #fff;
+}
+@media screen and (min-width: 1200px) and (max-width: 1910px) {
+  .about-us .brand .brand-info .right {
+    padding-top: 25px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+  .about-us .brand .brand-info .right .signature {
+    margin-top: 32px;
+    margin-bottom: 21px;
+  }
+  .about-us .brand-culture {
+    background-size: 235px 239px;
+    line-height: 38px;
+  }
+  .about-us .brand-culture .culture-content {
+    height: auto;
+  }
+  .about-us .brand-culture .culture-content .left .sub-title {
+    margin-top: 60px;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  .about-us .brand-culture .culture-content .left .info {
+    height: 220px;
+  }
+  .about-us .brand-culture .culture-content .right {
+    top: -30px;
+  }
+  .about-us .brand-culture .culture-content .right img {
+    widows: 566px;
+    height: 308px;
+  }
+}

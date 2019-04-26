@@ -57,6 +57,7 @@ module.exports = function(grunt) {
 					'<%= config.app %>/css/aboutChenxiang.css': '<%= config.app %>/less/aboutChenxiang.less',
 					'<%= config.app %>/css/contactUs.css': '<%= config.app %>/less/contactUs.less',
 					'<%= config.app %>/css/aboutBeauty.css': '<%= config.app %>/less/aboutBeauty.less',
+					'<%= config.app %>/css/aboutUs.css': '<%= config.app %>/less/aboutUs.less',
 				}
 			}
 		},

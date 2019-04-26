@@ -102,6 +102,164 @@
   font-size: 14px;
   color: #999;
 }
+.common-introduce {
+  position: relative;
+  height: 340px;
+  margin-right: 120px;
+  padding-bottom: 160px;
+  padding-left: 75px;
+  background: #f9f8f8;
+}
+.common-introduce li {
+  display: block;
+  margin-bottom: 15px;
+}
+.common-introduce .left {
+  padding-top: 86px;
+}
+.common-introduce .left .title {
+  position: relative;
+  padding-left: 25px;
+  font-size: 32px;
+  color: #020202;
+}
+.common-introduce .left .title::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 1px;
+  height: 180px;
+  background: #333;
+}
+.common-introduce .left .sub-title {
+  margin-top: 10px;
+  padding-left: 25px;
+  color: #adacac;
+  font-size: 14px;
+}
+.common-introduce .left .left-bottom {
+  position: absolute;
+  bottom: 160px;
+  font-size: 18px;
+  color: #666;
+  line-height: 40px;
+}
+.common-introduce .right {
+  position: absolute;
+  top: 125px;
+  left: 0px;
+  padding-left: 520px;
+  width: 100%;
+  padding-right: 80px;
+  box-sizing: border-box;
+  border-top: none;
+  border-bottom: none;
+  height: 340px;
+  overflow-y: auto;
+}
+.common-introduce .right li {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.common-introduce .right .date {
+  font-size: 20px;
+  color: #000;
+  vertical-align: middle;
+}
+.common-introduce .right .divider {
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  background: #ccc;
+  margin-left: 15px;
+  margin-right: 30px;
+  vertical-align: middle;
+}
+.common-introduce .right .text {
+  display: inline-block;
+  max-width: 950px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.qulity {
+  position: relative;
+  margin-right: 120px;
+}
+.qulity .right {
+  position: absolute;
+  width: 50%;
+  height: 670px;
+  right: 0;
+  top: 0;
+  background: #edeef0;
+}
+.qulity .right ul {
+  white-space: nowrap;
+}
+.qulity .right ul li {
+  white-space: normal;
+}
+.qulity .right .lunbo {
+  height: 100%;
+}
+.qulity .right .lunbo .flex-direction-nav {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  right: 50px;
+}
+.qulity .right .lunbo .flex-direction-nav li a {
+  display: inline-block;
+  width: 15px;
+  height: 29px;
+}
+.qulity .right .lunbo .flex-direction-nav li:last-child {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.qulity .right .lunbo .flex-direction-nav li:nth-of-type(1) a {
+  background: url(../images/gray-pre.png) center no-repeat;
+  background-size: 15px 29px;
+}
+.qulity .right .lunbo .flex-direction-nav li:nth-of-type(2) a {
+  background: url(../images/gray-next.png) center no-repeat;
+  background-size: 15px 29px;
+}
+.qulity .right .lunbo .lunbo-box {
+  position: relative;
+  width: 600px;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+}
+.qulity .right .lunbo .lunbo-box a .title {
+  margin-top: 85px;
+  margin-bottom: 25px;
+  font-size: 32px;
+  color: #020202;
+  letter-spacing: 0.3em;
+}
+.qulity .right .lunbo .lunbo-box a .sub-title {
+  font-size: 14px;
+  color: #979899;
+}
+.qulity .right .lunbo .lunbo-box a .text {
+  margin-top: 35px;
+}
+.qulity .right .lunbo .lunbo-box a .text li {
+  width: 35px;
+  height: 100%;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 24px;
+  color: #333;
+  vertical-align: top;
+}
 .footer {
   position: fixed;
   height: 56px;
@@ -123,9 +281,90 @@
   right: 22px;
   top: 22px;
 }
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 640px) and (max-width: 980px) {
+  .top-info .logo {
+    padding-left: 15px;
+  }
+  .news {
+    display: none;
+  }
+  .common-introduce {
+    padding-left: 0 !important;
+    margin-right: 0;
+    text-align: center;
+  }
+  .common-introduce .left .title::before {
+    left: 50% !important;
+    margin-left: -70px !important;
+  }
+  .common-introduce .left .left-bottom {
+    display: none;
+  }
+  .common-introduce .right {
+    padding-left: 25px;
+    margin-top: 40px;
+    text-align: left;
+  }
+  .qulity {
+    margin-right: 0;
+  }
+  .qulity .left {
+    width: 100%;
+  }
+  .qulity .left img {
+    width: 100%;
+  }
+  .qulity .right {
+    position: static;
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
   .bottom .contact-info .bottom-left,
   .bottom .contact-info .bottom-right {
     display: none;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+  .common-introduce {
+    height: 400px;
+    margin-right: 0;
+  }
+  .common-introduce .left .left-bottom {
+    display: none;
+  }
+  .common-introduce .right {
+    position: static;
+    padding-left: 0;
+    margin-top: 70px;
+  }
+  .qulity {
+    margin-right: 0;
+  }
+  .qulity .right .lunbo .lunbo-box a .text {
+    padding-right: 90px;
+  }
+  .qulity .right .lunbo .flex-direction-nav {
+    left: 20px;
+    right: 20px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+  .introduction .part .left {
+    height: auto;
+  }
+  .introduction .part .left img {
+    width: 548px;
+    height: 439px;
+  }
+  .introduction .part .right img {
+    width: 338px;
+    height: 206px;
+  }
+  .introduction .part .right .mt39 {
+    margin-top: 25px;
+  }
+  .introduction .part .gray {
+    height: 416px;
   }
 }
