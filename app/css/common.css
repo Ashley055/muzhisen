@@ -1,9 +1,6 @@
 .page-top {
   overflow: hidden;
-}
-.page-top .zsp1 {
-  width: 100%;
-  height: 679px;
+  position: relative;
 }
 .top-info {
   position: absolute;
@@ -189,6 +186,12 @@
   position: relative;
   margin-right: 120px;
 }
+.qulity .left {
+  width: 50%;
+}
+.qulity .left img {
+  width: 100%;
+}
 .qulity .right {
   position: absolute;
   width: 50%;
@@ -285,6 +288,9 @@
   .top-info .logo {
     padding-left: 15px;
   }
+  .introduction .link {
+    margin-bottom: 80px;
+  }
   .news {
     display: none;
   }
@@ -293,9 +299,13 @@
     margin-right: 0;
     text-align: center;
   }
+  .common-introduce .left {
+    padding-top: 30px;
+  }
   .common-introduce .left .title::before {
     left: 50% !important;
     margin-left: -70px !important;
+    height: 120px;
   }
   .common-introduce .left .left-bottom {
     display: none;
@@ -341,15 +351,33 @@
   .qulity {
     margin-right: 0;
   }
+  .qulity .right {
+    height: auto;
+  }
+  .qulity .right .lunbo {
+    width: 100%;
+  }
+  .qulity .right .lunbo .lunbo-box {
+    width: 100%;
+  }
+  .qulity .right .lunbo .lunbo-box a .title {
+    margin-top: 40px;
+    margin-bottom: 7px;
+  }
   .qulity .right .lunbo .lunbo-box a .text {
-    padding-right: 90px;
+    margin-top: 15px;
+    height: 246px;
+    padding-bottom: 16px;
+  }
+  .qulity .right .lunbo .lunbo-box a .text ul {
+    height: 100%;
   }
   .qulity .right .lunbo .flex-direction-nav {
     left: 20px;
     right: 20px;
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1920px) {
+@media screen and (min-width: 1200px) and (max-width: 1910px) {
   .introduction .part .left {
     height: auto;
   }
@@ -366,5 +394,33 @@
   }
   .introduction .part .gray {
     height: 416px;
+  }
+  .qulity .right {
+    height: auto;
+  }
+  .qulity .right .lunbo {
+    width: 100%;
+  }
+  .qulity .right .lunbo .lunbo-box a .title {
+    margin-top: 40px;
+    margin-bottom: 7px;
+  }
+  .qulity .right .lunbo .lunbo-box a .text {
+    margin-top: 15px;
+    height: 298px;
+    padding-bottom: 16px;
+  }
+  .qulity .right .lunbo .lunbo-box a .text ul {
+    height: 100%;
+  }
+  .qulity .right .lunbo .flex-direction-nav {
+    left: 20px;
+    right: 20px;
+  }
+}
+@media screen and (min-width: 1910px) {
+  .introduction .part .text {
+    top: 95px;
+    left: 630px;
   }
 }

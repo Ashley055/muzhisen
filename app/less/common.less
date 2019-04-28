@@ -1,9 +1,6 @@
 .page-top{
     overflow: hidden;
-    .zsp1{
-        width: 100%;
-        height: 679px;
-    }
+    position: relative;
 }
 .top-info{
     position: absolute;
@@ -188,6 +185,12 @@
 .qulity{
     position: relative;
     margin-right: 120px;
+    .left{
+        width: 50%;
+        img{
+            width: 100%;
+        }
+    }
     .right{
         position: absolute;
         width: 50%;
@@ -291,7 +294,11 @@
         padding-left: 15px;
     }
 }
-
+.introduction{
+    .link{
+        margin-bottom: 80px;
+    }
+}
 .news{
     display: none;
 }
@@ -300,9 +307,11 @@
     margin-right: 0;
     text-align: center;
     .left{
+        padding-top: 30px;
         .title::before{
             left: 50% !important;
             margin-left: -70px !important;
+            height: 120px;
         }
         .left-bottom{
             display: none;
@@ -357,11 +366,23 @@
     .qulity{
         margin-right: 0;
         .right{
+            height: auto;
             .lunbo{
+                width: 100%;
                 .lunbo-box{
+                    width: 100%;
                     a{
+                        .title{
+                            margin-top: 40px;
+                            margin-bottom: 7px;
+                        }
                         .text{
-                            padding-right: 90px;
+                            margin-top: 15px;
+                            height: 246px;
+                            padding-bottom: 16px;
+                            ul{
+                                height: 100%;
+                            }
                         }
                     }
                 }
@@ -374,7 +395,7 @@
     }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1920px) {
+@media screen and (min-width: 1200px) and (max-width: 1910px) {
     .introduction{
         .part{
             .left{
@@ -395,6 +416,44 @@
             }
             .gray{
                 height: 416px;
+            }
+        }
+    }
+    .qulity{
+        .right{
+            height: auto;
+            .lunbo{
+                width: 100%;
+                .lunbo-box{
+                    a{
+                        .title{
+                            margin-top: 40px;
+                            margin-bottom: 7px;
+                        }
+                        .text{
+                            margin-top: 15px;
+                            height: 298px;
+                            padding-bottom: 16px;
+                            ul{
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+                .flex-direction-nav{
+                    left: 20px;
+                    right: 20px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1910px) {
+    .introduction{
+        .part{
+            .text{
+                top: 95px;
+                left: 630px;
             }
         }
     }

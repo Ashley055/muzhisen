@@ -10,6 +10,21 @@
         padding-left: 0;
         .part{
             padding-left: 110px;
+            video{
+                width: 100%;
+                margin-bottom: 60px;
+            }
+            .title{
+                margin-bottom: 5px;
+                font-size: 32px;
+                color: #020202;
+            }
+            .en-title{
+                margin-bottom: 40px;
+                font-size: 14px;
+                color: #a3a3a3;
+                text-align: center;
+            }
             &.mt105{
                 margin-top: 105px;
             }
@@ -141,10 +156,11 @@
     }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1920px) {
+@media screen and (min-width: 1200px) and (max-width: 1910px) {
     .about-chenxiang{
         .introduction{
             .part{
+                padding-left: 15px;
                 .left{
                     height: auto;
                     img{
@@ -164,6 +180,36 @@
                 .gray{
                     height: 416px;
                 }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1910px) {
+    .about-chenxiang{
+        .introduction{
+            .part{
+                .text{
+                    top: 45px;
+                    left: 230px;;
+                }
+                .left{
+                    img{
+                        width: 902px;
+                        height: 721px;
+                    }
+                }
+                .gray{
+                    height: 694px;
+                }
+                .right{
+                    img{
+                        width: 556px;
+                        height: 338px;
+                    }
+                }
+            }
+            .link{
+                margin-bottom: 65px;
             }
         }
     }
