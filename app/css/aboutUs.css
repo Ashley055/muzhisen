@@ -65,6 +65,10 @@
 }
 .about-us .brand .left img {
   width: 100%;
+  transition: all 0.6s;
+}
+.about-us .brand .left img:hover {
+  transform: scale(1.1);
 }
 .about-us .brand .right {
   position: absolute;
@@ -163,15 +167,29 @@
 .about-us .masters {
   margin-right: 120px;
   margin-bottom: 30px;
+  padding-top: 170px;
   font-size: 0;
   overflow: hidden;
   white-space: nowrap;
 }
+.about-us .masters.min-masters {
+  display: none;
+}
 .about-us .masters .title {
+  position: relative;
   text-align: center;
   font-size: 32px;
   color: #020202;
   letter-spacing: 0.3em;
+}
+.about-us .masters .title::before {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  width: 1px;
+  height: 110px;
+  content: '';
+  background: #7b7b7b;
 }
 .about-us .masters .en {
   margin-bottom: 50px;
@@ -180,23 +198,26 @@
   color: #bebebe;
   text-align: center;
 }
-.about-us .masters li {
+.about-us .masters .slides li {
   display: inline-block;
   width: 25%;
   padding: 0 10px;
   box-sizing: border-box;
 }
-.about-us .masters li img {
+.about-us .masters .slides li img {
   width: 100%;
 }
-.about-us .masters li .acad-title {
+.about-us .masters .slides li:hover img {
+  transform: scale(1.1);
+}
+.about-us .masters .slides li .acad-title {
   position: relative;
   margin-top: 33px;
   font-size: 14px;
   color: #ac793c;
   line-height: 33px;
 }
-.about-us .masters li .acad-title::after {
+.about-us .masters .slides li .acad-title::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -205,18 +226,18 @@
   height: 1px;
   background: #ad793c;
 }
-.about-us .masters li .name {
+.about-us .masters .slides li .name {
   margin-bottom: 30px;
 }
-.about-us .masters li .name .cn {
+.about-us .masters .slides li .name .cn {
   font-size: 26px;
   color: #000;
 }
-.about-us .masters li .name .en {
+.about-us .masters .slides li .name .en {
   font-size: 16px;
   color: #999;
 }
-.about-us .masters li .name .family-name {
+.about-us .masters .slides li .name .family-name {
   margin-right: 10px;
 }
 .about-us .link {
@@ -235,9 +256,11 @@
   background: url(../images/family.png) left top no-repeat;
 }
 .about-us .talent {
+  position: relative;
   margin-top: 190px;
   margin-left: 15px;
   margin-right: 120px;
+  margin-bottom: 35px;
   padding-left: 15px;
   padding-right: 30px;
   text-align: center;
@@ -246,6 +269,15 @@
   font-size: 32px;
   color: #020202;
   letter-spacing: 0.2em;
+}
+.about-us .talent .title:before {
+  position: absolute;
+  top: -130px;
+  left: 50%;
+  width: 1px;
+  height: 110px;
+  content: '';
+  background: #333;
 }
 .about-us .talent .en {
   margin-bottom: 60px;
@@ -273,6 +305,7 @@
   right: 55px;
   padding-top: 81px;
   padding-bottom: 140px;
+  white-space: nowrap;
 }
 .about-us .talent .info ul li {
   position: relative;
@@ -282,12 +315,16 @@
   padding-right: 20px;
   height: 100%;
   overflow: hidden;
+  white-space: normal;
   font-size: 16px;
   color: #fff;
   box-sizing: border-box;
   text-align: left;
   line-height: 28px;
   vertical-align: middle;
+}
+.about-us .talent .info ul li.active {
+  background: rgba(0, 0, 0, 0.2);
 }
 .about-us .talent .info ul li .img {
   padding-right: 20px;
@@ -327,11 +364,288 @@
 .about-us .talent .info .link a {
   color: #fff;
 }
+@media screen and (min-width: 640px) and (max-width: 980px) {
+  .about-us .page-top .top-info .logo img {
+    margin-left: 0;
+  }
+  .about-us .page-top img {
+    margin-left: -100px;
+  }
+  .about-us .page-top h2 img {
+    margin-left: 0;
+  }
+  .about-us .navs a.master,
+  .about-us .navs a.talent,
+  .about-us .navs a.history {
+    display: none;
+  }
+  .about-us .brand {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 65px;
+  }
+  .about-us .brand .title:before {
+    display: none;
+  }
+  .about-us .brand .left {
+    width: 100%;
+  }
+  .about-us .brand .right {
+    position: static;
+    width: 100%;
+    padding-top: 55px;
+    padding-left: 55px;
+    padding-right: 40px;
+  }
+  .about-us .brand .right .text-info {
+    height: 215px;
+  }
+  .about-us .brand .right .signature {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 27px;
+  }
+  .about-us .brand-culture {
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .about-us .brand-culture .title-wrap {
+    margin-left: 0;
+    text-align: center;
+  }
+  .about-us .brand-culture .title-wrap .title:after {
+    display: none;
+  }
+  .about-us .brand-culture .culture-content {
+    height: auto;
+  }
+  .about-us .brand-culture .culture-content .left {
+    margin-top: 610px;
+  }
+  .about-us .brand-culture .culture-content .left .sub-title {
+    margin-bottom: 20px;
+  }
+  .about-us .brand-culture .culture-content .left .info {
+    margin-bottom: 0;
+  }
+  .about-us .brand-culture .culture-content .right {
+    top: -590px;
+  }
+  .about-us .masters {
+    display: none;
+    padding-top: 0;
+    margin-right: 0;
+  }
+  .about-us .masters.min-masters {
+    display: block;
+    position: relative;
+  }
+  .about-us .masters.min-masters .slides li {
+    display: block;
+    text-align: center;
+  }
+  .about-us .masters.min-masters .slides li img {
+    width: 242px;
+    height: 337px;
+  }
+  .about-us .masters.min-masters .flex-control-nav {
+    bottom: 5px;
+  }
+  .about-us .masters.min-masters .flex-direction-nav {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    right: 50px;
+  }
+  .about-us .masters.min-masters .flex-direction-nav li a {
+    display: inline-block;
+    width: 49px;
+    height: 49px;
+  }
+  .about-us .masters.min-masters .flex-direction-nav li:last-child {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .about-us .masters.min-masters .flex-direction-nav li:nth-of-type(1) a {
+    background: url(../images/cont-left.png) center no-repeat;
+    background-size: 49px 49px;
+  }
+  .about-us .masters.min-masters .flex-direction-nav li:nth-of-type(2) a {
+    background: url(../images/cont-right.png) center no-repeat;
+    background-size: 49px 49px;
+  }
+  .about-us .masters .title::before {
+    display: none;
+  }
+  .about-us .link {
+    margin-bottom: 30px;
+  }
+  .about-us .common-introduce .left {
+    padding-top: 35px;
+  }
+  .about-us .common-introduce .left .title:before {
+    display: none;
+  }
+  .about-us .common-introduce .right {
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 40px;
+    margin-right: 80px;
+    right: 0;
+    width: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  .about-us .common-introduce .right .date,
+  .about-us .common-introduce .right .divider {
+    display: none;
+  }
+  .about-us .talent {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 15px;
+  }
+  .about-us .talent .title:before {
+    display: none;
+  }
+  .about-us .talent .info {
+    margin-left: 0;
+    height: 455px;
+  }
+  .about-us .talent .info img.bg {
+    height: 100%;
+  }
+  .about-us .talent .info ul {
+    padding-top: 35px;
+  }
+  .about-us .talent .info ul li {
+    display: block;
+    width: 355px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    border-bottom: 1px dotted #fff;
+  }
+  .about-us .talent .info ul li:after {
+    display: none;
+  }
+  .about-us .talent .info ul li.min-none {
+    display: none;
+  }
+  .about-us .talent .info ul li a div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .about-us .talent .info ul li a div.img {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+  .about-us .navs {
+    top: 30%;
+  }
+  .about-us .brand {
+    padding-top: 15px;
+    margin-right: 0;
+  }
+  .about-us .brand .right {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+  .about-us .brand .right .text-info {
+    height: 190px;
+  }
+  .about-us .brand .right .signature {
+    margin-top: 45px;
+    margin-bottom: 28px;
+  }
+  .about-us .brand-culture {
+    margin-right: 0;
+    background-size: 245px 185px;
+  }
+  .about-us .brand-culture .title-wrap {
+    margin-left: 230px;
+  }
+  .about-us .brand-culture .title-wrap .img {
+    left: -50px;
+    top: 10px;
+  }
+  .about-us .brand-culture .title-wrap .img img {
+    width: 30px;
+    height: 32px;
+  }
+  .about-us .brand-culture .title-wrap .title {
+    font-size: 26px;
+  }
+  .about-us .brand-culture .title-wrap .title::after {
+    width: 90px;
+  }
+  .about-us .brand-culture .culture-content {
+    height: auto;
+  }
+  .about-us .brand-culture .culture-content .left .sub-title {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 22px;
+  }
+  .about-us .brand-culture .culture-content .left .info {
+    width: 335px;
+    height: 190px;
+  }
+  .about-us .brand-culture .culture-content .right {
+    top: -25px;
+  }
+  .about-us .brand-culture .culture-content .right img {
+    width: 572px;
+    height: 311px;
+  }
+  .about-us .masters {
+    margin-right: 0px;
+    padding-top: 100px;
+  }
+  .about-us .masters .title::before {
+    top: -80px;
+    height: 70px;
+  }
+  .about-us .masters li {
+    width: 33%;
+  }
+  .about-us .talent {
+    margin-top: 120px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .about-us .talent .title {
+    font-size: 24px;
+  }
+  .about-us .talent .title:before {
+    top: -100px;
+    height: 85px;
+  }
+  .about-us .talent .info {
+    margin-left: 0;
+  }
+  .about-us .talent .info ul li {
+    width: 33%;
+  }
+  .about-us .talent .info ul li .title {
+    font-size: 27px;
+  }
+}
 @media screen and (min-width: 1200px) and (max-width: 1910px) {
+  .about-us .navs {
+    top: auto;
+  }
   .about-us .brand .brand-info .right {
     padding-top: 25px;
     padding-left: 85px;
     padding-right: 85px;
+  }
+  .about-us .brand .brand-info .right .text-info {
+    height: 240px;
   }
   .about-us .brand .brand-info .right .signature {
     margin-top: 32px;
@@ -351,6 +665,8 @@
   }
   .about-us .brand-culture .culture-content .left .info {
     height: 220px;
+    width: 435px;
+    margin-bottom: 15px;
   }
   .about-us .brand-culture .culture-content .right {
     top: -30px;
@@ -358,5 +674,11 @@
   .about-us .brand-culture .culture-content .right img {
     widows: 566px;
     height: 308px;
+  }
+}
+@media screen and (min-width: 1910px) {
+  .about-us .masters {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

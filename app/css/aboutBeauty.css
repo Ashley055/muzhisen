@@ -1,19 +1,24 @@
 .about-beauty .page-top {
   position: relative;
 }
+.about-beauty .page-top .top-info {
+  height: 100%;
+  background: transparent;
+}
 .about-beauty .preview {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 120px;
-  padding-left: 200px;
-  margin-right: 120px;
+  height: 190px;
   box-sizing: border-box;
 }
 .about-beauty .preview .left {
+  position: absolute;
   padding-top: 40px;
   padding-bottom: 50px;
   width: 420px;
+  right: 1150px;
   text-align: center;
   background: #000;
 }
@@ -42,19 +47,28 @@
 .about-beauty .preview .right {
   position: absolute;
   top: 0;
-  width: 100%;
-  padding-left: 420px;
+  right: 0;
+  margin-left: 420px;
   box-sizing: border-box;
+  height: 190px;
+  width: 1150px;
+  background: #fff;
+  overflow: hidden;
+}
+.about-beauty .preview .right #scrollDiv {
+  height: 170px;
+  overflow: hidden;
+  margin: 10px 0;
+  line-height: 35px;
+  padding-right: 20px;
 }
 .about-beauty .preview .right ul {
-  padding-top: 45px;
   padding-left: 55px;
-  height: 190px;
-  background: #fff;
   box-sizing: border-box;
 }
 .about-beauty .preview .right ul li {
-  margin-bottom: 20px;
+  height: 35px;
+  overflow: hidden;
   font-size: 14px;
   color: #333;
 }
@@ -121,14 +135,35 @@
 }
 .about-beauty .beauty-content .beauty-hole .pic {
   position: absolute;
-  top: 110px;
+  top: 150px;
   right: 0;
 }
+.about-beauty .beauty-content .beauty-hole .pic img {
+  transition: all 0.6s;
+}
+.about-beauty .beauty-content .beauty-hole .pic img:hover {
+  transform: scale(1.1);
+}
 .about-beauty .beauty-content .beauty-hole.dif {
-  padding-top: 130px;
-  padding-bottom: 0;
+  padding-top: 0;
   background: #fff;
   height: 550px;
+}
+.about-beauty .beauty-content .beauty-hole.dif .til {
+  margin-bottom: 55px;
+  font-size: 23px;
+  color: #333;
+  text-align: center;
+}
+.about-beauty .beauty-content .beauty-hole.dif .til span {
+  display: inline-block;
+  padding: 20px 27px;
+  height: 118px;
+  text-align: left;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
 }
 .about-beauty .beauty-content .beauty-hole.dif .info {
   padding-bottom: 0;
@@ -145,7 +180,7 @@
   height: auto;
 }
 .about-beauty .beauty-content .beauty-hole.dif .info .link {
-  margin-top: 15px;
+  margin-top: 45px;
 }
 .about-beauty .beauty-content .beauty-hole.dif .pic {
   padding-left: 370px;
@@ -156,6 +191,7 @@
 .about-beauty .beauty-content .beauty-hole.dif.right {
   padding-top: 0;
   height: 480px;
+  margin-top: 105px;
   box-sizing: border-box;
 }
 .about-beauty .beauty-content .beauty-hole.dif.right .pic {
@@ -190,6 +226,7 @@
 }
 .about-beauty .beauty-content .beauty-hole.dif.train {
   padding-top: 100px;
+  height: 740px;
 }
 .about-beauty .beauty-content .beauty-hole.dif.train .pic {
   padding-right: 508px;
@@ -198,7 +235,7 @@
 .about-beauty .beauty-content .beauty-hole.dif.train .info {
   width: 508px;
   right: 0;
-  margin-top: 0;
+  margin-top: 160px;
   padding-left: 45px;
   padding-right: 30px;
 }
@@ -207,7 +244,7 @@
   overflow-y: auto;
 }
 .about-beauty .beauty-content .more-corse {
-  margin-top: 98px;
+  margin-top: 20px;
   margin-bottom: 128px;
 }
 .about-beauty .beauty-content .club {
@@ -258,31 +295,483 @@
   font-size: 26px;
   border: 1px solid #666;
 }
-.about-beauty .beauty-content .shows-wrap {
-  margin-right: 70px;
-  margin-left: 70px;
-  padding: 125px 0;
+.about-beauty .beauty-content .shows-wrap,
+.about-beauty .beauty-content .min-shows-wrap {
+  padding: 125px 150px;
+  overflow: hidden;
 }
-.about-beauty .beauty-content .shows {
+.about-beauty .beauty-content .shows-wrap li,
+.about-beauty .beauty-content .min-shows-wrap li {
   padding: 0 150px;
   font-size: 0;
-}
-.about-beauty .beauty-content .shows li {
-  display: inline-block;
-  width: 33%;
   font-size: 14px;
   padding: 0 20px;
   box-sizing: border-box;
 }
-.about-beauty .beauty-content .shows li img {
+.about-beauty .beauty-content .shows-wrap li img,
+.about-beauty .beauty-content .min-shows-wrap li img {
   width: 100%;
 }
+.about-beauty .beauty-content .shows-wrap li .info .title,
+.about-beauty .beauty-content .min-shows-wrap li .info .title {
+  font-size: 20px;
+  color: #222;
+  margin-top: 10px;
+  line-height: 35px;
+}
+.about-beauty .beauty-content .min-shows-wrap {
+  display: none;
+}
+.about-beauty .beauty-content .actives {
+  padding-left: 20px;
+  margin-bottom: 90px;
+  position: relative;
+}
 .about-beauty .beauty-content .actives .title {
+  margin-bottom: 100px;
   text-align: center;
   font-size: 26px;
   color: #333;
 }
 .about-beauty .beauty-content .actives .title span {
-  padding: 10px 15px;
+  padding: 15px 30px;
   color: #666;
+  border: 1px solid #666;
+}
+.about-beauty .beauty-content .actives .mb20 {
+  margin-bottom: 20px;
+}
+.about-beauty .beauty-content .actives .active-items li {
+  position: relative;
+  display: inline-block;
+  width: 49%;
+  font-size: 0;
+  box-sizing: border-box;
+}
+.about-beauty .beauty-content .actives .active-items li .info {
+  position: absolute;
+  left: 260px;
+  top: 45px;
+  padding: 25px;
+  width: 590px;
+  box-sizing: border-box;
+  background: #f4f5f7;
+  font-size: 20px;
+}
+.about-beauty .beauty-content .actives .active-items li .info .date {
+  margin-bottom: 30px;
+  color: #666;
+}
+.about-beauty .beauty-content .actives .active-items li .info .name {
+  margin-bottom: 38px;
+  font-size: 23px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.about-beauty .beauty-content .actives .active-items li .info .hole {
+  color: #999;
+}
+.about-beauty .beauty-content .actives .flex-control-nav {
+  bottom: -20px;
+  width: 98%;
+}
+.about-beauty .beauty-content .actives .flex-control-nav li {
+  width: 24px;
+  height: 24px;
+}
+.about-beauty .beauty-content .actives .flex-control-nav li a {
+  display: block;
+  background: url('../images/decor1.png') center no-repeat;
+}
+.about-beauty .beauty-content .actives .flex-control-nav li a.flex-active {
+  background: url('../images/decor2.png') center no-repeat;
+}
+.about-beauty .bottom .contact-info {
+  background: url(../images/aboutBeautyp9.jpg) left top no-repeat;
+}
+@media screen and (min-width: 640px) and (max-width: 980px) {
+  .about-beauty .page-top .top-info {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .about-beauty .nav-bar {
+    height: 120px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .about-beauty .preview {
+    padding-left: 0;
+    right: 0;
+  }
+  .about-beauty .preview .left {
+    position: absolute;
+    right: 410px;
+    width: 240px;
+    height: 190px;
+  }
+  .about-beauty .preview .left h3 {
+    font-size: 21px;
+  }
+  .about-beauty .preview .left .new {
+    font-size: 12px;
+  }
+  .about-beauty .preview .left .new span:last-child {
+    font-size: 12px;
+  }
+  .about-beauty .preview .right {
+    margin-left: 240px;
+    height: auto;
+    width: 410px;
+    bottom: 0;
+  }
+  .about-beauty .preview .right #scrollDiv {
+    height: 142px;
+  }
+  .about-beauty .beauty-content {
+    margin-right: 0;
+    padding: 0 10px;
+  }
+  .about-beauty .beauty-content .beauty-hole {
+    padding-top: 75px;
+  }
+  .about-beauty .beauty-content .beauty-hole .pic {
+    top: 70px;
+  }
+  .about-beauty .beauty-content .beauty-hole .pic img {
+    width: 100%;
+  }
+  .about-beauty .beauty-content .beauty-hole .info {
+    margin-top: 525px;
+    width: 100%;
+  }
+  .about-beauty .beauty-content .beauty-hole .info .info-content {
+    height: 80px;
+    line-height: 20px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif .pic {
+    padding-left: 0;
+    top: 150px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif .info {
+    margin-top: 265px;
+    padding-left: 10px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif .info .info-content {
+    height: 80px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.right .pic {
+    padding-right: 0;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.right .info {
+    top: 280px;
+    padding-left: 30px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.right .info.top380 {
+    top: 380px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.taiji .pic {
+    padding-left: 0;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.taiji .info {
+    margin-top: 425px;
+    width: 100%;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.train {
+    padding-top: 0;
+    height: 340px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.train .pic {
+    top: 0;
+    padding-right: 0;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.train .info {
+    margin-top: 365px;
+  }
+  .about-beauty .beauty-content .club {
+    padding: 0 30px;
+    padding-top: 55px;
+  }
+  .about-beauty .beauty-content .club .left {
+    width: 100%;
+  }
+  .about-beauty .beauty-content .club .right {
+    width: 100%;
+    padding: 45px 50px;
+    background: url(../images/bg.png) right 170px no-repeat;
+    background-size: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .about-beauty .beauty-content .club .right li {
+    white-space: normal;
+  }
+  .about-beauty .beauty-content .shows-wrap {
+    display: none;
+  }
+  .about-beauty .beauty-content .min-shows-wrap {
+    display: block;
+    margin-top: 95px;
+    margin-bottom: 95px;
+    padding-left: 125px;
+    overflow: hidden;
+  }
+  .about-beauty .beauty-content .min-shows-wrap li {
+    padding: 0;
+  }
+  .about-beauty .beauty-content .min-shows-wrap li img {
+    width: auto;
+  }
+  .about-beauty .beauty-content .min-shows-wrap li .info {
+    padding-right: 150px;
+    overflow: hidden;
+  }
+  .about-beauty .beauty-content .min-shows-wrap li .info .des {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .about-beauty .beauty-content .min-shows-wrap li .info a {
+    display: inline-block;
+    height: 30px;
+    font-size: 14px;
+    color: #666;
+    line-height: 30px;
+    border-bottom: 1px solid #ac793c;
+  }
+  .about-beauty .beauty-content .min-shows-wrap .slides {
+    margin-left: 110px;
+  }
+  .about-beauty .beauty-content .min-shows-wrap .flex-control-nav {
+    display: none;
+  }
+  .about-beauty .beauty-content .actives .active-items li {
+    display: block;
+  }
+  .about-beauty .beauty-content .actives .active-items li .info {
+    left: 210px;
+    width: 410px;
+  }
+  .about-beauty .beauty-content .actives .active-items li .info .name {
+    font-size: 18px;
+    height: 45px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    white-space: normal;
+  }
+  .about-beauty .beauty-content .actives .active-items li:nth-of-type(3),
+  .about-beauty .beauty-content .actives .active-items li:nth-of-type(4) {
+    display: none;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+  .about-beauty .preview {
+    display: none;
+  }
+  .about-beauty .beauty-content {
+    margin-right: 0;
+  }
+  .about-beauty .beauty-content .beauty-hole {
+    height: 695px;
+    padding-bottom: 0;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.taiji {
+    padding-top: 0;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.taiji .info {
+    width: 440px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.taiji .pic {
+    top: 0;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.taiji .pic img {
+    width: 532px;
+    height: 322px;
+  }
+  .about-beauty .beauty-content .beauty-hole .info {
+    margin-top: 70px;
+    padding: 30px;
+    width: 530px;
+  }
+  .about-beauty .beauty-content .beauty-hole .info .ads {
+    margin-top: 12px;
+    font-size: 18px;
+  }
+  .about-beauty .beauty-content .beauty-hole .info.w436 {
+    width: 436px;
+  }
+  .about-beauty .beauty-content .beauty-hole .info .link {
+    margin-top: 0;
+  }
+  .about-beauty .beauty-content .beauty-hole .pic img {
+    width: 638px;
+    height: 525px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.h380 {
+    height: 380px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif .pic {
+    padding-left: 490px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif .pic img {
+    width: 587px;
+    height: 356px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.right {
+    height: 420px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.right .pic {
+    padding-right: 455px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.right .pic img {
+    width: 527px;
+    height: 327px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.right .info {
+    top: 0;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif .info {
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 40px;
+    padding-right: 30px;
+    width: 425px;
+    box-sizing: border-box;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif .info .info-content {
+    height: 140px;
+    line-height: 25px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.taiji .info {
+    margin-top: 0;
+  }
+  .about-beauty .beauty-content .actives .active-items li .pic img {
+    width: 172px;
+    height: 164px;
+  }
+  .about-beauty .beauty-content .actives .active-items li .info {
+    left: 160px;
+    padding: 15px;
+    top: 15px;
+    width: 300px;
+  }
+  .about-beauty .beauty-content .actives .active-items li .info .date {
+    margin-bottom: 15px;
+  }
+  .about-beauty .beauty-content .actives .active-items li .info .name {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .about-beauty .beauty-content .club {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 35px;
+  }
+  .about-beauty .beauty-content .club .right {
+    height: 306px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: url(../images/bg.png) right bottom no-repeat;
+    background-size: 70%;
+  }
+  .about-beauty .preview .right {
+    width: 532px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1910px) {
+  .nav-bar p.menu-text {
+    margin-bottom: 5px;
+  }
+  .about-beauty .beauty-content .beauty-hole {
+    padding-bottom: 0;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.taiji {
+    padding-top: 0;
+  }
+  .about-beauty .beauty-content .beauty-hole .info {
+    margin-top: 70px;
+    padding: 30px;
+    width: 530px;
+  }
+  .about-beauty .beauty-content .beauty-hole .info .link {
+    margin-top: 0;
+  }
+  .about-beauty .beauty-content .beauty-hole .pic img {
+    width: 638px;
+    height: 525px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif .pic {
+    padding-left: 490px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif .pic img {
+    width: 587px;
+    height: 356px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.right .info {
+    top: 0;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif .info {
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 40px;
+    padding-right: 30px;
+    width: 485px;
+    box-sizing: border-box;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif .info .info-content {
+    height: 140px;
+    line-height: 25px;
+  }
+  .about-beauty .beauty-content .actives .active-items li .pic img {
+    width: 172px;
+    height: 164px;
+  }
+  .about-beauty .beauty-content .actives .active-items li .info {
+    left: 160px;
+    padding: 15px;
+    top: 15px;
+    width: 460px;
+  }
+  .about-beauty .beauty-content .actives .active-items li .info .date {
+    margin-bottom: 15px;
+  }
+  .about-beauty .beauty-content .actives .active-items li .info .name {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .about-beauty .preview .left {
+    right: 532px;
+  }
+  .about-beauty .preview .right {
+    width: 532px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .about-beauty .beauty-content .beauty-hole .info {
+    padding-left: 175px;
+    width: 850px;
+  }
+  .about-beauty .beauty-content .beauty-hole .info.w700 {
+    width: 700px;
+  }
+  .about-beauty .beauty-content .beauty-hole .info.w720 {
+    width: 720px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.taiji .info {
+    margin-top: 105px;
+    margin-left: 130px;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.train {
+    height: 940px;
+    box-sizing: border-box;
+  }
+  .about-beauty .beauty-content .beauty-hole.dif.train .pic {
+    left: 70px;
+  }
+  .about-beauty .beauty-content .club .right {
+    height: 554px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: url(../images/bg.png) right bottom no-repeat;
+  }
 }

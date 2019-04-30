@@ -1,6 +1,8 @@
 .page-top{
     overflow: hidden;
-    position: relative;
+    .zsp1{
+        // height: 679px;
+    }
 }
 .top-info{
     position: absolute;
@@ -185,12 +187,6 @@
 .qulity{
     position: relative;
     margin-right: 120px;
-    .left{
-        width: 50%;
-        img{
-            width: 100%;
-        }
-    }
     .right{
         position: absolute;
         width: 50%;
@@ -204,64 +200,64 @@
                 white-space: normal;
             }
         }
-        .lunbo{
-            height: 100%;
-            .flex-direction-nav{
+    }
+}
+.lunbo{
+    height: 100%;
+    .flex-direction-nav{
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        right: 50px;
+        li{
+            a{
+                display: inline-block;
+                width: 15px;
+                height: 29px;
+            }
+            &:last-child{
                 position: absolute;
-                top: 50%;
-                left: 50px;
-                right: 50px;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+    .flex-direction-nav li:nth-of-type(1) a{
+        background: url(../images/gray-pre.png) center no-repeat;
+        background-size: 15px 29px;
+    }
+    .flex-direction-nav li:nth-of-type(2) a{
+        background: url(../images/gray-next.png) center no-repeat;
+        background-size: 15px 29px;
+    }
+    .lunbo-box{
+        position: relative;
+        width: 600px;
+        overflow: hidden;
+        margin: 0 auto;
+        text-align: center;
+        a{
+            .title{
+                margin-top: 85px;
+                margin-bottom: 25px;
+                font-size: 32px;
+                color: #020202;
+                letter-spacing: 0.3em;
+            }
+            .sub-title{
+                font-size: 14px;
+                color: #979899;
+            }
+            .text{
+                margin-top: 35px;
                 li{
-                    a{
-                        display: inline-block;
-                        width: 15px;
-                        height: 29px;
-                    }
-                    &:last-child{
-                        position: absolute;
-                        right: 0;
-                        top: 0;
-                    }
-                }
-            }
-            .flex-direction-nav li:nth-of-type(1) a{
-                background: url(../images/gray-pre.png) center no-repeat;
-                background-size: 15px 29px;
-            }
-            .flex-direction-nav li:nth-of-type(2) a{
-                background: url(../images/gray-next.png) center no-repeat;
-                background-size: 15px 29px;
-            }
-            .lunbo-box{
-                position: relative;
-                width: 600px;
-                overflow: hidden;
-                margin: 0 auto;
-                text-align: center;
-                a{
-                    .title{
-                        margin-top: 85px;
-                        margin-bottom: 25px;
-                        font-size: 32px;
-                        color: #020202;
-                        letter-spacing: 0.3em;
-                    }
-                    .sub-title{
-                        font-size: 14px;
-                        color: #979899;
-                    }
-                    .text{
-                        margin-top: 35px;
-                        li{
-                            width: 35px;
-                            height: 100%;
-                            overflow: hidden;
-                            display: inline-block;
-                            font-size: 24px;
-                            color: #333;
-                            vertical-align: top;
-                        }
-                    }
+                    width: 35px;
+                    height: 100%;
+                    overflow: hidden;
+                    display: inline-block;
+                    font-size: 24px;
+                    color: #333;
+                    vertical-align: top;
                 }
             }
         }
@@ -289,16 +285,15 @@
     }
 }
 @media screen and (min-width: 640px) and (max-width: 980px) {
+.page-top .zsp1{
+    margin-left: -100px;
+}
 .top-info{
     .logo{
         padding-left: 15px;
     }
 }
-.introduction{
-    .link{
-        margin-bottom: 80px;
-    }
-}
+
 .news{
     display: none;
 }
@@ -307,11 +302,9 @@
     margin-right: 0;
     text-align: center;
     .left{
-        padding-top: 30px;
         .title::before{
             left: 50% !important;
             margin-left: -70px !important;
-            height: 120px;
         }
         .left-bottom{
             display: none;
@@ -366,23 +359,11 @@
     .qulity{
         margin-right: 0;
         .right{
-            height: auto;
             .lunbo{
-                width: 100%;
                 .lunbo-box{
-                    width: 100%;
                     a{
-                        .title{
-                            margin-top: 40px;
-                            margin-bottom: 7px;
-                        }
                         .text{
-                            margin-top: 15px;
-                            height: 246px;
-                            padding-bottom: 16px;
-                            ul{
-                                height: 100%;
-                            }
+                            padding-right: 90px;
                         }
                     }
                 }
@@ -395,7 +376,7 @@
     }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1910px) {
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
     .introduction{
         .part{
             .left{
@@ -416,44 +397,6 @@
             }
             .gray{
                 height: 416px;
-            }
-        }
-    }
-    .qulity{
-        .right{
-            height: auto;
-            .lunbo{
-                width: 100%;
-                .lunbo-box{
-                    a{
-                        .title{
-                            margin-top: 40px;
-                            margin-bottom: 7px;
-                        }
-                        .text{
-                            margin-top: 15px;
-                            height: 298px;
-                            padding-bottom: 16px;
-                            ul{
-                                height: 100%;
-                            }
-                        }
-                    }
-                }
-                .flex-direction-nav{
-                    left: 20px;
-                    right: 20px;
-                }
-            }
-        }
-    }
-}
-@media screen and (min-width: 1910px) {
-    .introduction{
-        .part{
-            .text{
-                top: 95px;
-                left: 630px;
             }
         }
     }

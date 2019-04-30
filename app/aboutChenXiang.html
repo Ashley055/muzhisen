@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=8">
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <script>
         // rem
@@ -54,10 +55,10 @@
         </div>
         <!--右侧菜单-->
         <div class="nav-bar">
-            <div>
+            <div class="control-nav">
                 <img src="images/menu-collap.png" alt="">
             </div>
-            <p class="menu-text">导 航 菜 单</p>
+            <p class="menu-text control-nav">导 航 菜 单</p>
             <h3 class="label">木之森香文化</h3>
             <p class="des">始于
                 <span>2007</span>年</p>
@@ -74,6 +75,49 @@
             </div>
         </div>
         <!--右侧菜单 end-->
+        <!-- 弹开的菜单 start -->
+        <div class="pop-menu">
+            <div class="close"></div>
+            <ul>
+                <li>
+                    <a href="http://localhost:9000/index.html">
+                    </a>
+                    <div class="han1"></div>
+                    <div class="text">首页</div>
+                </li>
+                <li>
+                    <a href="http://localhost:9000/aboutUs.html">
+                    </a>
+                    <div class="han2"></div>
+                    <div class="text">关于我们</div>
+                </li>
+                <li>
+                    <a href="http://localhost:9000/aboutBeauty.html">
+                    </a>
+                    <div class="han3"></div>
+                    <div class="text"> 生活美学</div>
+                </li>
+                <li>
+                    <a href="http://localhost:9000/aboutPartner.html">
+                    </a>
+                    <div class="han4"></div>
+                    <div class="text">招商加盟</div>
+                </li>
+                <li>
+                    <a href="http://localhost:9000/index.html">
+                    </a>
+                    <div class="han5"></div>
+                    <div class="text">新闻资讯</div>
+                </li>
+                <li>
+                    <a href="http://localhost:9000/index.html">
+                    </a>
+                    <div class="han6"></div>
+                    <div class="text">联系我们</div>
+                </li>
+            </ul>
+        </div>
+        <!-- 弹开的菜单 end -->
         <!--头部 end-->
         <div class="introduction">
             <ul>
@@ -96,22 +140,10 @@
                 </li>
             </ul>
             <div class="part mt105 pb110">
-                <div class="left">
-                    <img src="images/chenxiangp2.jpg" alt="">
-                    <!-- <div class="text">
-                        <p>越南芽庄沉香片烟丝香菸烟片~</p>
-                        <a href="">产品详情img</a>
-                    </div> -->
-                </div>
+                <div class="left"><img src="images/chenxiangp2.jpg" alt=""></div>
                 <div class="right">
-                    <div>
-                        <img src="images/chenxiangp3.jpg" alt="">
-                        <!-- <div class="text">正宗海南沉香线香</div> -->
-                    </div>
-                    <div class="mt39">
-                        <img src="images/chenxiangp4.jpg" alt="">
-                        <!-- <div class="text">卧香藏香礼佛</div> -->
-                    </div>
+                    <div><img src="images/chenxiangp3.jpg" alt=""></div>
+                    <div class="mt39"><img src="images/chenxiangp4.jpg" alt=""></div>
                 </div>
                 <div class="gray"></div>
             </div>
@@ -120,7 +152,7 @@
                 <p class="en-title">Video jin set</p>
                 <video src="images/video.mp4" controls="controls"></video>
             </div>
-            <div class="link"><a href="">更多视频雅集<img src="images/arrow-right.png" alt=""></a>  </div>
+            <div class="link"><a href="">更多视频雅集<img src="images/arrow-right.png" alt=""></a> </div>
         </div>
         <ul class="common-introduce">
             <li class="left">
@@ -142,7 +174,8 @@
                     <li>
                         <span class="date">2007年冬季</span>
                         <span class="divider"></span>
-                        <span class="text">木之森品牌成立，并在广西设立佛珠厂，占地面积3000多平米，其中，从事车珠三十余载老师傅12人面积3000多平米，其中，从事车珠三十余载老师傅12人，十年以上老师傅...</span>
+                        <span
+                            class="text">木之森品牌成立，并在广西设立佛珠厂，占地面积3000多平米，其中，从事车珠三十余载老师傅12人面积3000多平米，其中，从事车珠三十余载老师傅12人，十年以上老师傅...</span>
                     </li>
                     <li>
                         <span class="date">2007年春季</span>
@@ -312,6 +345,12 @@
 <!-- endbuild -->
 <script>
     $(function () {
+        $('.control-nav').off('click').click(function () {
+                $('.pop-menu').addClass('show')
+            })
+            $('.close').off('click').click(function () {
+                $('.pop-menu').removeClass('show')
+            })
         //flash
         $('.flexslider').flexslider({
             animation: 'slide',
@@ -322,6 +361,7 @@
             nextText: '',
             directionNav: true //Boolean:  (true/false)是否显示左右控制按钮
         });
-})
+    })
 </script>
+
 </html>

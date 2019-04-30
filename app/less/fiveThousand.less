@@ -1,10 +1,9 @@
 .five-thousand{
+    overflow: hidden;
     .page-top{
-        width: 1880px;
-        height: 920px;
+        position: relative;
         .img{
-            width: 1880px;
-            height: 920px;
+            width: 100%;
         }
         .top-info{
             background: transparent;
@@ -136,6 +135,9 @@
                 position: relative;
                 display: inline-block;
                 width: 25%;
+                img{
+                    width: 100%;
+                }
                 .text{
                     position: absolute;
                     width: 100%;
@@ -202,6 +204,210 @@
             bottom: 0;
             left: 0;
             z-index: -1;
+        }
+    }
+    .min-products{
+        display: none;
+    }
+}
+@media screen and (min-width: 640px) and (max-width: 980px) {
+    .five-thousand{
+        .page-top{
+            .img{
+                width: auto;
+            }
+            .top-info{
+                .info{
+                    top: 100px;
+                    right: 110px;
+                }
+            }
+        }
+        .five-summery{
+            margin-right: 0;
+            height: 1310px;
+            .left{
+                width: 100%;
+                .info{
+                    left: -100px;
+                }
+            }
+            .right{
+                position: static;
+                width: 100%;
+                height: auto;
+                .inner{
+                    padding-top: 145px;
+                    margin-top: 0;
+                    min-height: auto;
+                }
+            }
+        }
+        .products{
+            display: none;
+            li.item{
+                margin-right: 0;
+            }
+        }
+        .min-products{
+            display: block;
+            .products{
+                display: block;
+                .customise{
+                    .link{
+                        display: none;
+                    }
+                }
+                li.item{
+                    position: relative;
+                    padding-left: 150px;
+                    padding-right: 150px;
+                    .title{
+                        text-align: center;
+                    }
+                }
+                .list{
+                    li{
+                        display: block;
+                        width: 100%;
+                        box-sizing: border-box;
+                    }
+                }
+                .flex-control-nav{
+                    left: 0;
+                }
+                .flex-direction-nav{
+                    position: absolute;
+                    left: 10px;
+                    right: 35px;
+                    top: 50%;
+                    margin-top: -14px;
+                }
+                .flex-direction-nav li{
+                    &:last-child{
+                        position: absolute;
+                        right: -10px;
+                        top: 0;
+                        z-index: 999;
+                    }
+                }
+                .flex-direction-nav li a{
+                    display: inline-block;
+                    width: 28px;
+                    height: 51px;
+                }
+                .flex-direction-nav li:nth-of-type(1) a{
+                    background: url(../images/gray-pre.png) center no-repeat;
+                }
+                .flex-direction-nav li:nth-of-type(2) a{
+                    background: url(../images/gray-next.png) center no-repeat;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+    .five-thousand{
+        .page-top{
+            .top-info{
+                .info{
+                    top: 50px;
+                    right: 245px;
+                    li{
+                        font-size: 26px;
+                        &:last-child{
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+        }
+        .five-summery{
+            margin-right: 0;
+            height: auto;
+            .left{
+                .img{
+                    width: 100%;
+                }
+                .info{
+                    margin-left: -135px;
+                    img{
+                        width: auto;
+                    }
+                    .cn-name{
+                        font-size: 46px;
+                    }
+                }
+            }
+            .right{
+                height: auto;
+                padding-left: 30px;
+                padding-right: 35px;
+                box-sizing: border-box;
+                .inner{
+                    margin-top: 110px;
+                    margin-bottom: 77px;
+                    width: auto;
+                    height: auto;
+                    min-height: auto;
+                    .text{
+                        height: 290px;
+                        overflow-y: auto;
+                    }
+                }
+            }
+        }
+        .products{
+            li.item{
+                margin-right: 0;
+                padding-left: 35px;
+                padding-right: 20px;
+                box-sizing: border-box;
+                .title.text-right{
+                    text-align: center;
+                }
+            }
+            .list{
+                width: 100%;
+                overflow: hidden;
+                white-space: nowrap;
+                li{
+                    width: 33%;
+                    padding: 0 10px;
+                    box-sizing: border-box;
+                    img{
+                        width: 100%;
+                    }
+                }
+                &.order{
+                    li{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1910px) {
+    .five-thousand{
+        .page-top{
+            .img{
+                width: auto;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .products {
+            .list{
+                li{
+                    padding: 0 5px;
+                    box-sizing: border-box;
+                }
+            }
+            .bg{
+                height: 350px;
+            }
         }
     }
 }

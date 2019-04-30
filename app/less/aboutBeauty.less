@@ -1,79 +1,108 @@
-.about-beauty{
-    .page-top{
+.about-beauty {
+    .page-top {
         position: relative;
+
+        .top-info {
+            height: 100%;
+            background: transparent;
+        }
     }
-    .preview{
+
+    .preview {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 120px;
-        padding-left: 200px;
-        margin-right: 120px;
+        // padding-left: 200px;
+        height: 190px;
         box-sizing: border-box;
-        .left{
+        .left {
+            position: absolute;
             padding-top: 40px;
             padding-bottom: 50px;
             width: 420px;
+            right: 1150px;
             text-align: center;
             background: #000;
-            h3{
+
+            h3 {
                 margin-bottom: 25px;
                 font-size: 36px;
                 color: #fff;
             }
-            .new{
+
+            .new {
                 color: #fff;
                 font-size: 20px;
-                span:last-child{
-                  font-size: 16px;
-                  &::before{
-                      display: inline-block;
-                      content: '';
-                      width: 1px;
-                      height: 20px;
-                      margin-left: 5px;
-                      margin-right: 10px;
-                      vertical-align: middle;
-                      background: #fff;
-                  }
+
+                span:last-child {
+                    font-size: 16px;
+
+                    &::before {
+                        display: inline-block;
+                        content: '';
+                        width: 1px;
+                        height: 20px;
+                        margin-left: 5px;
+                        margin-right: 10px;
+                        vertical-align: middle;
+                        background: #fff;
+                    }
                 }
             }
         }
-        .right{
+
+        .right {
             position: absolute;
             top: 0;
-            width: 100%;
-            padding-left: 420px;
+            right: 0;
+            margin-left: 420px;
             box-sizing: border-box;
-            ul{
-                padding-top: 45px;
+            height: 190px;
+            width: 1150px;
+            background: #fff;
+            overflow: hidden;
+            #scrollDiv {
+                height: 170px;
+                overflow: hidden;
+                margin: 10px 0;
+                line-height: 35px;
+                padding-right: 20px;
+            }
+
+            ul {
                 padding-left: 55px;
-                height: 190px;
-                background: #fff;
                 box-sizing: border-box;
-                li{
-                    margin-bottom: 20px;
+
+                li {
+                    height: 35px;
+                    overflow: hidden;
                     font-size: 14px;
                     color: #333;
-                    .date{
+
+                    .date {
                         margin-right: 45px;
                     }
-                    &::last-child{
+
+                    &::last-child {
                         margin-bottom: 0;
                     }
                 }
             }
         }
     }
-    .beauty-content{
+
+    .beauty-content {
         margin-right: 120px;
-        .beauty-hole{
+
+        .beauty-hole {
             position: relative;
             padding-bottom: 200px;
             padding-top: 110px;
             height: 793px;
             background: #edeef0;
-            .info{
+
+            .info {
                 position: absolute;
                 z-index: 99;
                 width: 630px;
@@ -81,15 +110,18 @@
                 padding: 55px 90px 90px 80px;
                 box-sizing: border-box;
                 background: #edeef0;
-                h3{
+
+                h3 {
                     font-size: 36px;
                     color: #5f5f60;
                 }
-                .ads{
+
+                .ads {
                     font-size: 26px;
                     color: #000;
                 }
-                .info-content{
+
+                .info-content {
                     margin-top: 30px;
                     height: 200px;
                     overflow-y: auto;
@@ -97,21 +129,25 @@
                     font-size: 14px;
                     color: #000;
                 }
-                .tip{
+
+                .tip {
                     color: #ac793c;
                     font-size: 14px;
                 }
-                .link{
+
+                .link {
                     margin-top: 70px;
                     text-align: left;
-                    a{
+
+                    a {
                         background: url(../images/linkbg.png) center no-repeat;
                         border: none;
                         color: #fff;
                         background-size: contain;
                     }
-                    &.brown{
-                        a{
+
+                    &.brown {
+                        a {
                             background: url(../images/linkbgbr.png) center no-repeat;
                             border: none;
                             color: #fff;
@@ -120,87 +156,130 @@
                     }
                 }
             }
-            .pic{
+
+            .pic {
                 position: absolute;
-                top: 110px;
+                top: 150px;
                 right: 0;
             }
-            &.dif{
-                padding-top: 130px;
-                padding-bottom: 0;
+
+            .pic img {
+                transition: all 0.6s;
+            }
+
+            .pic img:hover {
+                transform: scale(1.1);
+            }
+
+            &.dif {
+                padding-top: 0;
                 background: #fff;
                 height: 550px;
-                .info{
+                .til{
+                    margin-bottom: 55px;
+                    font-size: 23px;
+                    color: #333;
+                    text-align: center;
+                    span{
+                        display: inline-block;
+                        padding: 20px 27px;
+                        height: 118px;
+                        text-align: left;
+                        box-sizing: border-box;
+                        border: 1px solid #000;
+                        -webkit-writing-mode: vertical-rl;
+                        writing-mode: vertical-rl;
+                    }
+                }
+                .info {
                     padding-bottom: 0;
                     padding-top: 38px;
                     background: #fff;
-                    h3{
+
+                    h3 {
                         color: #000;
                         font-size: 26px;
                     }
-                    .info-content{
+
+                    .info-content {
                         font-size: 16px;
                         color: #666;
                         height: auto;
                     }
-                    .link{
-                        margin-top: 15px;
+
+                    .link {
+                        margin-top: 45px;
                     }
                 }
-                .pic{
+
+                .pic {
                     padding-left: 370px;
-                    img{
+                    img {
                         width: 100%;
                     }
                 }
-                &.right{
+
+                &.right {
                     padding-top: 0;
                     height: 480px;
+                    margin-top: 105px;
                     box-sizing: border-box;
-                    .pic{
+
+                    .pic {
                         left: 0;
                         top: 0;
                         padding-right: 350px;
                         padding-left: 0;
                     }
-                    .info{
+
+                    .info {
                         margin-top: 0;
                         top: 80px;
                         right: 0;
-                        .info-content{
+
+                        .info-content {
                             margin-top: 15px;
                         }
                     }
                 }
-                &.taiji{
+
+                &.taiji {
                     padding-top: 100px;
-                    .pic{
+
+                    .pic {
                         padding-left: 508px;
                     }
-                    .info{
+
+                    .info {
                         width: 508px;
                         margin-top: 0;
                         padding-left: 45px;
                         padding-right: 30px;
-                        .info-content{
+
+                        .info-content {
                             max-height: 340px;
                             overflow-y: auto;
                         }
                     }
                 }
-                &.train{
+
+                &.train {
                     padding-top: 100px;
-                    .pic{
+                    height: 740px;
+
+                    .pic {
                         padding-right: 508px;
                         padding-left: 0;
                     }
-                    .info{
+
+                    .info {
                         width: 508px;
                         right: 0;
-                        margin-top: 0;
+                        margin-top: 160px;
                         padding-left: 45px;
                         padding-right: 30px;
-                        .info-content{
+
+                        .info-content {
                             max-height: 340px;
                             overflow-y: auto;
                         }
@@ -208,23 +287,28 @@
                 }
             }
         }
-        .more-corse{
-            margin-top: 98px;
+
+        .more-corse {
+            margin-top: 20px;
             margin-bottom: 128px;
         }
-        .club{
+
+        .club {
             padding: 145px 0 145px 70px;
             background: #edeef0;
             font-size: 0;
             text-align: center;
-            .left{
+
+            .left {
                 display: inline-block;
                 width: 50%;
-                img{
+
+                img {
                     width: 100%;
                 }
             }
-            .right{
+
+            .right {
                 display: inline-block;
                 width: 50%;
                 padding: 0 15px;
@@ -232,25 +316,30 @@
                 vertical-align: top;
                 font-size: 16px;
                 color: #333;
-                ul{
+
+                ul {
                     max-width: 100%;
                     overflow-x: auto;
                     white-space: nowrap;
                 }
-                li{
+
+                li {
                     display: inline-block;
                     width: 18px;
                     height: 100%;
                     margin-right: 26px;
                     white-space: normal;
                     vertical-align: top;
-                    &:first-child{
+
+                    &:first-child {
                         margin-right: 30px;
-                        a{
+
+                        a {
                             color: #de0606;
                         }
                     }
-                    &:last-child{
+
+                    &:last-child {
                         width: 28px;
                         padding: 10px 5px;
                         margin-left: 40px;
@@ -260,33 +349,554 @@
                 }
             }
         }
-        .shows-wrap{
-            margin-right: 70px;
-            margin-left: 70px;
-            padding: 125px 0;
-        }
-        .shows{
-            padding: 0 150px;
-            font-size: 0;
-            li{
-                display: inline-block;
-                width: 33%;
+
+        .shows-wrap, .min-shows-wrap {
+            padding: 125px 150px;
+            overflow: hidden;
+            li {
+                padding: 0 150px;
+                font-size: 0;
                 font-size: 14px;
                 padding: 0 20px;
                 box-sizing: border-box;
-                img{
+                img {
                     width: 100%;
+                }
+                .info{
+                    .title{
+                        font-size: 20px;
+                        color: #222;
+                        margin-top: 10px;
+                        line-height: 35px;
+                    }
                 }
             }
         }
-        .actives{
-            .title{
+        .min-shows-wrap{
+            display: none;
+        }
+
+        .actives {
+            padding-left: 20px;
+            margin-bottom: 90px;
+            position: relative;
+            .title {
+                margin-bottom: 100px;
                 text-align: center;
                 font-size: 26px;
                 color: #333;
-                span{
-                    padding: 10px 15px;
+                span {
+                    padding: 15px 30px;
                     color: #666;
+                    border: 1px solid #666;
+                }
+            }
+            .mb20{
+                margin-bottom: 20px;
+            }
+            .active-items{
+                li{
+                    position: relative;
+                    display: inline-block;
+                    width: 49%;
+                    font-size: 0;
+                    box-sizing: border-box;
+                    .info{
+                        position: absolute;
+                        left: 260px;
+                        top: 45px;
+                        padding: 25px;
+                        width: 590px;
+                        box-sizing: border-box;
+                        background: #f4f5f7;
+                        font-size: 20px;
+                        .date{
+                            margin-bottom: 30px;
+                            color: #666;
+                        }
+                        .name{
+                            margin-bottom: 38px;
+                            font-size: 23px;
+                            color: #333;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                        .hole{
+                            color: #999;
+                        }
+                    }
+                }
+            }
+            .flex-control-nav{
+                bottom: -20px;
+                width: 98%;
+                li{
+                    width: 24px;
+                    height: 24px;
+                    a{
+                        display: block;
+                        background: url('../images/decor1.png') center no-repeat;
+                        &.flex-active{
+                            background: url('../images/decor2.png') center no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom{
+        .contact-info{
+            background: url(../images/aboutBeautyp9.jpg) left top no-repeat;
+        }
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 980px) {
+    .about-beauty{
+        .page-top{
+            .top-info{
+                background: rgba(0, 0, 0, 0.3);
+            }
+        }
+        .nav-bar{
+            height: 120px;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        .preview{
+            padding-left: 0;
+            right: 0;
+            .left{
+                position: absolute;
+                right: 410px;
+                width: 240px;
+                height: 190px;
+                h3{
+                    font-size: 21px;
+                }
+                .new{
+                    font-size: 12px;
+                    span:last-child{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .right{
+                margin-left: 240px;
+                height: auto;
+                width: 410px;
+                bottom: 0;
+                #scrollDiv{
+                    height: 142px;
+                }
+            }
+        }
+        .beauty-content{
+            margin-right: 0;
+            padding: 0 10px;
+            .beauty-hole{
+                padding-top: 75px;
+                .pic{
+                    top: 70px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .info{
+                    margin-top: 525px;
+                    width: 100%;
+                    .info-content{
+                        height: 80px;
+                        line-height: 20px;
+                    }
+                }
+                &.dif{
+                    .pic{
+                        padding-left: 0;
+                        top: 150px;
+                    }
+                    .info{
+                        margin-top: 265px;
+                        padding-left: 10px;
+                        .info-content{
+                            height: 80px;
+                        }
+                    }
+                    &.right{
+                        .pic{
+                            padding-right: 0;
+                        }
+                        .info{
+                            top: 280px;
+                            padding-left: 30px;
+                            &.top380{
+                                top: 380px;
+                            }
+                        }
+                    }
+                    &.taiji{
+                        .pic{
+                            padding-left: 0;
+                        }
+                        .info{
+                            margin-top: 425px;
+                            width: 100%;
+                        }
+                    }
+                    &.train{
+                        padding-top: 0;
+                        height: 340px;
+                        .pic{
+                            top: 0;
+                            padding-right: 0;
+                        }
+                        .info{
+                            margin-top: 365px;
+                        }
+                    }
+                }
+            }
+            .club{
+                padding: 0 30px;
+                padding-top: 55px;
+                .left{
+                    width: 100%;
+                }
+                .right{
+                    width: 100%;
+                    padding: 45px 50px;
+                    background: url(../images/bg.png) right 170px no-repeat;
+                    background-size: 70%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    li{
+                        white-space: normal;
+                    }
+                }
+            }
+            .shows-wrap{
+                display: none;
+            }
+            .min-shows-wrap{
+                display: block;
+                margin-top: 95px;
+                margin-bottom: 95px;
+                padding-left: 125px;
+                overflow: hidden;
+                li{
+                    padding: 0;
+                    img{
+                        width: auto;;
+                    }
+                    .info{
+                        padding-right: 150px;
+                        overflow: hidden;
+                        .des{
+                            margin-top: 10px;
+                            margin-bottom: 15px;
+                            width: 100%;
+                        }
+                        a{
+                            display: inline-block;
+                            height: 30px;
+                            font-size: 14px;
+                            color: #666;
+                            line-height: 30px;
+                            border-bottom: 1px solid #ac793c;
+                        }
+                    }
+                }
+                .slides{
+                    margin-left: 110px;
+                }
+                .flex-control-nav{
+                    display: none;
+                }
+            }
+            .actives{
+                .active-items{
+                    li{
+                        display: block;
+                        .info{
+                            left: 210px;
+                            width: 410px;
+                            .name{
+                                font-size: 18px;
+                                height: 45px;
+                                margin-bottom: 10px;
+                                overflow: hidden;
+                                white-space: normal;
+                            }
+                        }
+                    }
+                    li:nth-of-type(3), li:nth-of-type(4){
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+    .about-beauty {
+        .preview{
+            display: none;
+        }
+        .beauty-content {
+            margin-right: 0;
+            .beauty-hole {
+                height: 695px;
+                padding-bottom: 0;
+                &.dif.taiji{
+                    padding-top: 0;
+                    .info{
+                        width: 440px;
+                    }
+                    .pic{
+                        top: 0;
+                        img{
+                            width: 532px;
+                            height: 322px;
+                        }
+                    }
+                }
+                .info{
+                    margin-top: 70px;
+                    padding: 30px;
+                    width: 530px;
+                    .ads{
+                        margin-top: 12px;
+                        font-size: 18px;
+                    }
+                    &.w436{
+                        width: 436px;
+                    }
+                    .link{
+                        margin-top: 0;
+                    }
+                }
+                .pic{
+                    img{
+                        width: 638px;
+                        height: 525px;
+                    }
+                }
+                &.dif {
+                    &.h380{
+                        height: 380px;
+                    }
+                    .pic {
+                        padding-left: 490px;
+                        img{
+                            width: 587px;
+                            height: 356px;
+                        }
+                    }
+                    &.right{
+                        height: 420px;
+                        .pic{
+                            padding-right: 455px;
+                            img{
+                                width: 527px;
+                                height: 327px;
+                            }
+                        }
+                        .info{
+                            top: 0;
+                        }
+                    }
+                    .info {
+                        margin-top: 0;
+                        padding-top: 0;
+                        padding-left: 40px;
+                        padding-right: 30px;
+                        width: 425px;
+                        box-sizing: border-box;
+                        .info-content {
+                            height: 140px;
+                            line-height: 25px;
+                        }
+                    }
+                    &.taiji{
+                        .info{
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+            .actives{
+                .active-items{
+                    li{
+                        .pic{
+                            img{
+                                width: 172px;
+                                height: 164px;
+                            }
+                        }
+                        .info{
+                            left: 160px;
+                            padding: 15px;
+                            top: 15px;
+                            width: 300px;
+                            .date{
+                                margin-bottom: 15px;
+                            }
+                            .name{
+                                margin-bottom: 20px;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+            .club{
+                padding-top: 80px;
+                padding-bottom: 80px;
+                padding-left: 35px;
+                .right{
+                    height: 306px;
+                    padding: 10px 0;
+                    box-sizing: border-box;
+                    overflow: hidden;
+                    background: url(../images/bg.png) right bottom no-repeat;
+                    background-size: 70%;
+                }
+            }
+        }
+        .preview{
+            .right{
+                width: 532px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1910px) {
+    .nav-bar p.menu-text{
+        margin-bottom: 5px;
+    }
+    .about-beauty {
+        .beauty-content {
+            .beauty-hole {
+                // height: 390px;
+                padding-bottom: 0;
+                &.dif.taiji{
+                    padding-top: 0;
+                }
+                .info{
+                    margin-top: 70px;
+                    padding: 30px;
+                    width: 530px;
+                    .link{
+                        margin-top: 0;
+                    }
+                }
+                .pic{
+                    img{
+                        width: 638px;
+                        height: 525px;
+                    }
+                }
+                &.dif {
+                    .pic {
+                        padding-left: 490px;
+                        img{
+                            width: 587px;
+                            height: 356px;
+                        }
+                    }
+                    &.right{
+                        .info{
+                            top: 0;
+                        }
+                    }
+                    .info {
+                        margin-top: 0;
+                        padding-top: 0;
+                        padding-left: 40px;
+                        padding-right: 30px;
+                        width: 485px;
+                        box-sizing: border-box;
+                        .info-content {
+                            height: 140px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+            }
+            .actives{
+                .active-items{
+                    li{
+                        .pic{
+                            img{
+                                width: 172px;
+                                height: 164px;
+                            }
+                        }
+                        .info{
+                            left: 160px;
+                            padding: 15px;
+                            top: 15px;
+                            width: 460px;
+                            .date{
+                                margin-bottom: 15px;
+                            }
+                            .name{
+                                margin-bottom: 20px;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .preview{
+            .left{
+                right: 532px;
+            }
+            .right{
+                width: 532px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1920px) {
+    .about-beauty{
+        .beauty-content{
+            .beauty-hole{
+                .info{
+                    padding-left: 175px;
+                    width: 850px;
+                    &.w700{
+                        width: 700px;
+                    }
+                    &.w720{
+                        width: 720px;
+                    }
+                }
+                &.dif{
+                    &.taiji{
+                        .info{
+                            margin-top: 105px;
+                            margin-left: 130px;
+                        }
+                    }
+                    &.train{
+                        height: 940px;
+                        box-sizing: border-box;
+                        .pic{
+                            left: 70px;
+                        }
+                    }
+                }
+            }
+            .club{
+                .right{
+                    height: 554px;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    background: url(../images/bg.png) right bottom no-repeat;
                 }
             }
         }

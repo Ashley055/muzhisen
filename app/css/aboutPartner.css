@@ -1,6 +1,3 @@
-.about-partner {
-  position: relative;
-}
 .about-partner .partner-content {
   margin-right: 120px;
   margin-left: 0;
@@ -8,6 +5,7 @@
 .about-partner .partner-content .source {
   width: 100%;
   height: 551px;
+  margin-top: 40px;
   position: relative;
 }
 .about-partner .partner-content .source .left {
@@ -15,8 +13,7 @@
   top: 0;
   left: 0;
   width: 50%;
-  height: 551px;
-  padding: 80px 60px 15px 60px;
+  padding: 80px 60px 28px 60px;
   overflow-y: auto;
   box-sizing: border-box;
   text-align: center;
@@ -27,6 +24,10 @@
   font-size: 32px;
   color: #333;
   letter-spacing: 0.2em;
+}
+.about-partner .partner-content .source .left .info {
+  height: 265px;
+  overflow-y: auto;
 }
 .about-partner .partner-content .source .left p {
   font-size: 16px;
@@ -157,11 +158,178 @@
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: 50px;
+  bottom: 10px;
 }
 .about-partner .partner-content .map {
   margin: 23px;
 }
 .about-partner .partner-content .map img {
   width: 100%;
+}
+@media screen and (min-width: 640px) and (max-width: 980px) {
+  .about-partner .partner-content {
+    margin-right: 0;
+  }
+  .about-partner .partner-content .source {
+    margin-top: 0;
+    height: 1030px;
+  }
+  .about-partner .partner-content .source .left {
+    position: static;
+    width: 100%;
+    padding-top: 30px;
+  }
+  .about-partner .partner-content .source .left h3 {
+    margin-bottom: 60px;
+  }
+  .about-partner .partner-content .source .right {
+    position: static;
+    width: 100%;
+  }
+  .about-partner .partner-content .source .right .down-load {
+    top: 75%;
+  }
+  .about-partner .partner-content .introduce {
+    margin: 15px;
+    background: url('../images/zsbj2.png') left top no-repeat;
+    background-color: #eee;
+  }
+  .about-partner .partner-content .introduce .steps {
+    position: relative;
+    text-align: left;
+    height: 680px;
+    background: url('../images/zsbj1.png') right bottom no-repeat;
+  }
+  .about-partner .partner-content .introduce .steps li {
+    width: 50%;
+    margin-bottom: 100px;
+    min-height: 195px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .about-partner .partner-content .introduce .steps li:nth-of-type(2) .next,
+  .about-partner .partner-content .introduce .steps li:nth-of-type(3) .next,
+  .about-partner .partner-content .introduce .steps li:nth-of-type(4) .next {
+    display: none;
+  }
+  .about-partner .partner-content .introduce .steps li:nth-of-type(2):after,
+  .about-partner .partner-content .introduce .steps li:nth-of-type(4):after {
+    position: absolute;
+    top: 176px;
+    left: 130px;
+    width: 10px;
+    height: 60px;
+    content: '';
+    background: url('../images/vet-next.png') center no-repeat;
+  }
+  .about-partner .partner-content .introduce .steps li:nth-of-type(3) {
+    position: absolute;
+    right: 0;
+    top: 255px;
+  }
+  .about-partner .partner-content .introduce .steps li:nth-of-type(3):before {
+    position: absolute;
+    top: 46px;
+    left: -69px;
+    width: 60px;
+    height: 10px;
+    content: '';
+    background: url('../images/hor-next.png') center no-repeat;
+  }
+  .about-partner .partner-content .introduce .steps li:nth-of-type(4) {
+    position: absolute;
+    left: 0;
+    top: 255px;
+  }
+  .about-partner .partner-content .introduce .steps li:nth-of-type(5) {
+    position: absolute;
+    left: 0;
+    padding-right: 100px;
+    top: 555px;
+  }
+  .about-partner .partner-content .introduce .steps li img {
+    margin-bottom: 30px;
+  }
+  .about-partner .partner-content .advance {
+    height: 1160px;
+  }
+  .about-partner .partner-content .advance .left {
+    width: 100%;
+    position: static;
+  }
+  .about-partner .partner-content .advance .right {
+    position: static;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+  .about-partner .partner-content {
+    margin-right: 0;
+  }
+  .about-partner .partner-content .source {
+    height: 430px;
+  }
+  .about-partner .partner-content .source .left {
+    padding-top: 35px;
+    padding-left: 45px;
+    padding-right: 40px;
+    padding-bottom: 82px;
+  }
+  .about-partner .partner-content .source .left h3 {
+    margin-bottom: 28px;
+  }
+  .about-partner .partner-content .source .left .info {
+    height: 210px;
+  }
+  .about-partner .partner-content .source .right .down-load {
+    display: none;
+  }
+  .about-partner .partner-content .introduce {
+    padding-top: 20px;
+  }
+  .about-partner .partner-content .advance {
+    height: 396px;
+  }
+  .about-partner .partner-content .advance .right {
+    height: 100%;
+    padding-top: 40px;
+  }
+  .about-partner .partner-content .advance .right .decor {
+    bottom: 25px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+  .about-partner .partner-content .advance {
+    height: 427px;
+  }
+  .about-partner .partner-content .advance .right {
+    height: 427px;
+    padding-top: 50px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .about-partner .partner-content .source {
+    height: 703px;
+  }
+  .about-partner .partner-content .source .left {
+    padding-top: 135px;
+  }
+  .about-partner .partner-content .source .left .info {
+    height: 270px;
+    margin-bottom: 155px;
+  }
+  .about-partner .partner-content .source .right {
+    height: 703px;
+  }
+  .about-partner .partner-content .advance {
+    height: 700px;
+  }
+  .about-partner .partner-content .advance .right {
+    height: 700px;
+    padding-top: 150px;
+    box-sizing: border-box;
+  }
+  .about-partner .partner-content .advance .right .decor {
+    bottom: 80px;
+  }
 }

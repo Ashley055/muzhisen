@@ -1,6 +1,5 @@
 .page-top {
   overflow: hidden;
-  position: relative;
 }
 .top-info {
   position: absolute;
@@ -186,12 +185,6 @@
   position: relative;
   margin-right: 120px;
 }
-.qulity .left {
-  width: 50%;
-}
-.qulity .left img {
-  width: 100%;
-}
 .qulity .right {
   position: absolute;
   width: 50%;
@@ -206,55 +199,55 @@
 .qulity .right ul li {
   white-space: normal;
 }
-.qulity .right .lunbo {
+.lunbo {
   height: 100%;
 }
-.qulity .right .lunbo .flex-direction-nav {
+.lunbo .flex-direction-nav {
   position: absolute;
   top: 50%;
   left: 50px;
   right: 50px;
 }
-.qulity .right .lunbo .flex-direction-nav li a {
+.lunbo .flex-direction-nav li a {
   display: inline-block;
   width: 15px;
   height: 29px;
 }
-.qulity .right .lunbo .flex-direction-nav li:last-child {
+.lunbo .flex-direction-nav li:last-child {
   position: absolute;
   right: 0;
   top: 0;
 }
-.qulity .right .lunbo .flex-direction-nav li:nth-of-type(1) a {
+.lunbo .flex-direction-nav li:nth-of-type(1) a {
   background: url(../images/gray-pre.png) center no-repeat;
   background-size: 15px 29px;
 }
-.qulity .right .lunbo .flex-direction-nav li:nth-of-type(2) a {
+.lunbo .flex-direction-nav li:nth-of-type(2) a {
   background: url(../images/gray-next.png) center no-repeat;
   background-size: 15px 29px;
 }
-.qulity .right .lunbo .lunbo-box {
+.lunbo .lunbo-box {
   position: relative;
   width: 600px;
   overflow: hidden;
   margin: 0 auto;
   text-align: center;
 }
-.qulity .right .lunbo .lunbo-box a .title {
+.lunbo .lunbo-box a .title {
   margin-top: 85px;
   margin-bottom: 25px;
   font-size: 32px;
   color: #020202;
   letter-spacing: 0.3em;
 }
-.qulity .right .lunbo .lunbo-box a .sub-title {
+.lunbo .lunbo-box a .sub-title {
   font-size: 14px;
   color: #979899;
 }
-.qulity .right .lunbo .lunbo-box a .text {
+.lunbo .lunbo-box a .text {
   margin-top: 35px;
 }
-.qulity .right .lunbo .lunbo-box a .text li {
+.lunbo .lunbo-box a .text li {
   width: 35px;
   height: 100%;
   overflow: hidden;
@@ -285,11 +278,11 @@
   top: 22px;
 }
 @media screen and (min-width: 640px) and (max-width: 980px) {
+  .page-top .zsp1 {
+    margin-left: -100px;
+  }
   .top-info .logo {
     padding-left: 15px;
-  }
-  .introduction .link {
-    margin-bottom: 80px;
   }
   .news {
     display: none;
@@ -299,13 +292,9 @@
     margin-right: 0;
     text-align: center;
   }
-  .common-introduce .left {
-    padding-top: 30px;
-  }
   .common-introduce .left .title::before {
     left: 50% !important;
     margin-left: -70px !important;
-    height: 120px;
   }
   .common-introduce .left .left-bottom {
     display: none;
@@ -351,33 +340,15 @@
   .qulity {
     margin-right: 0;
   }
-  .qulity .right {
-    height: auto;
-  }
-  .qulity .right .lunbo {
-    width: 100%;
-  }
-  .qulity .right .lunbo .lunbo-box {
-    width: 100%;
-  }
-  .qulity .right .lunbo .lunbo-box a .title {
-    margin-top: 40px;
-    margin-bottom: 7px;
-  }
   .qulity .right .lunbo .lunbo-box a .text {
-    margin-top: 15px;
-    height: 246px;
-    padding-bottom: 16px;
-  }
-  .qulity .right .lunbo .lunbo-box a .text ul {
-    height: 100%;
+    padding-right: 90px;
   }
   .qulity .right .lunbo .flex-direction-nav {
     left: 20px;
     right: 20px;
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1910px) {
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
   .introduction .part .left {
     height: auto;
   }
@@ -394,33 +365,5 @@
   }
   .introduction .part .gray {
     height: 416px;
-  }
-  .qulity .right {
-    height: auto;
-  }
-  .qulity .right .lunbo {
-    width: 100%;
-  }
-  .qulity .right .lunbo .lunbo-box a .title {
-    margin-top: 40px;
-    margin-bottom: 7px;
-  }
-  .qulity .right .lunbo .lunbo-box a .text {
-    margin-top: 15px;
-    height: 298px;
-    padding-bottom: 16px;
-  }
-  .qulity .right .lunbo .lunbo-box a .text ul {
-    height: 100%;
-  }
-  .qulity .right .lunbo .flex-direction-nav {
-    left: 20px;
-    right: 20px;
-  }
-}
-@media screen and (min-width: 1910px) {
-  .introduction .part .text {
-    top: 95px;
-    left: 630px;
   }
 }

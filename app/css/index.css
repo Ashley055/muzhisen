@@ -248,6 +248,9 @@ select {
   background-color: white;
   cursor: default;
 }
+.pr20{
+  padding-right: 20px;
+}
 body {
   font-size: 12px;
   color: #666;
@@ -293,6 +296,10 @@ body {
   padding-top: 30px;
   box-sizing: border-box;
   background: #fff;
+  cursor: pointer;
+}
+.min-nav{
+  display: none;
 }
 .nav-bar p.menu-text{
   margin-top: 14px;
@@ -411,23 +418,63 @@ body {
 }
 .introduction .part{
   position: relative;
+  overflow: hidden;
 }
-.introduction .part>img {
-  width: 100%;
+.introduction .part img {
+  transition: all 0.3s;
 }
-.introduction img.h321{
-  height: 321px;
+.introduction .pic-text img:hover, .introduction .part img:hover{
+  transform: scale(1.1);
+}
+.introd1:hover img{
+  transform: scale(1.1);
 }
 .introduction .part .text{
   position: absolute;
-  top: 5%;
-  left: 15%;
-  text-align: right;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 150px;
+  padding-right: 20px;
+  text-align: center;
   color: #fff;
   font-size: 16px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.4);
 }
-.introduction .part .text.top50{
-  top: 50px;
+.introduction .part.chenx-culture{
+  padding-top: 145px;
+}
+.introduction .part.chenx-culture .text{
+  width: 1729px;
+  height: 535px;
+  padding-right: 135px;
+  box-sizing: border-box;
+  text-align: right;
+}
+.introduction .part.chenx-culture .title::before{
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  content: '';
+  width: 1px;
+  height: 128px;
+  background: #333;
+}
+.introduction .part.chenx-culture .pic-text{
+  position: relative;
+}
+.introduction .part.chenx-culture .text.text-center{
+  text-align: center;
+}
+.introduction .part.chenx-culture .sig{
+  position: absolute;
+  bottom: 25px;
+  left: 48px;
+}
+.introduction .part .text.pt65{
+  padding-top: 65px;
 }
 .introduction .part .text li{
   display: inline-block;
@@ -436,6 +483,7 @@ body {
   vertical-align: top;
 }
 .introduction .part .text li:first-child{
+  margin-top: 20px;
   margin-right: 40px;
   color: #de0606;
 }
@@ -467,20 +515,15 @@ body {
   font-size: 14px;
   color: #a3a3a3;
 }
-.scroll-wrap {
-  width: 100%;
-  overflow-x: auto;
-  font-size: 0;
-  white-space: nowrap;
-}
-.scroll-wrap li{
-  display: inline-block;
-  width: 210px;
-  height: 128px;
-}
+/* .scroll-wrap {
+  width: 1729px;
+} */
 .scroll-wrap li img{
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
+}
+.scroll-wrap .flex-control-nav{
+  display: none;
 }
 .link{
   margin: 35px 0;
@@ -494,7 +537,9 @@ body {
 }
 .link img{
   width: 24px;
-  height: 7px;
+  height: 19px;
+  margin-right: 8px;
+  vertical-align: middle;
 }
 .bottom .about-beauty{
   padding-left: 60px;
@@ -521,8 +566,13 @@ body {
   vertical-align: top;
 }
 .bottom li.left{
-  margin-right: 48px;
+  width: 225px;
+  display: inline-block;
+  margin-right: 215px;
   display: none;
+}
+.bottom li.left.show{
+  display: inline-block;
 }
 .bottom li.left .link{
   margin: 0;
@@ -531,17 +581,24 @@ body {
   text-align: left;
 }
 .bottom li.right{
+  display: inline-block;
   padding: 30px 0;
   min-height: 325px;
+  width: 1200px;
   box-sizing: border-box;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
 .bottom li.right li{
+  position: relative;
   height: 30px;
+  margin-bottom: 15px;
   line-height: 30px;
   font-size: 16px;
   color: #999;
+}
+.bottom li.right li:last-child{
+  margin-bottom: 0;
 }
 .bottom li.left .link .tower{
   width: 18px;
@@ -570,7 +627,22 @@ body {
   vertical-align: middle;
 }
 .bottom .right .text{
+  display: inline-block;
+  width: 740px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   color: #666;
+}
+.bottom .right .label{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 10px;
+  font-size: 14px;
+  background: #de0606;
+  color: #fff;
 }
 .contact-info{
   position: relative;
@@ -644,9 +716,83 @@ body {
 .text-right{
   text-align: right;
 }
+.pop-menu ul li{
+  position: relative;
+}
+.pop-menu ul li a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.pop-menu.show{
+  display: flex !important;
+}
 
 @media screen and (max-width: 980px) {
   .nav-bar{
+    height: 150px;
+    background: transparent;
+  }
+  .nav-bar p.menu-text{
+    color: #fff;
+  }
+  .min-nav{
+    display: block;
+    height: 120px;
+    background: #fff;
+  }
+  .min-nav .web-link{
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    vertical-align: top;
+  }
+  .min-nav .web-link a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 43px;
+    text-align: center;
+    color: #ddd;
+    font-size: 12px;
+    background-color: #000;
+  }
+  .min-nav li{
+    display: inline-block;
+    width: 32%;
+  }
+  .min-nav .menus{
+    display: inline-block;
+    vertical-align: top;
+    width: 74%;
+  }
+  .min-nav .menus li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 11px 0;
+    padding-top: 72px;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    border-top: 1px solid #eee;
+    font-size: 12px;
+    color: #999;
+    background: url(../images/menu-icon.png) 63px 30px no-repeat;
+  }
+  .min-nav .web-link a span{
+    display: block;
+    margin-top: 9px;
+  }
+  .min-nav .menus li:last-child a{
+    background: url(../images/menu-icon2.png) 63px 30px no-repeat;
+  }
+  .min-nav p.menu-text{
+    color: #fff;
+  }
+  .nav-bar .label, .nav-bar .des, .nav-bar .menus, .nav-bar .web-link{
     display: none;
   }
   .pop-menu{
@@ -681,6 +827,7 @@ body {
     border-bottom: 1px dotted #fff;
     min-height: 133px;
     display: flex;
+    margin: 0 auto;
     align-items: center;
     justify-content: left;
   }
@@ -732,9 +879,106 @@ body {
     background: url(../images/han6.png) no-repeat;
     background-size: 42px 50px;
   }
+  .introduction .part.chenx-culture .text{
+    left: 45px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 40px;
+    padding-right: 0;
+  }
+  .introduction .part.chenx-culture .text li {
+    padding: 0 20px;
+    height: 100%;
+    overflow: hidden;
+  }
+  .introduction .part.chenx-culture .text li:last-child{
+    height: auto;
+    margin-left: 30px;
+  }
+  .introduction .part.chenx-culture .pic-text {
+    height: 310px;
+  }
+  .introduction .part.chenx-culture .pic-text img {
+    height: 100%;
+  }
+  .introduction .part.chenx-culture .pic-text img.w100{
+    width: 100%;
+  }
+  .introduction .part.chenx-culture .pic-text .text{
+    padding-top: 40px;
+    padding-right: 20px;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .introduction .part.chenx-culture .pic-text .text li {
+    white-space: normal;
+  }
+  .introduction .part.chenx-culture .pic-text .text li:first-child{
+    margin-right: 0;
+  }
+  .introduction .part.chenx-culture .pic-text .text li:last-child{
+    margin-left: 0;
+  }
+  .introduction .part.chenx-culture .pic-text .sig{
+    display: none;
+  }
+  .introduction .part .text li{
+    padding: 0 10px;
+  }
+  .introduction .part .text li:first-child{
+    margin-top: 20px;
+  }
+  .bottom li.left{
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .bottom .sub-title {
+    margin-bottom: 50px;
+  }
+  .bottom li.left .link{
+    display: inline-block;
+    border-bottom: none;
+    line-height: 19px;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+  }
+  .bottom li.left .link img{
+    margin-right: 8px;
+    height: 19px;
+    vertical-align: middle;
+  }
+  .bottom li.right{
+    width: 100%;
+  }
+  .bottom .right .text{
+    width: 465px;
+  }
+  .bottom li.right li .date, .bottom li.right li .divider, .bottom li.right li .label{
+    display: none;
+  }
+  .contact-info .bottom-right{
+    display: none;
+  }
+  .contact-info .bottom-left{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 980px) and (max-width: 1200px) {
+  .nav-bar{
+    height: 150px;
+    background: transparent;
+  }
+  .nav-bar p.menu-text{
+    color: #fff;
+  }
+  .nav-bar .label, .nav-bar .des, .nav-bar .menus, .nav-bar .web-link{
+    display: none;
+  }
   .pop-menu{
     position: absolute;
     top: 0;
@@ -747,6 +991,50 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
+  }
+  .introduction .part img{
+    margin-left: -550px;
+    margin-top: -100px;
+  }
+  .introduction .part img.ml0{
+    margin-left: 0;
+  }
+  .introduction .part img.mt0{
+    margin-top: 0;
+  }
+  .introduction .part.chenx-culture .sig{
+    width: 43px;
+    height: 155px;
+  }
+  .introduction .part.chenx-culture .text{
+    width: 100%;
+    height: 100%;
+  }
+  .introduction .part .text.pt65{
+    padding-top: 30px;
+  }
+  .bottom li.left.show .link{
+    display: none;
+  }
+  .bottom .sub-title{
+    margin-bottom: 20px;
+  }
+  .bottom .right .label{
+    display: none;
+  }
+  .introduction .part img.w100{
+    width: 100%;
+  }
+  .introduction .part .text{
+    top: 0;
+    padding-top: 35px;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .brand .title, .brand .sub-title{
+    display: none;
   }
   .pop-menu .close{
     width: 38px;
@@ -816,6 +1104,11 @@ body {
     background: url(../images/han6.png) no-repeat;
     background-size: 42px 50px;
   }
+  .introduction .part .scroll-wrap img{
+    margin-left: 0;
+    width: 236px;
+    height: 144px;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1920px) {
@@ -841,12 +1134,24 @@ body {
     padding-right: 120px;
     box-sizing: border-box;
   }
+  .bottom .sub-title{
+    margin-bottom: 105px;
+  }
   .bottom .left {
     display: block;
   }
-
+  .bottom li.right{
+    width: 735px;
+  }
+  .bottom .right .text{
+    width: 475px;
+  }
+  .bottom .right .label{
+    display: none;
+  }
   .pop-menu{
     position: absolute;
+    display: none;
     top: 0;
     left: 0;
     width: 100%;
@@ -857,6 +1162,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
   }
   .pop-menu .close{
     width: 38px;
@@ -926,6 +1232,20 @@ body {
     background: url(../images/han6.png) no-repeat;
     background-size: 55px 65px;
   }
+  .introduction .part.chenx-culture.beauty .text{
+    padding-top: 60px;
+  }
+  .introduction .part.chenx-culture .text{
+    padding-right: 540px;
+  }
+  .introduction .part .scroll-wrap img{
+    margin-left: 0;
+    width: 207px;
+    height: 127px;
+  }
+  .bottom li.left{
+    margin-right: 50px;
+  }
 }
 @media screen and (min-width: 1920px) {
   .pop-menu{
@@ -940,6 +1260,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
   }
   .pop-menu .close{
     width: 38px;
@@ -1002,5 +1323,13 @@ body {
     width: 77px;
     height: 91px;
     background: url(../images/han6.png) no-repeat;
+  }
+  .introduction .part .scroll-wrap img{
+    width: 342px;
+    height: 210px;
+  }
+  .scroll-wrap{
+    width: 1729px;
+    overflow: hidden;
   }
 }
