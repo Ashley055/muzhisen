@@ -359,12 +359,24 @@
                 slideshowSpeed: 3000
             });
 
-            var width = window.screen.width
+            var width = parseInt(window.screen.width)
             var itemWidth = 100
-            if (parseInt(width) >= 1920) {
+            var minItems = 3
+            var maxItems = 3
+            if (width >= 1920) {
                 itemWidth = 347
-            } else if (parseInt(width) >= 1200) {
+                minItems = 5
+                maxItems = 5
+            } else if (width >= 1200) {
                 itemWidth = 212
+                minItems = 5
+                maxItems = 5
+            } else if (width >= 980) {
+                itemWidth = 212
+                minItems = 5
+                maxItems = 5
+            } else {
+                itemWidth = width / 3  - 10
             }
             //flash
             $('.scroll-wrap').flexslider({
@@ -373,9 +385,8 @@
                 directionNav: false,
                 slideshowSpeed: 3000,
                 itemWidth: itemWidth,
-                itemMargin: 5,
-                minItems: 3,
-                maxItems: 5,
+                minItems: minItems,
+                maxItems: maxItems,
                 move: 1,
                 animationSpeed: 2000,
                 touch: true,
