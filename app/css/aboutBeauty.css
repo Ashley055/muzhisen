@@ -391,7 +391,7 @@
 .about-beauty .bottom .contact-info {
   background: url(../images/aboutBeautyp9.jpg) left top no-repeat;
 }
-@media screen and (min-width: 640px) and (max-width: 980px) {
+@media screen and (max-width: 980px) {
   .about-beauty .page-top .top-info {
     background: rgba(0, 0, 0, 0.3);
   }
@@ -512,18 +512,22 @@
     display: block;
     margin-top: 95px;
     margin-bottom: 95px;
-    padding-left: 125px;
+    padding: 10px;
     overflow: hidden;
   }
   .about-beauty .beauty-content .min-shows-wrap li {
     padding: 0;
   }
   .about-beauty .beauty-content .min-shows-wrap li img {
-    width: auto;
+    width: 340px;
+    margin: 0 auto;
+    display: block;
   }
   .about-beauty .beauty-content .min-shows-wrap li .info {
-    padding-right: 150px;
+    padding-right: 0;
     overflow: hidden;
+    width: 340px;
+    margin: 0 auto;
   }
   .about-beauty .beauty-content .min-shows-wrap li .info .des {
     margin-top: 10px;
@@ -537,9 +541,6 @@
     color: #666;
     line-height: 30px;
     border-bottom: 1px solid #ac793c;
-  }
-  .about-beauty .beauty-content .min-shows-wrap .slides {
-    margin-left: 110px;
   }
   .about-beauty .beauty-content .min-shows-wrap .flex-control-nav {
     display: none;

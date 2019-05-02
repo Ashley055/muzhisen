@@ -166,13 +166,17 @@
 .about-partner .partner-content .map img {
   width: 100%;
 }
-@media screen and (min-width: 640px) and (max-width: 980px) {
+@media screen and (max-width: 980px) {
+  .top-info .logo {
+    padding-left: 22px;
+    padding-top: 25px;
+  }
   .about-partner .partner-content {
     margin-right: 0;
   }
   .about-partner .partner-content .source {
     margin-top: 0;
-    height: 1030px;
+    height: auto;
   }
   .about-partner .partner-content .source .left {
     position: static;
@@ -183,11 +187,12 @@
     margin-bottom: 60px;
   }
   .about-partner .partner-content .source .right {
-    position: static;
+    position: relative;
+    height: auto;
     width: 100%;
   }
   .about-partner .partner-content .source .right .down-load {
-    top: 75%;
+    top: 50%;
   }
   .about-partner .partner-content .introduce {
     margin: 15px;
@@ -216,7 +221,7 @@
   .about-partner .partner-content .introduce .steps li:nth-of-type(4):after {
     position: absolute;
     top: 176px;
-    left: 130px;
+    left: 60px;
     width: 10px;
     height: 60px;
     content: '';
@@ -244,14 +249,13 @@
   .about-partner .partner-content .introduce .steps li:nth-of-type(5) {
     position: absolute;
     left: 0;
-    padding-right: 100px;
     top: 555px;
   }
   .about-partner .partner-content .introduce .steps li img {
     margin-bottom: 30px;
   }
   .about-partner .partner-content .advance {
-    height: 1160px;
+    height: auto;
   }
   .about-partner .partner-content .advance .left {
     width: 100%;
@@ -260,6 +264,15 @@
   .about-partner .partner-content .advance .right {
     position: static;
     width: 100%;
+  }
+  .about-partner .partner-content .advance .right .advantages li:last-child {
+    margin-left: 0;
+  }
+  .about-partner .partner-content .introduce .des {
+    font-size: 14px;
+  }
+  .about-partner .partner-content .introduce .steps li {
+    padding-right: 0;
   }
 }
 @media screen and (min-width: 980px) and (max-width: 1200px) {
