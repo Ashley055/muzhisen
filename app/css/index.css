@@ -6,7 +6,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: none;
-  font-family: "宋体", "microsoft yahei", "Times New Roman", Arial, sans-serif;
+  font-family: "SimSun", "Times New Roman", Arial, sans-serif;
 }
 /* 内外边距通常让各个浏览器样式的表现位置不同 */
 body,
@@ -251,6 +251,12 @@ select {
 .pr20{
   padding-right: 20px;
 }
+.rotate90{
+  padding: 8px 0;
+  transform: rotate(90deg) translateY(5px);
+  display: block;
+
+}
 body {
   font-size: 12px;
   color: #666;
@@ -286,7 +292,7 @@ body {
   height: 61px;
 }
 .nav-bar{
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 100;
@@ -319,11 +325,11 @@ body {
   color: #999;
 }
 .nav-bar .des span{
-  transform:rotate(90deg);
-  -ms-transform:rotate(90deg); 	/* IE 9 */
-  -moz-transform:rotate(90deg); 	/* Firefox */
-  -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
-  -o-transform:rotate(90deg); 
+  /* transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  -o-transform:rotate(90deg);  */
 }
 .nav-bar .menus{
   position: absolute;
@@ -823,9 +829,8 @@ body {
   }
   .pop-menu ul li{
     width: 327px;
-    padding-top: 20px;
     border-bottom: 1px dotted #fff;
-    min-height: 133px;
+    min-height: 95px;
     display: flex;
     margin: 0 auto;
     align-items: center;
