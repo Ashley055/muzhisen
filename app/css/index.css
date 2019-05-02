@@ -548,7 +548,8 @@ body {
   vertical-align: middle;
 }
 .bottom .about-beauty{
-  padding-left: 60px;
+  /* padding-left: 60px; */
+  text-align: center;
   padding-top: 55px;
   padding-bottom: 55px;
   background: -webkit-linear-gradient(#eee, #eee); /* Safari 5.1 - 6.0 */
@@ -765,6 +766,7 @@ body {
     display: block;
     width: 100%;
     height: 100%;
+    box-sizing: content-box;
     padding-top: 43px;
     text-align: center;
     color: #ddd;
@@ -773,12 +775,12 @@ body {
   }
   .min-nav li{
     display: inline-block;
-    width: 32%;
+    width: 31%;
   }
   .min-nav .menus{
     display: inline-block;
     vertical-align: top;
-    width: 74%;
+    width: 73%;
   }
   .min-nav .menus li a {
     display: block;
@@ -792,14 +794,14 @@ body {
     border-top: 1px solid #eee;
     font-size: 12px;
     color: #999;
-    background: url(../images/menu-icon.png) 63px 30px no-repeat;
+    background: url(../images/menu-icon.png) center no-repeat;
   }
   .min-nav .web-link a span{
     display: block;
     margin-top: 9px;
   }
   .min-nav .menus li:last-child a{
-    background: url(../images/menu-icon2.png) 63px 30px no-repeat;
+    background: url(../images/menu-icon2.png) center no-repeat;
   }
   .min-nav p.menu-text{
     color: #fff;
@@ -980,6 +982,9 @@ body {
   }
   .contact-info .bottom-left{
     display: none;
+  }
+  .scroll-wrap li img{
+    height: 125px;
   }
 }
 
