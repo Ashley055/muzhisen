@@ -242,11 +242,13 @@
             img {
                 width: 100%;
             }
-            &:hover{
-                img{
+
+            &:hover {
+                img {
                     transform: scale(1.1);
                 }
             }
+
             .acad-title {
                 position: relative;
                 margin-top: 33px;
@@ -433,7 +435,19 @@
     }
 }
 
-@media screen and (min-width: 640px) and (max-width: 980px) {
+@media screen and (max-width: 980px) {
+    .top-info .logo {
+        padding-left: 22px;
+        padding-top: 25px;
+    }
+    .common-introduce {
+        position: relative;
+        height: 340px;
+        margin-right: 10px;
+        padding-bottom: 160px;
+        padding-left: 10px;
+        background: #f9f8f8;
+    }
     .about-us {
         .page-top {
             .top-info {
@@ -515,22 +529,29 @@
 
             .culture-content {
                 height: auto;
-
                 .left {
                     margin-top: 610px;
-
                     .sub-title {
                         margin-bottom: 20px;
                     }
-
                     .info {
+                        width: 100%;
                         margin-bottom: 0;
+                        margin: 0 10px;
                     }
                 }
 
                 .right {
                     top: -590px;
                 }
+
+                // .info {
+                //     width: 100%;
+                //     height: 260px;
+                //     margin-bottom: 120px;
+                //     margin-left: 70px;
+                //     overflow-y: auto;
+                // }
             }
         }
 
@@ -602,19 +623,23 @@
         .common-introduce {
             .left {
                 padding-top: 35px;
-
+                margin: 0 auto;
+                width: 200px;
                 .title {
                     &:before {
                         display: none;
                     }
+                }
+                .left-bottom{
+                    display: none;
                 }
             }
 
             .right {
                 padding-right: 0;
                 padding-left: 0;
-                margin-left: 40px;
-                margin-right: 80px;
+                margin-left: 10px;
+                margin-right: 10px;
                 right: 0;
                 width: auto;
                 padding-top: 20px;
@@ -865,9 +890,10 @@
         }
     }
 }
+
 @media screen and (min-width: 1910px) {
-    .about-us{
-        .masters{
+    .about-us {
+        .masters {
             padding-left: 15px;
             padding-right: 15px;
         }

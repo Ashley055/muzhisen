@@ -10,26 +10,6 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <script>
-        // rem
-        (function (doc, win) {
-            var docEl = doc.documentElement,
-                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-                recalc = function () {
-                    var clientWidth = docEl.clientWidth;
-                    if (!clientWidth) return;
-                    if (clientWidth >= 750) {
-                        docEl.style.fontSize = '100px';
-                    } else {
-                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
-                    }
-                };
-
-            if (!doc.addEventListener) return;
-            win.addEventListener(resizeEvt, recalc, false);
-            doc.addEventListener('DOMContentLoaded', recalc, false);
-        })(document, window);
-    </script>
     <!-- build:css css/common.min.css -->
     <link rel="stylesheet" type="text/css" href="css/common.css" />
     <!-- endbuild -->
@@ -416,6 +396,16 @@
         $('.close').off('click').click(function () {
             $('.pop-menu').removeClass('show')
         })
+        var width = window.screen.width
+        var minItems = 1
+        var maxItems = 1
+        if (parseInt(width) <= 400) {
+            minItems = 1
+            maxItems = 1
+        } else {
+            minItems = 3
+            maxItems = 4
+        }
         //flash
         $('.masters').flexslider({
             animation: 'slide',
@@ -426,8 +416,8 @@
             nextText: '',
             itemWidth: 275,
             itemMargin: 5,
-            minItems: 3,
-            maxItems: 4,
+            minItems: minItems,
+            maxItems: maxItems,
             move: 1,
             animationSpeed: 2000,
             touch: true,

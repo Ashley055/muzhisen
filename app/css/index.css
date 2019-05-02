@@ -755,6 +755,7 @@ body {
     display: block;
     height: 120px;
     background: #fff;
+    overflow: hidden;
   }
   .min-nav .web-link{
     display: inline-block;
