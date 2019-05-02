@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
     <title>木之森</title>
@@ -14,8 +15,10 @@
     <link rel="stylesheet" type="text/css" href="css/commonList.css" />
     <!-- endbuild -->
 </head>
+
 <body>
     <div class="common-detail">
+        <div class="logo"><img src="images/color-logo.png" alt=""></div>
         <div class="top-left">
             <h3>伍仟沉香</h3>
             <p>WuQian ShenXiang</p>
@@ -64,28 +67,14 @@
                             </div>
                         </li>
                         <li>
-                            <div class="lubo-box">
+                            <div class="lunbo-box">
                                 <a href="" title="">
                                     <img src="images/comDetailp1.jpg">
                                 </a>
                             </div>
                         </li>
                         <li>
-                            <div class="lubo-box">
-                                <a href="" title="">
-                                    <img src="images/comDetailp1.jpg">
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="lubo-box">
-                                <a href="" title="">
-                                    <img src="images/comDetailp1.jpg">
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="lubo-box">
+                            <div class="lunbo-box">
                                 <a href="" title="">
                                     <img src="images/comDetailp1.jpg">
                                 </a>
@@ -116,7 +105,8 @@
         </div>
         <div class="item-info">
             <div class="title">产品详情<span>Product Details</span></div>
-            <p>对于我们来说，每天要车珠子，香粉自然会有，平时拿来做线香的不多，因为产量还是很少，但是至少能供得起朋友们用，这就是我们做这个线香的初衷。大家可以看我们自己制作线香的视频，说起来也简单，做起来也难，就是用天然极细的沉香粉+楠木粉（因为楠木粉有粘性，可代替一般线香的粘合剂）加水，完全是纯手工的做香，也就是像蒸馒头一样，得和面，揉面，后放在特制的特制的容器挤压，再掐头去尾就成了。推荐这款线香的原因很纯粹：淡雅醇厚，甘甜清凉，给您的优雅生活助燃，亏本赚个销量，希望你能和我们一起分享这种感受。</p>
+            <p>对于我们来说，每天要车珠子，香粉自然会有，平时拿来做线香的不多，因为产量还是很少，但是至少能供得起朋友们用，这就是我们做这个线香的初衷。大家可以看我们自己制作线香的视频，说起来也简单，做起来也难，就是用天然极细的沉香粉+楠木粉（因为楠木粉有粘性，可代替一般线香的粘合剂）加水，完全是纯手工的做香，也就是像蒸馒头一样，得和面，揉面，后放在特制的特制的容器挤压，再掐头去尾就成了。推荐这款线香的原因很纯粹：淡雅醇厚，甘甜清凉，给您的优雅生活助燃，亏本赚个销量，希望你能和我们一起分享这种感受。
+            </p>
             <div>
                 <img src="images/comDetailp3.jpg" alt="">
             </div>
@@ -139,7 +129,7 @@
 <script>
     $(function () {
         //flash
-        $('#tab li').off('click').click(function() {
+        $('#tab li').off('click').click(function () {
             $(event.target).addClass('active').siblings().removeClass('active');
         })
         //flash
@@ -152,6 +142,7 @@
             nextText: '',
             directionNav: true //Boolean:  (true/false)是否显示左右控制按钮
         });
-})
+    })
 </script>
+
 </html>

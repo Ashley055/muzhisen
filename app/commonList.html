@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
     <title>木之森</title>
@@ -14,12 +15,36 @@
     <link rel="stylesheet" type="text/css" href="css/commonList.css" />
     <!-- endbuild -->
 </head>
+
 <body>
     <div class="common-list">
+        <div class="logo"><img src="images/color-logo.png" alt=""></div>
         <div class="top-left">
             <h3>木之森美学馆</h3>
             <p>Muzhisen Aesthetics</p>
         </div>
+        <!--右侧菜单-->
+        <div class="nav-bar">
+            <div>
+                <img src="images/menu-collap.png" alt="">
+            </div>
+            <p class="menu-text">导 航 菜 单</p>
+            <h3 class="label">木之森香文化</h3>
+            <p class="des">始于
+                <span>2007</span>年</p>
+            <ul class="menus">
+                <li><a>木之森沉香</a></li>
+                <li><a>木之森美学馆</a></li>
+                <li><a>伍仟香业</a></li>
+            </ul>
+            <div class="web-link">
+                <a href="">
+                    <img src="images/icon-cart.png" alt="">
+                    <span>官方商城</span>
+                </a>
+            </div>
+        </div>
+        <!--右侧菜单 end-->
         <div class="tab" id="tab">
             <ul>
                 <li class="active">全部</li>
@@ -88,8 +113,10 @@
             </ul>
         </div>
         <div class="footer">
-            <span class="left">Copyright ©2017 www.muzhisen.info. All Right Reserved</span>
-            <span class="right">闽ICP备：123456789 | 技术支持：南希网站建设</span>
+            <div class="inner">
+                    <span class="left">Copyright ©2017 www.muzhisen.info. All Right Reserved</span>
+                    <span class="right">闽ICP备：123456789 | 技术支持：南希网站建设</span>
+            </div>
         </div>
     </div>
 </body>
@@ -100,20 +127,21 @@
 <script>
     $(function () {
         //flash
-        $('#tab li').off('click').click(function() {
+        $('#tab li').off('click').click(function () {
             $(event.target).addClass('active').siblings().removeClass('active');
         })
 
     });
-    $('#pagination li').off('click').click(function(event) {
-    if ($(event.target).index() == 0) {
-        var index = $(event.target).siblings('.active').index();
-        if (index < $('#pagination li').length - 2){
-            $(event.target).siblings().eq(index).addClass('active').siblings().removeClass('active')
+    $('#pagination li').off('click').click(function (event) {
+        if ($(event.target).index() == 0) {
+            var index = $(event.target).siblings('.active').index();
+            if (index < $('#pagination li').length - 2) {
+                $(event.target).siblings().eq(index).addClass('active').siblings().removeClass('active')
+            }
+        } else if ($(event.target).index() != 0) {
+            $(event.target).addClass('active').siblings().removeClass('active');
         }
-    } else if ($(event.target).index() != 0) {
-        $(event.target).addClass('active').siblings().removeClass('active');
-    }
-})
+    })
 </script>
+
 </html>

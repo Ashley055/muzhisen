@@ -68,7 +68,7 @@
 }
 .pagination li {
   display: inline-block;
-  padding: 3px 6px;
+  padding: 7px 10px;
   font-size: 16px;
   color: #434343;
   border: 1px solid #dcdcdc;
@@ -207,6 +207,7 @@
   top: 50%;
   left: 50px;
   right: 50px;
+  width: 87%;
 }
 .lunbo .flex-direction-nav li a {
   display: inline-block;
@@ -228,7 +229,6 @@
 }
 .lunbo .lunbo-box {
   position: relative;
-  width: 600px;
   overflow: hidden;
   margin: 0 auto;
   text-align: center;
@@ -262,10 +262,15 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  padding-right: 120px;
   font-size: 14px;
   color: #ccc;
-  border-top: 1px solid #c5c5c5;
+  box-sizing: border-box;
   background: #fff;
+}
+.footer .inner {
+  width: 100%;
+  border-top: 1px solid #c5c5c5;
 }
 .footer .left {
   position: absolute;
@@ -274,7 +279,7 @@
 }
 .footer .right {
   position: absolute;
-  right: 22px;
+  right: 120px;
   top: 22px;
 }
 @media screen and (min-width: 640px) and (max-width: 980px) {
@@ -365,5 +370,8 @@
   }
   .introduction .part .gray {
     height: 416px;
+  }
+  .lunbo .flex-direction-nav {
+    width: 80%;
   }
 }

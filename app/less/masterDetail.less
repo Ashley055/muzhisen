@@ -30,9 +30,10 @@
         .inner{
             position: relative;
             width: 805px;
-            height: 460px;
+            min-height: 460px;
             padding-top: 100px;
             margin: 0 auto;
+            overflow-y: auto;
             .left{
                 color: #ac793c;
                 .master{
@@ -82,6 +83,13 @@
             }
         }
     }
+    .lunbo{
+        .lunbo-box{
+            .min-masterdp1{
+                display: none;
+            }
+        }
+    }
     .diproma{
         width: 805px;
         margin: 0 auto;
@@ -89,6 +97,7 @@
         color: #333;
         h3{
             margin-top: 40px;
+            font-size: 30px;
         }
         p{
             margin-top: 30px;
@@ -103,6 +112,79 @@
             &:last-child{
                 margin-right: 0;
             }
+        }
+    }
+}
+@media screen and (max-width: 980px) {
+    .master-detail{
+        .lunbo{
+            .lunbo-box{
+                img{
+                    display: none;
+                    &.min-masterdp1{
+                        display: block;
+                    }
+                }
+            }
+            .flex-direction-nav{
+                width: 75%;
+            }
+        }
+        .introduce{
+            margin-right: 0;
+            .inner{
+                padding-top: 50px;
+                padding-left: 45px;
+                padding-right: 47px;
+                padding-bottom: 50px;
+                width: auto;
+                .right{
+                    position: static;
+                    margin-top: 47px;
+                    width: auto;
+                }
+            }
+        }
+        .diproma{
+            padding-left: 45px;
+            padding-right: 47px;
+            width: auto;
+        }
+        .link{
+            width: 100%;
+            padding: 0 15px;
+            box-sizing: border-box;
+            a{
+                margin-right: 25px;
+                padding: 6px 12px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+    .master-detail{
+        .introduce{
+            margin-top: 30px;
+            margin-right: 0;
+            .inner{
+                margin-left: 135px;
+            }
+        }
+        .diproma{
+            h3{
+                font-size: 26px;
+            }
+        }
+    }
+}
+@media screen (min-width: 1920px) {
+    .master-detail{
+        .introduce{
+            margin-top: 37px;
+        }
+        .lunbo .flex-direction-nav{
+            width: 86%;
+            left: 100px;
         }
     }
 }

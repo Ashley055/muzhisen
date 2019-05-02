@@ -79,6 +79,9 @@
 .contact-us .contact-content .outlets .left img {
   width: 100%;
 }
+.contact-us .contact-content .outlets .min-left {
+  display: none;
+}
 .contact-us .contact-content .outlets .right {
   position: absolute;
   width: 50%;
@@ -97,35 +100,6 @@
   padding-top: 60px;
   margin-left: -200px;
   text-align: center;
-  max-height: 465px;
-}
-.contact-us .contact-content .outlets .right .info li {
-  padding: 15px 10px;
-  background: rgba(0, 0, 0, 0.4);
-  border-bottom: 1px dashed #fff;
-}
-.contact-us .contact-content .outlets .right .info li .name {
-  font-size: 26px;
-  color: #fff;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  line-height: 40px;
-}
-.contact-us .contact-content .outlets .right .info li .address {
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 16px;
-  color: #fff;
-  line-height: 30px;
-}
-.contact-us .contact-content .outlets .right .info li .phone {
-  color: #fff;
-  font-size: 16px;
-  line-height: 30px;
 }
 .contact-us .contact-content .outlets .right .control {
   position: absolute;
@@ -147,4 +121,391 @@
 }
 .contact-us .contact-content .outlets .right .control li.active {
   background: #fff;
+}
+@media screen and (max-width: 980px) {
+  .page-top {
+    height: 1136px;
+  }
+  .page-top .zsp1,
+  .page-top .zsp1-980 {
+    display: none;
+  }
+  .page-top .zsp1-1200 {
+    display: none;
+  }
+  .page-top .zsp1-640 {
+    width: 100%;
+  }
+  .page-top .top-info {
+    height: 1136px;
+  }
+  .contact-us .contact-content {
+    margin-right: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .contact-us .contact-content .beauty-hole .left {
+    width: 100%;
+  }
+  .contact-us .contact-content .beauty-hole .left .info h3 {
+    font-size: 28px;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .address {
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .bus-time {
+    display: none;
+  }
+  .contact-us .contact-content .beauty-hole .right {
+    position: static;
+    width: 100%;
+    overflow: hidden;
+  }
+  .contact-us .contact-content .outlets .left {
+    display: none;
+  }
+  .contact-us .contact-content .outlets .min-left {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+  .contact-us .contact-content .outlets .right {
+    position: static;
+    width: 100%;
+  }
+  .contact-us .contact-content .outlets .right .info {
+    left: 0;
+    width: 100%;
+    padding: 0 100px;
+    margin-left: 0;
+    margin-top: 70px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li {
+    padding: 20px;
+    color: #fff;
+    border-bottom: 1px dashed #fff;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li .name {
+    font-size: 18px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 40px;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li .address {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li .phone {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li.active {
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+  }
+  .contact-us .contact-content .outlets .right .info .flex-control-nav {
+    top: 50%;
+    bottom: auto;
+    right: 45px;
+    width: 15px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+  .page-top {
+    position: relative;
+    min-height: 434px;
+    overflow: hidden;
+  }
+  .page-top .zsp1 {
+    display: none;
+  }
+  .page-top .zsp1-980 {
+    width: 100%;
+  }
+  .page-top .zsp1-1200 {
+    display: none;
+  }
+  .page-top .zsp1-640 {
+    display: none;
+  }
+  .page-top .top-info {
+    height: 100%;
+  }
+  .contact-us .contact-content {
+    margin-right: 0;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .tel {
+    display: none;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .person {
+    display: block;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .mid-person {
+    display: none;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .bus-time {
+    display: none;
+  }
+  .contact-us .contact-content .outlets .right .info {
+    padding-top: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li {
+    padding: 17px 15px;
+    color: #fff;
+    border-bottom: 1px dashed #fff;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li .name {
+    font-size: 18px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 40px;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li .address {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li .phone {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li.active {
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li:nth-of-type(3) {
+    display: none;
+  }
+  .contact-us .contact-content .outlets .right .info .flex-control-nav {
+    top: 0;
+    right: 15px;
+    width: 15px;
+    height: 100%;
+    padding-top: 30%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+  .page-top {
+    margin-right: 120px;
+  }
+  .page-top .zsp1,
+  .page-top .zsp1-980 {
+    display: none;
+  }
+  .page-top .zsp1-1200 {
+    display: block;
+    width: 100%;
+  }
+  .page-top .zsp1-640 {
+    display: none;
+  }
+  .page-top .top-info {
+    max-height: 613px;
+  }
+  .contact-us .contact-content {
+    padding-top: 20px;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .tel {
+    margin-bottom: 6px;
+    font-size: 12px;
+    color: #fff;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .mid-h3 {
+    display: none;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .address {
+    margin-bottom: 20px;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .person {
+    display: none;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .mid-person {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .mid-person .name {
+    margin-right: 15px;
+    font-size: 26px;
+    color: #fff;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .mid-person span {
+    font-size: 28px;
+    color: #fff;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .time span {
+    display: block;
+    margin-top: 12px;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .time span:first-child::after {
+    display: none;
+  }
+  .contact-us .contact-content .outlets .right .info {
+    text-align: left;
+    padding-left: 90px;
+    padding-right: 90px;
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+    color: #fff;
+    box-sizing: border-box;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner {
+    width: 100%;
+    overflow: hidden;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li {
+    padding: 20px 40px;
+    background: transparent;
+    border-bottom: 1px dashed #fff;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li .name {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li .address {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li .phone {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li.active {
+    color: #ad8f6b;
+  }
+  .contact-us .contact-content .outlets .right .info .flex-control-nav {
+    bottom: -50px;
+    left: 0;
+    text-align: right;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .page-top .zsp1 {
+    display: block;
+  }
+  .page-top .zsp1-1200,
+  .page-top .zsp1-980 {
+    display: none;
+  }
+  .page-top .zsp1-640 {
+    display: none;
+  }
+  .page-top .top-info {
+    max-height: 697px;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .tel {
+    display: none;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .person {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .person .name {
+    margin-right: 15px;
+    font-size: 26px;
+    color: #fff;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .person .phone {
+    font-size: 28px;
+    color: #fff;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .bus-time {
+    display: none;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .mid-person {
+    display: none;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .time {
+    font-size: 16px;
+    color: #fff;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .time span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .contact-us .contact-content .beauty-hole .left .info .time span:first-child:after {
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 14px;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 3px;
+    background: #fff;
+  }
+  .contact-us .contact-content .outlets {
+    max-height: auto;
+  }
+  .contact-us .contact-content .outlets .right .info {
+    height: 100%;
+    padding-top: 60px;
+    max-height: auto;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li {
+    padding: 35px 30px;
+    color: #fff;
+    border-bottom: 1px dashed #fff;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li .name {
+    font-size: 26px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 40px;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li .address {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li .phone {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .contact-us .contact-content .outlets .right .info .info-inner li.active {
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+  }
+  .contact-us .contact-content .outlets .right .info .flex-control-nav {
+    top: 50%;
+    right: 45px;
+    left: auto;
+    width: 15px;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }

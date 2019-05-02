@@ -1,14 +1,38 @@
 .common-list {
   margin-right: 120px;
 }
+.common-list .logo {
+  display: none;
+}
 .common-detail {
   margin-right: 120px;
   padding-bottom: 65px;
+}
+.common-detail .logo {
+  display: none;
 }
 .common-detail .base-info {
   margin-left: 70px;
   margin-right: 90px;
   position: relative;
+}
+.common-detail .base-info .left {
+  width: 50%;
+}
+.common-detail .base-info .left .lunbo {
+  width: 100%;
+}
+.common-detail .base-info .left .lunbo .lunbo-box {
+  width: 100%;
+}
+.common-detail .base-info .left .lunbo .lunbo-box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.common-detail .base-info .left .lunbo .lunbo-box a img {
+  width: 100%;
 }
 .common-detail .base-info .right {
   position: absolute;
@@ -83,14 +107,23 @@
   margin-right: 50%;
 }
 .common-detail .flex-direction-nav {
-  left: 35px;
-  right: 35px;
+  left: 28px;
+  right: 51px;
+}
+.common-detail .flex-direction-nav li {
+  vertical-align: middle;
 }
 .common-detail .flex-direction-nav li:nth-of-type(1) a {
+  width: 28px;
+  height: 51px;
   background: url(../images/gray-pre.png) center no-repeat;
+  background-size: 28px 51px;
 }
 .common-detail .flex-direction-nav li:nth-of-type(2) a {
+  width: 28px;
+  height: 51px;
   background: url(../images/gray-next.png) center no-repeat;
+  background-size: 28px 51px;
 }
 .tab {
   margin-left: 70px;
@@ -104,6 +137,7 @@
   color: #666;
   font-size: 18px;
   line-height: 40px;
+  letter-spacing: 0.3em;
 }
 .tab li.active {
   border-bottom: 1px solid #cfa972;
@@ -154,4 +188,299 @@
 }
 .list-content .list li:nth-of-type(3n) {
   text-align: right;
+}
+@media screen and (max-width: 980px) {
+  .tab {
+    margin-left: 40px;
+    margin-right: 0;
+  }
+  .tab ul {
+    display: flex;
+    width: 100%;
+  }
+  .tab li {
+    flex: 1;
+    margin-right: 0;
+    font-size: 16px;
+    letter-spacing: 0.3em;
+  }
+  .tab li.active {
+    position: relative;
+    border-bottom: none;
+  }
+  .tab li.active::after {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: #cfa972;
+  }
+  .common-detail {
+    margin-right: 0;
+  }
+  .common-detail .logo {
+    display: block;
+    height: 100px;
+    padding: 23px;
+    box-sizing: border-box;
+    -moz-box-shadow: 2px 2px 5px #c6c6c6;
+    -webkit-box-shadow: 2px 2px 5px #c6c6c6;
+    box-shadow: 2px 2px 5px #c6c6c6;
+  }
+  .common-detail .logo img {
+    width: 160px;
+    height: 48px;
+  }
+  .common-detail .flex-direction-nav {
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .common-detail .flex-direction-nav li:nth-of-type(1) a {
+    width: 24px;
+    height: 43px;
+    background: url(../images/gray-pre.png) center no-repeat;
+    background-size: 24px 43px;
+  }
+  .common-detail .flex-direction-nav li:nth-of-type(2) a {
+    width: 24px;
+    height: 43px;
+    background: url(../images/gray-next.png) center no-repeat;
+    background-size: 24px 51px;
+  }
+  .common-detail .top-left {
+    display: none;
+  }
+  .common-detail .base-info {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .common-detail .base-info .left {
+    width: 100%;
+  }
+  .common-detail .base-info .right {
+    position: static;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .common-detail .base-info .right .title {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .common-detail .item-info {
+    margin-left: 60px;
+    margin-right: 45px;
+  }
+  .common-detail .item-info .title {
+    margin-top: 0;
+    font-size: 28px;
+    letter-spacing: 0.1em;
+  }
+  .common-detail .item-info .title span {
+    margin-left: 15px;
+  }
+  .common-detail .item-info p {
+    padding-right: 0;
+  }
+  .common-detail .item-info img {
+    width: 100%;
+  }
+  .common-detail .link {
+    margin-left: 55px;
+    margin-right: 35px;
+    display: flex;
+  }
+  .common-detail .link a {
+    flex: 1;
+    padding: 10px 0;
+    margin-right: 8px;
+  }
+  .common-detail .footer {
+    padding-right: 0;
+  }
+  .common-detail .footer .right {
+    display: none;
+  }
+  .common-list {
+    margin-right: 0;
+  }
+  .common-list .top-left {
+    display: none;
+  }
+  .common-list .logo {
+    display: block;
+    height: 100px;
+    padding: 23px;
+    box-sizing: border-box;
+    -moz-box-shadow: 2px 2px 5px #c6c6c6;
+    -webkit-box-shadow: 2px 2px 5px #c6c6c6;
+    box-shadow: 2px 2px 5px #c6c6c6;
+  }
+  .common-list .logo img {
+    width: 160px;
+    height: 48px;
+  }
+  .common-list .list-content {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  .common-list .list-content .list {
+    font-size: 0;
+  }
+  .common-list .list-content .list li {
+    width: 50%;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-right: 1px solid #bcbcbc;
+  }
+  .common-list .list-content .list li img {
+    width: 100%;
+  }
+  .common-list .list-content .list li:nth-of-type(2),
+  .common-list .list-content .list li:nth-of-type(3n+5) {
+    width: 50%;
+    padding-right: 10px;
+  }
+  .common-list .list-content .list li:nth-of-type(2n+1) {
+    padding-left: 0;
+  }
+  .common-list .list-content .list li:nth-of-type(2n) {
+    border-right: none;
+    padding-right: 0;
+  }
+  .common-list .list-content .list li p {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .common-list .list-content .pagination {
+    margin-top: -80px;
+  }
+  .common-list .list-content .pagination li {
+    padding: 7px 10px;
+  }
+  .common-list .footer .left {
+    width: 100%;
+    text-align: center;
+  }
+  .common-list .footer .right {
+    display: none;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+  .tab {
+    margin-right: 10px;
+  }
+  .common-detail {
+    margin-right: 0;
+  }
+  .common-detail .base-info {
+    margin-right: 10px;
+  }
+  .common-detail .base-info .right {
+    padding-right: 20px;
+  }
+  .common-detail .base-info .right .info {
+    margin-right: 0;
+    line-height: 24px;
+  }
+  .common-detail .base-info .right .title {
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+  }
+  .common-detail .base-info .right .title h3 {
+    font-size: 28px;
+  }
+  .common-detail .base-info .right .title p {
+    line-height: 28px;
+  }
+  .common-detail .item-info {
+    margin-right: 30px;
+  }
+  .common-detail .item-info img {
+    width: 100%;
+  }
+  .common-detail .item-info p {
+    padding-right: 0;
+  }
+  .common-list {
+    margin-right: 0;
+  }
+  .common-list .top-left {
+    display: none;
+  }
+  .common-list .logo {
+    display: block;
+    height: 100px;
+    padding: 23px;
+    box-sizing: border-box;
+    -moz-box-shadow: 2px 2px 5px #c6c6c6;
+    -webkit-box-shadow: 2px 2px 5px #c6c6c6;
+    box-shadow: 2px 2px 5px #c6c6c6;
+  }
+  .common-list .logo img {
+    width: 160px;
+    height: 48px;
+  }
+  .common-list .list-content {
+    margin-right: 75px;
+  }
+  .common-list .list-content .list {
+    font-size: 0;
+  }
+  .common-list .list-content .list li {
+    width: 33%;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  .common-list .list-content .list li img {
+    width: 100%;
+  }
+  .common-list .list-content .list li:nth-of-type(2),
+  .common-list .list-content .list li:nth-of-type(3n+5) {
+    width: 33%;
+    padding-right: 10px;
+  }
+  .common-list .pagination li {
+    padding: 7px 10px;
+  }
+  .common-list .footer .left {
+    width: 100%;
+    text-align: center;
+  }
+  .common-list .footer .right {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+  .common-detail .base-info .right .info {
+    line-height: 32px;
+  }
+  .list-content {
+    margin-right: 45px;
+  }
+  .list-content .list {
+    font-size: 0;
+  }
+  .list-content .list li {
+    width: 33%;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  .list-content .list li img {
+    width: 100%;
+  }
+  .list-content .list li:nth-of-type(2),
+  .list-content .list li:nth-of-type(3n+5) {
+    width: 33%;
+    padding-right: 10px;
+  }
 }

@@ -1,3 +1,9 @@
+.about-master .page-top .zsp1-1200 {
+  display: none;
+}
+.about-master .page-top .zsp1-640 {
+  display: none;
+}
 .about-master .page-top .title h2 {
   letter-spacing: 0.1em;
 }
@@ -57,8 +63,7 @@
 .about-master .master-list ul.list li .right .des {
   margin-top: 60px;
   height: 150px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow-y: auto;
   color: #888;
   line-height: 30px;
 }
@@ -67,4 +72,118 @@
 }
 .about-master .master-list .pagination {
   margin: 90px 0;
+}
+@media screen and (max-width: 980px) {
+  .about-master .page-top {
+    position: relative;
+    height: 1136px;
+    overflow: hidden;
+  }
+  .about-master .page-top .zsp1 {
+    display: none;
+  }
+  .about-master .page-top .zsp1-1200 {
+    display: none;
+  }
+  .about-master .page-top .zsp1-640 {
+    display: block;
+  }
+  .about-master .page-top .top-info {
+    height: 100%;
+  }
+  .about-master .master-list {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+  }
+  .about-master .master-list ul.list li {
+    height: 279px;
+    margin-top: 40px;
+  }
+  .about-master .master-list ul.list li .left {
+    width: 200px;
+    margin-right: 15px;
+  }
+  .about-master .master-list ul.list li .left img {
+    width: 100%;
+  }
+  .about-master .master-list ul.list li .right {
+    width: 165px;
+  }
+  .about-master .master-list ul.list li .right .name {
+    font-size: 16px;
+  }
+  .about-master .master-list ul.list li .right .name span.family-name {
+    margin-right: 8px;
+  }
+  .about-master .master-list ul.list li .right .name span.en {
+    margin-left: 8px;
+    font-size: 14px;
+  }
+  .about-master .master-list ul.list li .right .des {
+    margin-top: 20px;
+    height: 130px;
+  }
+  .about-master .master-list ul.list li .right .link {
+    margin: 0;
+    margin-top: 25px;
+  }
+  .about-master .master-list ul.list li .right .link a {
+    padding: 8px 12px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 980px) {
+  .master-detail .lunbo .flex-direction-nav {
+    width: 85%;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+  .about-master .page-top {
+    position: relative;
+    height: 435px;
+    overflow: hidden;
+  }
+  .about-master .page-top .zsp1 {
+    display: none;
+  }
+  .about-master .page-top .zsp1-1200 {
+    display: block;
+    width: 100%;
+  }
+  .about-master .page-top .top-info {
+    height: 100%;
+  }
+  .about-master .master-list {
+    margin-left: 118px;
+    margin-right: 120px;
+    width: auto;
+  }
+  .about-master .master-list ul.list li .right {
+    width: 430px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+  .about-master .page-top {
+    position: relative;
+    height: 530px;
+    overflow: hidden;
+  }
+  .about-master .page-top .zsp1 {
+    display: none;
+  }
+  .about-master .page-top .zsp1-1200 {
+    display: block;
+    width: 100%;
+  }
+  .about-master .page-top .top-info {
+    height: 100%;
+  }
+  .about-master .master-list {
+    width: auto;
+    margin-right: 120px;
+    margin-left: 165px;
+  }
+  .about-master .master-list ul.list li .right {
+    width: 545px;
+  }
 }

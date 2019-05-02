@@ -6,7 +6,8 @@
     <title>木之森</title>
     <meta http-equiv="X-UA-Compatible" content="IE=8">
     <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <script>
         // rem
@@ -40,6 +41,8 @@
     <div class="about-master">
         <div class="page-top">
             <img class="zsp1" src="images/masterp1.jpg" alt="">
+            <img class="zsp1-1200" src="images/masterp1-1200.jpg" alt="">
+            <img class="zsp1-640" src="images/contactusp1-640.jpg" alt="">
             <div class="top-info">
                 <div class="logo"><img src="images/logo.png" alt=""></div>
                 <div class="title">
@@ -77,14 +80,63 @@
                         <img src="images/masterp2.jpg" alt="">
                     </div>
                     <div class="right">
-                        <div class="name"><span class="family-name">黄</span>志阳 <span class="en">huang zhiyang</span></div>
+                        <div class="name"><span class="family-name">黄</span>志阳 <span class="en">huang zhiyang</span>
+                        </div>
                         <div class="summary">首席香道师 制香师</div>
                         <div class="des">
                             木之森首席香道师，制香师，中国传统香学倡导者，跟随多位香学导师、中医名师悟道学香，立志于香与生活的链接。
-                                主张中国传统素养文化，将香、花、插融入到生活美学中，
-                                还原生活的简单与纯粹，回归本心.
+                            主张中国传统素养文化，将香、花、插融入到生活美学中，
+                            还原生活的简单与纯粹，回归本心.
                         </div>
-                        <div class="link text-left"><a href="">人物详情<img src="images/arrow-right.png" alt=""></a>  </div>
+                        <div class="link text-left"><a href="">人物详情<img src="images/arrow-right.png" alt=""></a> </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left">
+                        <img src="images/masterp2.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="name"><span class="family-name">黄</span>志阳 <span class="en">huang zhiyang</span>
+                        </div>
+                        <div class="summary">首席香道师 制香师</div>
+                        <div class="des">
+                            木之森首席香道师，制香师，中国传统香学倡导者，跟随多位香学导师、中医名师悟道学香，立志于香与生活的链接。
+                            主张中国传统素养文化，将香、花、插融入到生活美学中，
+                            还原生活的简单与纯粹，回归本心.
+                        </div>
+                        <div class="link text-left"><a href="">人物详情<img src="images/arrow-right.png" alt=""></a> </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left">
+                        <img src="images/masterp2.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="name"><span class="family-name">黄</span>志阳 <span class="en">huang zhiyang</span>
+                        </div>
+                        <div class="summary">首席香道师 制香师</div>
+                        <div class="des">
+                            木之森首席香道师，制香师，中国传统香学倡导者，跟随多位香学导师、中医名师悟道学香，立志于香与生活的链接。
+                            主张中国传统素养文化，将香、花、插融入到生活美学中，
+                            还原生活的简单与纯粹，回归本心.
+                        </div>
+                        <div class="link text-left"><a href="">人物详情<img src="images/arrow-right.png" alt=""></a> </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left">
+                        <img src="images/masterp2.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="name"><span class="family-name">黄</span>志阳 <span class="en">huang zhiyang</span>
+                        </div>
+                        <div class="summary">首席香道师 制香师</div>
+                        <div class="des">
+                            木之森首席香道师，制香师，中国传统香学倡导者，跟随多位香学导师、中医名师悟道学香，立志于香与生活的链接。
+                            主张中国传统素养文化，将香、花、插融入到生活美学中，
+                            还原生活的简单与纯粹，回归本心.
+                        </div>
+                        <div class="link text-left"><a href="">人物详情<img src="images/arrow-right.png" alt=""></a> </div>
                     </div>
                 </li>
             </ul>
@@ -98,7 +150,7 @@
                 <li>></li>
             </ul>
         </div>
-         <!--底部-->
+        <!--底部-->
         <div class="bottom">
             <div class="contact-info">
                 <div class="bottom-top">
@@ -131,20 +183,33 @@
             </div>
         </div>
         <!--底部 end-->
+        <div class="min-nav">
+            <div class="web-link">
+                <a href="">
+                    <img class="mt0" src="images/icon-cart.png" alt="">
+                    <span>官方商城</span>
+                </a>
+            </div>
+            <ul class="menus">
+                <li><a>木之森沉香</a></li>
+                <li><a>木之森美学馆</a></li>
+                <li><a>伍仟香业</a></li>
+            </ul>
+        </div>
     </div>
 </body>
 <script src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript">
-$('#pagination li').off('click').click(function(event) {
-    if ($(event.target).index() == 0) {
-        var index = $(event.target).siblings('.active').index();
-        if (index < $('#pagination li').length - 2){
-            $(event.target).siblings().eq(index).addClass('active').siblings().removeClass('active')
+    $('#pagination li').off('click').click(function (event) {
+        if ($(event.target).index() == 0) {
+            var index = $(event.target).siblings('.active').index();
+            if (index < $('#pagination li').length - 2) {
+                $(event.target).siblings().eq(index).addClass('active').siblings().removeClass('active')
+            }
+        } else if ($(event.target).index() != 0) {
+            $(event.target).addClass('active').siblings().removeClass('active');
         }
-    } else if ($(event.target).index() != 0) {
-        $(event.target).addClass('active').siblings().removeClass('active');
-    }
-})
+    })
 </script>
 
 </html>

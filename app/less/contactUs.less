@@ -1,54 +1,65 @@
-.contact-us{
-    .contact-content{
+.contact-us {
+    .contact-content {
         margin-right: 120px;
         padding-top: 80px;
         padding-bottom: 60px;
-        .beauty-hole{
+
+        .beauty-hole {
             position: relative;
             font-size: 0;
-            .left{
+
+            .left {
                 position: relative;
                 width: 50%;
-                .img{
-                    img{
+
+                .img {
+                    img {
                         width: 100%;
                     }
                 }
-                .info{
+
+                .info {
                     position: absolute;
                     width: 100%;
                     top: 50%;
                     left: 0;
                     margin-top: -145px;
                     text-align: center;
-                    h3{
+
+                    h3 {
                         font-size: 32px;
                         color: #fff;
                     }
-                    .address{
+
+                    .address {
                         margin-top: 15px;
                         margin-bottom: 60px;
                         font-size: 16px;
                         color: #fff;
                     }
-                    .person{
+
+                    .person {
                         margin-top: 35px;
                         margin-bottom: 20px;
-                        .name{
+
+                        .name {
                             margin-right: 15px;
                             font-size: 26px;
                             color: #fff;
                         }
-                        .phone{
+
+                        .phone {
                             font-size: 28px;
                             color: #fff;
                         }
                     }
-                    .time{
+
+                    .time {
                         font-size: 16px;
                         color: #fff;
-                        span{
-                            &:first-child:after{
+
+                        span {
+                            &:first-child:after {
                                 display: inline-block;
                                 content: '';
                                 width: 1px;
@@ -62,93 +73,554 @@
                     }
                 }
             }
-            .right{
+
+            .right {
                 position: absolute;
                 width: 50%;
                 height: 100%;
                 overflow: hidden;
                 right: 0;
                 top: 0;
-                img{
+
+                img {
                     width: 100%;
                 }
             }
         }
-        .outlets{
+
+        .outlets {
             position: relative;
-            .left{
+
+            .left {
                 width: 50%;
-                img{
+
+                img {
                     width: 100%;
                 }
             }
-            .right{
+            .min-left{
+                display: none;
+            }
+            .right {
                 position: absolute;
                 width: 50%;
                 height: 100%;
                 right: 0;
                 top: 0;
                 overflow: hidden;
-                .img{
-                    img{
+
+                .img {
+                    img {
                         width: 100%;
                     }
                 }
-                .info{
+
+                .info {
                     position: absolute;
                     top: 0;
                     left: 50%;
                     padding-top: 60px;
                     margin-left: -200px;
                     text-align: center;
-                    max-height: 465px;
-                    li{
-                        padding: 15px 10px;
-                        background: rgba(0, 0, 0, 0.4);
-                        border-bottom: 1px dashed #fff;
-                        .name{
-                            font-size: 26px;
-                            color: #fff;
-                            width: 100%;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
-                            white-space: nowrap;
-                            line-height: 40px;
-                        }
-                        .address{
-                            width: 100%;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
-                            white-space: nowrap;
-                            font-size: 16px;
-                            color: #fff;
-                            line-height: 30px;
-                        }
-                        .phone{
-                            color: #fff;
-                            font-size: 16px;
-                            line-height: 30px;
-                        }
-                    }
+                    // max-height: 465px;
                 }
-                .control{
+
+                .control {
                     position: absolute;
                     right: 45px;
                     top: 50%;
                     width: 16px;
-                    transform:translate(-50%,-50%);
-                    li{
+                    transform: translate(-50%, -50%);
+
+                    li {
                         display: block;
                         width: 14px;
                         height: 14px;
                         margin-bottom: 15px;
                         border-radius: 50%;
                         border: 1px solid #fff;
-                        &:last-child{
+
+                        &:last-child {
                             margin-bottom: 0;
                         }
-                        &.active{
+
+                        &.active {
                             background: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+    .page-top {
+        height: 1136px;
+        .zsp1, .zsp1-980 {
+            display: none;
+        }
+
+        .zsp1-1200 {
+            display: none;
+        }
+        .zsp1-640{
+            width: 100%;
+        }
+        .top-info{
+            height: 1136px;
+        }
+    }
+    .contact-us{
+        .contact-content{
+            margin-right: 0;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+            .beauty-hole{
+                .left{
+                    width: 100%;
+                    .info{
+                        h3{
+                            font-size: 28px;
+                        }
+                        .address{
+                            margin-top: 25px;
+                            margin-bottom: 50px;
+                        }
+                        .bus-time{
+                            display: none;
+                        }
+                    }
+                }
+                .right{
+                    position: static;
+                    width: 100%;
+                    overflow: hidden;
+                }
+            }
+            .outlets{
+                .left{
+                    display: none;
+                }
+                .min-left{
+                    display: block;
+                    width: 100%;
+                    overflow: hidden;
+                }
+                .right{
+                    position: static;
+                    width: 100%;
+                    .info{
+                        left: 0;
+                        width: 100%;
+                        padding: 0 100px;
+                        margin-left: 0;
+                        margin-top: 70px;
+                        box-sizing: border-box;
+                        text-align: left;
+                        .info-inner {
+                            li {
+                                padding: 20px;
+                                color: #fff;
+                                border-bottom: 1px dashed #fff;
+    
+                                .name {
+                                    font-size: 18px;
+                                    width: 100%;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    line-height: 40px;
+                                }
+    
+                                .address {
+                                    width: 100%;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    font-size: 14px;
+                                    line-height: 25px;
+                                }
+    
+                                .phone {
+                                    font-size: 14px;
+                                    line-height: 25px;
+                                }
+                                &.active{
+                                    background: rgba(0, 0, 0, 0.4);
+                                    color: #fff;
+                                }
+                            }
+                        }
+                        .flex-control-nav{
+                            top: 50%;
+                            bottom: auto;
+                            right: 45px;
+                            width: 15px;
+                            transform:translate(-50%,-50%);
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+    .page-top {
+        position: relative;
+        min-height: 434px;
+        overflow: hidden;
+        .zsp1 {
+            display: none;
+        }
+        .zsp1-980{
+            width: 100%;
+        }
+        .zsp1-1200 {
+            display: none;
+        }
+        .zsp1-640{
+            display: none;
+        }
+        .top-info {
+            height: 100%;
+        }
+    }
+    .contact-us {
+        .contact-content {
+            margin-right: 0;
+            .beauty-hole {
+                .left {
+                    .info {
+                        .tel {
+                            display: none;
+                        }
+
+                        .person {
+                            display: block;
+                        }
+
+                        .mid-person {
+                            display: none;
+                        }
+                        .bus-time{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .outlets{
+                .right{
+                    .info{
+                        padding-top: 60px;
+                        width: 100%;
+                        top: 0;
+                        left: 0;
+                        margin-left: 0;
+                        padding-left: 50px;
+                        padding-right: 50px;
+                        height: 100%;
+                        box-sizing: border-box;
+                        text-align: left;
+                        .info-inner {
+                            li {
+                                padding: 17px 15px;
+                                color: #fff;
+                                border-bottom: 1px dashed #fff;
+    
+                                .name {
+                                    font-size: 18px;
+                                    width: 100%;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    line-height: 40px;
+                                }
+    
+                                .address {
+                                    width: 100%;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    font-size: 14px;
+                                    line-height: 25px;
+                                }
+    
+                                .phone {
+                                    font-size: 14px;
+                                    line-height: 25px;
+                                }
+                                &.active{
+                                    background: rgba(0, 0, 0, 0.4);
+                                    color: #fff;
+                                }
+                                &:nth-of-type(3) {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .flex-control-nav{
+                            top: 0;
+                            right: 15px;
+                            width: 15px;
+                            height: 100%;
+                            padding-top: 30%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+    .page-top {
+        margin-right: 120px;
+
+        .zsp1, .zsp1-980 {
+            display: none;
+        }
+
+        .zsp1-1200 {
+            display: block;
+            width: 100%;
+        }
+        .zsp1-640{
+            display: none;
+        }
+        .top-info {
+            max-height: 613px;
+        }
+    }
+
+    .contact-us {
+        .contact-content {
+            padding-top: 20px;
+            .beauty-hole {
+                .left {
+                    .info {
+                        .tel {
+                            margin-bottom: 6px;
+                            font-size: 12px;
+                            color: #fff;
+                        }
+
+                        .mid-h3 {
+                            display: none;
+                        }
+
+                        .address {
+                            margin-bottom: 20px;
+                        }
+
+                        .person {
+                            display: none;
+                        }
+
+                        .mid-person {
+                            margin-top: 6px;
+                            margin-bottom: 6px;
+
+                            .name {
+                                margin-right: 15px;
+                                font-size: 26px;
+                                color: #fff;
+                            }
+
+                            span {
+                                font-size: 28px;
+                                color: #fff;
+                            }
+                        }
+
+                        .time {
+                            span {
+                                display: block;
+                                margin-top: 12px;
+
+                                &:first-child {
+                                    &::after {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .outlets {
+                .right {
+                    .info {
+                        text-align: left;
+                        padding-left: 90px;
+                        padding-right: 90px;
+                        left: 0;
+                        width: 100%;
+                        margin-left: 0;
+                        color: #fff;
+                        box-sizing: border-box;
+                        .info-inner {
+                            width: 100%;
+                            overflow: hidden;
+                            li {
+                                padding: 20px 40px;
+                                background: transparent;
+                                border-bottom: 1px dashed #fff;
+                                .name {
+                                    font-size: 18px;
+                                    line-height: 30px;
+                                }
+
+                                .address {
+                                    font-size: 12px;
+                                    line-height: 20px;
+                                }
+
+                                .phone {
+                                    font-size: 12px;
+                                    line-height: 20px;
+                                }
+
+                                &.active {
+                                    color: #ad8f6b;
+                                    ;
+                                }
+                            }
+                        }
+                        .flex-control-nav{
+                            bottom: -50px;
+                            left: 0;
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .page-top {
+        .zsp1 {
+            display: block;
+        }
+        .zsp1-1200, .zsp1-980 {
+            display: none;
+        }
+        .zsp1-640{
+            display: none;
+        }
+        .top-info {
+            max-height: 697px;
+        }
+    }
+    .contact-us .contact-content .beauty-hole .left .info .tel{
+        display: none;
+    }
+    .contact-us{
+        .contact-content{
+            .beauty-hole{
+                .left{
+                    .info{
+                        .person {
+                            margin-top: 35px;
+                            margin-bottom: 20px;
+                            display: block;
+                            .name {
+                                margin-right: 15px;
+                                font-size: 26px;
+                                color: #fff;
+                            }
+    
+                            .phone {
+                                font-size: 28px;
+                                color: #fff;
+                            }
+                        }
+                        .bus-time{
+                            display: none;
+                        }
+                        .mid-person{
+                            display: none;
+                        }
+                        .time {
+                            font-size: 16px;
+                            color: #fff;
+    
+                            span {
+                                display: inline-block;
+                                vertical-align: middle;
+                                &:first-child:after {
+                                    display: inline-block;
+                                    content: '';
+                                    width: 1px;
+                                    height: 14px;
+                                    vertical-align: middle;
+                                    margin-left: 10px;
+                                    margin-right: 3px;
+                                    background: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .outlets{
+                max-height: auto;
+                .right{
+                    .info{
+                        height: 100%;
+                        padding-top: 60px;
+                        max-height: auto;
+                        .info-inner {
+                            li {
+                                padding: 35px 30px;
+                                color: #fff;
+                                border-bottom: 1px dashed #fff;
+    
+                                .name {
+                                    font-size: 26px;
+                                    width: 100%;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    line-height: 40px;
+                                }
+    
+                                .address {
+                                    width: 100%;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    font-size: 16px;
+                                    line-height: 30px;
+                                }
+    
+                                .phone {
+                                    font-size: 16px;
+                                    line-height: 30px;
+                                }
+                                &.active{
+                                    background: rgba(0, 0, 0, 0.4);
+                                    color: #fff;
+                                }
+                            }
+                        }
+                        .flex-control-nav{
+                            top: 50%;
+                            right: 45px;
+                            left: auto;
+                            width: 15px;
+                            bottom: auto;
+                            transform:translate(-50%,-50%);
+                            text-align: center;
                         }
                     }
                 }

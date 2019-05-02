@@ -29,9 +29,10 @@
 .master-detail .introduce .inner {
   position: relative;
   width: 805px;
-  height: 460px;
+  min-height: 460px;
   padding-top: 100px;
   margin: 0 auto;
+  overflow-y: auto;
 }
 .master-detail .introduce .inner .left {
   color: #ac793c;
@@ -80,6 +81,9 @@
   color: #ac793c;
   vertical-align: middle;
 }
+.master-detail .lunbo .lunbo-box .min-masterdp1 {
+  display: none;
+}
 .master-detail .diproma {
   width: 805px;
   margin: 0 auto;
@@ -88,6 +92,7 @@
 }
 .master-detail .diproma h3 {
   margin-top: 40px;
+  font-size: 30px;
 }
 .master-detail .diproma p {
   margin-top: 30px;
@@ -102,4 +107,65 @@
 }
 .master-detail .link a:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 980px) {
+  .master-detail .lunbo .lunbo-box img {
+    display: none;
+  }
+  .master-detail .lunbo .lunbo-box img.min-masterdp1 {
+    display: block;
+  }
+  .master-detail .lunbo .flex-direction-nav {
+    width: 75%;
+  }
+  .master-detail .introduce {
+    margin-right: 0;
+  }
+  .master-detail .introduce .inner {
+    padding-top: 50px;
+    padding-left: 45px;
+    padding-right: 47px;
+    padding-bottom: 50px;
+    width: auto;
+  }
+  .master-detail .introduce .inner .right {
+    position: static;
+    margin-top: 47px;
+    width: auto;
+  }
+  .master-detail .diproma {
+    padding-left: 45px;
+    padding-right: 47px;
+    width: auto;
+  }
+  .master-detail .link {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  .master-detail .link a {
+    margin-right: 25px;
+    padding: 6px 12px;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+  .master-detail .introduce {
+    margin-top: 30px;
+    margin-right: 0;
+  }
+  .master-detail .introduce .inner {
+    margin-left: 135px;
+  }
+  .master-detail .diproma h3 {
+    font-size: 26px;
+  }
+}
+@media screen (min-width: 1920px) {
+  .master-detail .introduce {
+    margin-top: 37px;
+  }
+  .master-detail .lunbo .flex-direction-nav {
+    width: 86%;
+    left: 100px;
+  }
 }
