@@ -292,7 +292,7 @@ body {
   height: 61px;
 }
 .nav-bar{
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   z-index: 100;
@@ -737,6 +737,12 @@ body {
 }
 
 @media screen and (max-width: 980px) {
+  .lunbo .logo {
+    position: absolute;
+    top: 25px;
+    left: 22px;
+    z-index: 100;
+  }
   .nav-bar{
     height: 150px;
     background: transparent;
@@ -930,9 +936,13 @@ body {
   }
   .introduction .part .text li{
     padding: 0 10px;
+    height: 510px;
   }
   .introduction .part .text li:first-child{
     margin-top: 20px;
+  }
+  .introduction .part .text li.texts{
+    height: auto;
   }
   .bottom li.left{
     margin-right: 0;
@@ -1117,6 +1127,9 @@ body {
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1920px) {
+  .nav-bar{
+    position: fixed;
+  }
   .bottom{
     margin-right: 120px;
     width: auto;
