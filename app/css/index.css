@@ -971,9 +971,12 @@ body {
   }
   .bottom li.right{
     width: 100%;
+    box-sizing: content-box;
+    min-height:auto;
   }
   .bottom .right .text{
-    width: 465px;
+    width: auto;
+    padding: 0 10px;
   }
   .bottom li.right li .date, .bottom li.right li .divider, .bottom li.right li .label{
     display: none;
@@ -984,8 +987,15 @@ body {
   .contact-info .bottom-left{
     display: none;
   }
+  .scroll-wrap{
+    margin-top:2px;
+  }
   .scroll-wrap li img{
-    height: 125px;
+    height: auto;
+    width: calc(100% - 1px);
+  }
+  .scroll-wrap li:last-child img{
+    width: 100%;
   }
 }
 
