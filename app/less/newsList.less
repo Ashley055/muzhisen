@@ -69,10 +69,10 @@
                         font-size: 24px;
                         color: #333;
                     }
-
+                    .info-content{
+                        margin-top: 35px;
+                    }
                     p {
-                        margin-top: 38px;
-                        margin-bottom: 70px;
                         font-size: 14px;
                         color: #666;
                         line-height: 30px;
@@ -95,7 +95,10 @@
                     left: 0;
                     bottom: 0;
                     z-index: 3;
-
+                    .left-info{
+                        height: 185px;
+                        overflow-y: auto;
+                    }
                     h3 {
                         margin-bottom: 70px;
                     }
@@ -114,7 +117,6 @@
         }
 
         .list {
-            margin-right: 143px;
             font-size: 0;
 
             li {
@@ -181,6 +183,70 @@
 
 }
 @media screen and (min-width: 1200px) and (max-width: 1920px) {
-
+    .news-list{
+        .news-content{
+            margin-left: 15px;
+            .hot{
+                li{
+                    margin-right: 15px;
+                    height: 528px;
+                    &:nth-of-type(odd) .left,&:nth-of-type(even) .right{
+                        max-width: 765px;
+                        height: 528px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    &:nth-of-type(even) .left, &:nth-of-type(odd) .right{
+                        width: 566px;
+                        padding: 30px;
+                        height: auto;
+                        right: 0;
+                        box-sizing: border-box;
+                        .info-content{
+                            height: 160px;
+                            overflow-y: auto;
+                        }
+                    }
+                    &:nth-of-type(even){
+                        height: 400px;
+                        .left{
+                            width: 392px;
+                            padding-left: 15px;
+                            padding-bottom: 0;
+                            h3{
+                                margin-bottom: 45px;
+                            }
+                            .link{
+                                margin-top: 30px;
+                                margin-bottom: 15px;
+                            }
+                            .left-info{
+                                height: 165px;
+                            }
+                        }
+                        .right{
+                            height: 100%;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .list{
+                li{
+                    min-height: 248px;
+                    .inner{
+                        height: 248px;
+                    }
+                    .img{
+                        height: 188px;
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (min-width: 1920px) {}
