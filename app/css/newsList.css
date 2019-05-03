@@ -47,7 +47,7 @@
 .news-list .news-content .hot li:nth-of-type(even) .left,
 .news-list .news-content .hot li:nth-of-type(odd) .right {
   padding: 50px;
-  width: 660px;
+  width: 560px;
   height: 550px;
   background: #fff;
   box-sizing: border-box;
@@ -57,10 +57,12 @@
   font-size: 24px;
   color: #333;
 }
+.news-list .news-content .hot li:nth-of-type(even) .left .info-content,
+.news-list .news-content .hot li:nth-of-type(odd) .right .info-content {
+  margin-top: 35px;
+}
 .news-list .news-content .hot li:nth-of-type(even) .left p,
 .news-list .news-content .hot li:nth-of-type(odd) .right p {
-  margin-top: 38px;
-  margin-bottom: 70px;
   font-size: 14px;
   color: #666;
   line-height: 30px;
@@ -80,6 +82,10 @@
   bottom: 0;
   z-index: 3;
 }
+.news-list .news-content .hot li:nth-of-type(even) .left .left-info {
+  height: 185px;
+  overflow-y: auto;
+}
 .news-list .news-content .hot li:nth-of-type(even) .left h3 {
   margin-bottom: 70px;
 }
@@ -92,7 +98,6 @@
   margin-top: 90px;
 }
 .news-list .news-content .list {
-  margin-right: 143px;
   font-size: 0;
 }
 .news-list .news-content .list li {
@@ -141,4 +146,176 @@
 .news-list .news-content .pagination {
   margin-top: 70px;
   margin-bottom: 100px;
+}
+@media screen and (max-width: 980px) {
+  .news-list .news-content {
+    margin-right: 15px;
+  }
+  .news-list .news-content .hot {
+    display: none;
+  }
+  .news-list .news-content .list li {
+    width: 50%;
+    min-height: 182px;
+  }
+  .news-list .news-content .list li .inner {
+    height: 182px;
+  }
+  .news-list .news-content .list li .img {
+    height: 122px;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+  .news-list .news-content {
+    margin-right: 0;
+  }
+  .news-list .news-content .hot li {
+    height: 462px;
+    margin-right: 0;
+  }
+  .news-list .news-content .hot li:nth-of-type(odd) .left,
+  .news-list .news-content .hot li:nth-of-type(even) .right {
+    width: 672px;
+    height: 462px;
+  }
+  .news-list .news-content .hot li:nth-of-type(even) {
+    height: 462px;
+  }
+  .news-list .news-content .hot li:nth-of-type(even) .left,
+  .news-list .news-content .hot li:nth-of-type(odd) .right {
+    padding: 30px;
+    width: 384px;
+    height: 290px;
+  }
+  .news-list .news-content .hot li:nth-of-type(even) .left h3,
+  .news-list .news-content .hot li:nth-of-type(odd) .right h3 {
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+  .news-list .news-content .hot li:nth-of-type(even) .left h3.mb0,
+  .news-list .news-content .hot li:nth-of-type(odd) .right h3.mb0 {
+    margin-bottom: 0;
+  }
+  .news-list .news-content .hot li:nth-of-type(even) .left .info-content,
+  .news-list .news-content .hot li:nth-of-type(odd) .right .info-content {
+    margin-top: 18px;
+    height: 150px;
+    overflow-y: auto;
+  }
+  .news-list .news-content .hot li:nth-of-type(even) .left .left-info,
+  .news-list .news-content .hot li:nth-of-type(odd) .right .left-info {
+    height: 137px;
+  }
+  .news-list .news-content .hot li:nth-of-type(even) .left .link,
+  .news-list .news-content .hot li:nth-of-type(odd) .right .link {
+    margin-top: 28px;
+  }
+  .news-list .news-content .list {
+    font-size: 0;
+  }
+  .news-list .news-content .list li {
+    width: 33%;
+    min-height: 288px;
+  }
+  .news-list .news-content .list li .inner {
+    height: 288px;
+  }
+  .news-list .news-content .list li .img {
+    height: 228px;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1200px) and screen and (min-width: 1200px) and (max-width: 1920px) {
+  .news-list .news-content {
+    margin-left: 15px;
+  }
+  .news-list .news-content .hot li {
+    margin-right: 15px;
+    height: 528px;
+  }
+  .news-list .news-content .hot li:nth-of-type(odd) .left,
+  .news-list .news-content .hot li:nth-of-type(even) .right {
+    max-width: 765px;
+    height: 528px;
+  }
+  .news-list .news-content .hot li:nth-of-type(odd) .left img,
+  .news-list .news-content .hot li:nth-of-type(even) .right img {
+    width: 100%;
+    height: 100%;
+  }
+  .news-list .news-content .hot li:nth-of-type(even) .left,
+  .news-list .news-content .hot li:nth-of-type(odd) .right {
+    height: auto;
+  }
+  .news-list .news-content .hot li:nth-of-type(even) .left .info-content,
+  .news-list .news-content .hot li:nth-of-type(odd) .right .info-content {
+    height: 160px;
+    overflow-y: auto;
+  }
+  .news-list .news-content .hot li:nth-of-type(even) {
+    height: 400px;
+  }
+  .news-list .news-content .hot li:nth-of-type(even) .left {
+    width: 392px;
+    padding-left: 15px;
+    padding-bottom: 0;
+  }
+  .news-list .news-content .hot li:nth-of-type(even) .left h3 {
+    margin-bottom: 45px;
+  }
+  .news-list .news-content .hot li:nth-of-type(even) .left .link {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  .news-list .news-content .hot li:nth-of-type(even) .left .left-info {
+    height: 165px;
+  }
+  .news-list .news-content .hot li:nth-of-type(even) .right {
+    height: 100%;
+  }
+  .news-list .news-content .hot li:nth-of-type(even) .right img {
+    width: 100%;
+  }
+  .news-list .news-content .list li {
+    min-height: 248px;
+  }
+  .news-list .news-content .list li .inner {
+    height: 248px;
+  }
+  .news-list .news-content .list li .img {
+    height: 188px;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1200px) and screen and (min-width: 1920px) {
+  .news-list .news-content .hot li {
+    height: 872px;
+  }
+  .news-list .news-content .hot li:nth-of-type(odd) .left,
+  .news-list .news-content .hot li:nth-of-type(even) .right {
+    display: inline-block;
+    width: 1264px;
+    height: 100%;
+    max-width: 1264px;
+  }
+  .news-list .news-content .hot li:nth-of-type(odd) .left img,
+  .news-list .news-content .hot li:nth-of-type(even) .right img {
+    width: 100%;
+    height: 100%;
+  }
+  .news-list .news-content .hot li:nth-of-type(even) .left,
+  .news-list .news-content .hot li:nth-of-type(odd) .right {
+    width: 566px;
+    padding: 30px;
+    height: auto;
+    right: 0;
+    box-sizing: border-box;
+  }
+  .news-list .news-content .hot li:nth-of-type(even) {
+    height: 661px;
+  }
+  .news-list .news-content .list li .inner {
+    height: 369px;
+  }
+  .news-list .news-content .list li .img {
+    height: 309px;
+  }
 }
