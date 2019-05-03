@@ -50,29 +50,75 @@
                     <p class="sub-title">Membership in a merchant</p>
                 </div>
             </div>
-            <!--右侧菜单-->
-            <div class="nav-bar">
-                <div>
-                    <img src="images/menu-collap.png" alt="">
-                </div>
-                <p class="menu-text">导 航 菜 单</p>
-                <h3 class="label">木之森香文化</h3>
-                <p class="des">始于
-                    <span>2007</span>年</p>
-                <ul class="menus">
-                    <li><a>木之森沉香</a></li>
-                    <li><a>木之森美学馆</a></li>
-                    <li><a>伍仟香业</a></li>
-                </ul>
-                <div class="web-link">
-                    <a href="">
-                        <img src="images/icon-cart.png" alt="">
-                        <span>官方商城</span>
-                    </a>
-                </div>
-            </div>
-            <!--右侧菜单 end-->
         </div>
+        <!--右侧菜单-->
+        <div class="nav-bar">
+            <div class="control-nav">
+                <img src="images/menu-collap.png" alt="">
+            </div>
+            <p class="menu-text control-nav">导 航 菜 单</p>
+            <h3 class="label">木之森香文化</h3>
+            <p class="des">
+                始于
+                <span class="rotate90">2007</span>
+                年
+            </p>
+            <ul class="menus">
+                <li><a>木之森沉香</a></li>
+                <li><a>木之森美学馆</a></li>
+                <li><a>伍仟香业</a></li>
+            </ul>
+            <div class="web-link">
+                <a href="">
+                    <img src="images/icon-cart.png" alt="">
+                    <span>官方商城</span>
+                </a>
+            </div>
+        </div>
+        <!--右侧菜单 end-->
+        <!-- 弹开的菜单 start -->
+        <div class="pop-menu">
+            <div class="close"></div>
+            <ul>
+                <li>
+                    <a href="http://localhost:9000/index.html">
+                    </a>
+                    <div class="han1"></div>
+                    <div class="text">首页</div>
+                </li>
+                <li>
+                    <a href="http://localhost:9000/aboutUs.html">
+                    </a>
+                    <div class="han2"></div>
+                    <div class="text">关于我们</div>
+                </li>
+                <li>
+                    <a href="http://localhost:9000/aboutBeauty.html">
+                    </a>
+                    <div class="han3"></div>
+                    <div class="text"> 生活美学</div>
+                </li>
+                <li>
+                    <a href="http://localhost:9000/aboutPartner.html">
+                    </a>
+                    <div class="han4"></div>
+                    <div class="text">招商加盟</div>
+                </li>
+                <li>
+                    <a href="http://localhost:9000/index.html">
+                    </a>
+                    <div class="han5"></div>
+                    <div class="text">新闻资讯</div>
+                </li>
+                <li>
+                    <a href="http://localhost:9000/index.html">
+                    </a>
+                    <div class="han6"></div>
+                    <div class="text">联系我们</div>
+                </li>
+            </ul>
+        </div>
+        <!-- 弹开的菜单 end -->
         <div class="master-list">
             <ul class="list">
                 <li>
@@ -200,6 +246,12 @@
 </body>
 <script src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript">
+    $('.control-nav').off('click').click(function () {
+        $('.pop-menu').addClass('show')
+    })
+    $('.close').off('click').click(function () {
+        $('.pop-menu').removeClass('show')
+    })
     $('#pagination li').off('click').click(function (event) {
         if ($(event.target).index() == 0) {
             var index = $(event.target).siblings('.active').index();
