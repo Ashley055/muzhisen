@@ -90,31 +90,12 @@
                                         <div class="address">地址：<span>福建省厦门市思明区禾祥西路927号木之森门店</span></div>
                                         <div class="phone">联系电话：<span>15710667829</span></div>
                                     </li>
-                                    <li>
-                                        <div class="name">木之森直营店（厦门店）</div>
-                                        <div class="address">地址：<span>福建省厦门市思明区禾祥西路927号木之森门店</span></div>
-                                        <div class="phone">联系电话：<span>15710667829</span></div>
-                                    </li>
-                                    <li>
-                                        <div class="name">木之森直营店（厦门店）</div>
-                                        <div class="address">地址：<span>福建省厦门市思明区禾祥西路927号木之森门店</span></div>
-                                        <div class="phone">联系电话：<span>15710667829</span></div>
-                                    </li>
+                                
                                 </ul>
                             </li>
                             <li>
                                 <ul class="info-inner">
                                     <li class="active">
-                                        <div class="name">木之森直营店（厦门店）</div>
-                                        <div class="address">地址：<span>福建省厦门市思明区禾祥西路927号木之森门店</span></div>
-                                        <div class="phone">联系电话：<span>15710667829</span></div>
-                                    </li>
-                                    <li>
-                                        <div class="name">木之森直营店（厦门店）</div>
-                                        <div class="address">地址：<span>福建省厦门市思明区禾祥西路927号木之森门店</span></div>
-                                        <div class="phone">联系电话：<span>15710667829</span></div>
-                                    </li>
-                                    <li>
                                         <div class="name">木之森直营店（厦门店）</div>
                                         <div class="address">地址：<span>福建省厦门市思明区禾祥西路927号木之森门店</span></div>
                                         <div class="phone">联系电话：<span>15710667829</span></div>
@@ -177,10 +158,12 @@
             $('.pop-menu').removeClass('show')
         })
 
-        var width = window.screen.width;
+        var width = parseInt(window.screen.width);
         var slideDirection = "horizontal";
-        if (parseInt(width) >= 1920) {
+        if (width >= 1920) {
             slideDirection = "vertical";
+        } else if (width <= 400) {
+
         }
         //flash
         $('.flexslider').flexslider({
@@ -191,6 +174,8 @@
             slideshowSpeed: 3000,
             move: 1,
             animationSpeed: 2000,
+            minItems: 1,
+            maxItems: 1,
             touch: true,
             prevText: '',
             nextText: '',

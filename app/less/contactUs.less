@@ -98,9 +98,11 @@
                     width: 100%;
                 }
             }
-            .min-left{
+
+            .min-left {
                 display: none;
             }
+
             .right {
                 position: absolute;
                 width: 50%;
@@ -156,64 +158,78 @@
 
 
 @media screen and (max-width: 980px) {
+    .top-info .logo {
+        padding-left: 22px;
+        padding-top: 25px;
+    }
+
     .page-top {
-        height: 1136px;
-        .zsp1, .zsp1-980 {
+        height: auto;
+
+        .zsp1,
+        .zsp1-980 {
             display: none;
         }
 
         .zsp1-1200 {
             display: none;
         }
-        .zsp1-640{
+
+        .zsp1-640 {
             width: 100%;
         }
-        .top-info{
-            height: 1136px;
+
+        .top-info {
+            height: 100%;
         }
     }
-    .contact-us{
-        .contact-content{
+
+    .contact-us {
+        .contact-content {
             margin-right: 0;
             padding-bottom: 20px;
             padding-top: 20px;
             padding-left: 15px;
             padding-right: 15px;
-            .beauty-hole{
-                .left{
+
+            .beauty-hole {
+                .left {
                     width: 100%;
-                    .info{
-                        h3{
+
+                    .info {
+                        h3 {
                             font-size: 28px;
                         }
-                        .address{
-                            margin-top: 25px;
-                            margin-bottom: 50px;
-                        }
-                        .bus-time{
+
+                        .bus-time {
                             display: none;
                         }
                     }
                 }
-                .right{
+
+                .right {
                     position: static;
                     width: 100%;
                     overflow: hidden;
                 }
             }
-            .outlets{
-                .left{
+
+            .outlets {
+                .left {
                     display: none;
                 }
-                .min-left{
+
+                .min-left {
                     display: block;
                     width: 100%;
                     overflow: hidden;
                 }
-                .right{
+
+                .right {
                     position: static;
                     width: 100%;
-                    .info{
+
+                    .info {
                         left: 0;
                         width: 100%;
                         padding: 0 100px;
@@ -221,12 +237,13 @@
                         margin-top: 70px;
                         box-sizing: border-box;
                         text-align: left;
+
                         .info-inner {
                             li {
                                 padding: 20px;
                                 color: #fff;
                                 border-bottom: 1px dashed #fff;
-    
+
                                 .name {
                                     font-size: 18px;
                                     width: 100%;
@@ -235,7 +252,7 @@
                                     white-space: nowrap;
                                     line-height: 40px;
                                 }
-    
+
                                 .address {
                                     width: 100%;
                                     overflow: hidden;
@@ -244,29 +261,49 @@
                                     font-size: 14px;
                                     line-height: 25px;
                                 }
-    
+
                                 .phone {
                                     font-size: 14px;
                                     line-height: 25px;
                                 }
-                                &.active{
+
+                                &.active {
                                     background: rgba(0, 0, 0, 0.4);
                                     color: #fff;
                                 }
                             }
                         }
-                        .flex-control-nav{
+
+                        .flex-control-nav {
                             top: 50%;
                             bottom: auto;
                             right: 45px;
                             width: 15px;
-                            transform:translate(-50%,-50%);
+                            transform: translate(-50%, -50%);
                             text-align: center;
                         }
                     }
                 }
             }
         }
+    }
+
+    .contact-us .contact-content .beauty-hole .left .info {
+        position: absolute;
+        width: 100%;
+        // top: 50%;
+        left: 0;
+        margin-top: -100px;
+        text-align: center;
+    }
+    .contact-us .contact-content .beauty-hole .left .info .address{
+        margin-bottom: 20px;
+    }
+    .contact-us .contact-content .beauty-hole .left .info .person{
+        margin: 10px 0;
+    }
+    .contact-us .contact-content .outlets .right .info{
+        padding: 0;
     }
 }
 
@@ -275,25 +312,32 @@
         position: relative;
         min-height: 434px;
         overflow: hidden;
+
         .zsp1 {
             display: none;
         }
-        .zsp1-980{
+
+        .zsp1-980 {
             width: 100%;
         }
+
         .zsp1-1200 {
             display: none;
         }
-        .zsp1-640{
+
+        .zsp1-640 {
             display: none;
         }
+
         .top-info {
             height: 100%;
         }
     }
+
     .contact-us {
         .contact-content {
             margin-right: 0;
+
             .beauty-hole {
                 .left {
                     .info {
@@ -308,15 +352,17 @@
                         .mid-person {
                             display: none;
                         }
-                        .bus-time{
+
+                        .bus-time {
                             display: none;
                         }
                     }
                 }
             }
-            .outlets{
-                .right{
-                    .info{
+
+            .outlets {
+                .right {
+                    .info {
                         padding-top: 60px;
                         width: 100%;
                         top: 0;
@@ -327,12 +373,13 @@
                         height: 100%;
                         box-sizing: border-box;
                         text-align: left;
+
                         .info-inner {
                             li {
                                 padding: 17px 15px;
                                 color: #fff;
                                 border-bottom: 1px dashed #fff;
-    
+
                                 .name {
                                     font-size: 18px;
                                     width: 100%;
@@ -341,7 +388,7 @@
                                     white-space: nowrap;
                                     line-height: 40px;
                                 }
-    
+
                                 .address {
                                     width: 100%;
                                     overflow: hidden;
@@ -350,21 +397,24 @@
                                     font-size: 14px;
                                     line-height: 25px;
                                 }
-    
+
                                 .phone {
                                     font-size: 14px;
                                     line-height: 25px;
                                 }
-                                &.active{
+
+                                &.active {
                                     background: rgba(0, 0, 0, 0.4);
                                     color: #fff;
                                 }
+
                                 &:nth-of-type(3) {
                                     display: none;
                                 }
                             }
                         }
-                        .flex-control-nav{
+
+                        .flex-control-nav {
                             top: 0;
                             right: 15px;
                             width: 15px;
@@ -383,7 +433,8 @@
     .page-top {
         margin-right: 120px;
 
-        .zsp1, .zsp1-980 {
+        .zsp1,
+        .zsp1-980 {
             display: none;
         }
 
@@ -391,9 +442,11 @@
             display: block;
             width: 100%;
         }
-        .zsp1-640{
+
+        .zsp1-640 {
             display: none;
         }
+
         .top-info {
             max-height: 613px;
         }
@@ -402,6 +455,7 @@
     .contact-us {
         .contact-content {
             padding-top: 20px;
+
             .beauty-hole {
                 .left {
                     .info {
@@ -466,13 +520,16 @@
                         margin-left: 0;
                         color: #fff;
                         box-sizing: border-box;
+
                         .info-inner {
                             width: 100%;
                             overflow: hidden;
+
                             li {
                                 padding: 20px 40px;
                                 background: transparent;
                                 border-bottom: 1px dashed #fff;
+
                                 .name {
                                     font-size: 18px;
                                     line-height: 30px;
@@ -494,7 +551,8 @@
                                 }
                             }
                         }
-                        .flex-control-nav{
+
+                        .flex-control-nav {
                             bottom: -50px;
                             left: 0;
                             text-align: right;
@@ -511,52 +569,63 @@
         .zsp1 {
             display: block;
         }
-        .zsp1-1200, .zsp1-980 {
+
+        .zsp1-1200,
+        .zsp1-980 {
             display: none;
         }
-        .zsp1-640{
+
+        .zsp1-640 {
             display: none;
         }
+
         .top-info {
             max-height: 697px;
         }
     }
-    .contact-us .contact-content .beauty-hole .left .info .tel{
+
+    .contact-us .contact-content .beauty-hole .left .info .tel {
         display: none;
     }
-    .contact-us{
-        .contact-content{
-            .beauty-hole{
-                .left{
-                    .info{
+
+    .contact-us {
+        .contact-content {
+            .beauty-hole {
+                .left {
+                    .info {
                         .person {
                             margin-top: 35px;
                             margin-bottom: 20px;
                             display: block;
+
                             .name {
                                 margin-right: 15px;
                                 font-size: 26px;
                                 color: #fff;
                             }
-    
+
                             .phone {
                                 font-size: 28px;
                                 color: #fff;
                             }
                         }
-                        .bus-time{
+
+                        .bus-time {
                             display: none;
                         }
-                        .mid-person{
+
+                        .mid-person {
                             display: none;
                         }
+
                         .time {
                             font-size: 16px;
                             color: #fff;
-    
+
                             span {
                                 display: inline-block;
                                 vertical-align: middle;
+
                                 &:first-child:after {
                                     display: inline-block;
                                     content: '';
@@ -572,19 +641,22 @@
                     }
                 }
             }
-            .outlets{
+
+            .outlets {
                 max-height: auto;
-                .right{
-                    .info{
+
+                .right {
+                    .info {
                         height: 100%;
                         padding-top: 60px;
                         max-height: auto;
+
                         .info-inner {
                             li {
                                 padding: 35px 30px;
                                 color: #fff;
                                 border-bottom: 1px dashed #fff;
-    
+
                                 .name {
                                     font-size: 26px;
                                     width: 100%;
@@ -593,7 +665,7 @@
                                     white-space: nowrap;
                                     line-height: 40px;
                                 }
-    
+
                                 .address {
                                     width: 100%;
                                     overflow: hidden;
@@ -602,24 +674,26 @@
                                     font-size: 16px;
                                     line-height: 30px;
                                 }
-    
+
                                 .phone {
                                     font-size: 16px;
                                     line-height: 30px;
                                 }
-                                &.active{
+
+                                &.active {
                                     background: rgba(0, 0, 0, 0.4);
                                     color: #fff;
                                 }
                             }
                         }
-                        .flex-control-nav{
+
+                        .flex-control-nav {
                             top: 50%;
                             right: 45px;
                             left: auto;
                             width: 15px;
                             bottom: auto;
-                            transform:translate(-50%,-50%);
+                            transform: translate(-50%, -50%);
                             text-align: center;
                         }
                     }
