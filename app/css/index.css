@@ -447,6 +447,7 @@ body {
   color: #fff;
   font-size: 16px;
   box-sizing: border-box;
+  overflow: hidden;
   background: rgba(0, 0, 0, 0.4);
 }
 .introduction .part.chenx-culture{
@@ -558,9 +559,19 @@ body {
   background: linear-gradient(#eee, #eee); /* 标准的语法 */
 }
 .bottom .title{
+  position: relative;
   font-size: 32px;
   color: #020202;
   letter-spacing: 0.3em;
+}
+.bottom .title::before{
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 1px;
+  height: 180px;
+  content: '';
+  background: #333;
 }
 .bottom .sub-title{
   margin-top: 5px;
@@ -586,6 +597,10 @@ body {
   padding: 15px 0;
   border-bottom: 1px solid #ccc;
   text-align: left;
+}
+.link.home{
+  margin-top: 85px;
+  margin-bottom: 80px;
 }
 .bottom li.right{
   display: inline-block;
@@ -1168,6 +1183,32 @@ body {
     padding-right: 120px;
     box-sizing: border-box;
   }
+  .introduction.pr130{
+    padding-right: 130px;
+  }
+  .introduction .part.introd1{
+    height: 400px;
+  }
+  .introduction .part.introd1 .text{
+    padding-top: 65px;
+  }
+  .introduction .part.chenx-culture .pic-text.introd1{
+    height: 321px;
+  }
+  .introduction .part.chenx-culture .pic-text.introd1 img.w100{
+    height: 100%;
+    width: 100%;
+  }
+  .introduction .part.chenx-culture .text{
+    padding-top: 60px;
+    height: 100%;
+    width: 100%;
+    padding-right: 120px;
+  }
+  .introduction .part.chenx-culture .sig{
+    width: 43px;
+    height: 129px;
+  }
   .bottom .sub-title{
     margin-bottom: 105px;
   }
@@ -1269,9 +1310,6 @@ body {
   .introduction .part.chenx-culture.beauty .text{
     padding-top: 60px;
   }
-  .introduction .part.chenx-culture .text{
-    padding-right: 540px;
-  }
   .introduction .part .scroll-wrap img{
     margin-left: 0;
     width: 207px;
@@ -1365,5 +1403,27 @@ body {
   .scroll-wrap{
     width: 1729px;
     overflow: hidden;
+  }
+  .bottom li.right{
+    width: 1200px;
+    text-align: left;
+  }
+  .bottom li.left{
+    margin-right: 210px;
+  }
+  .bottom .sub-title{
+    margin-bottom: 113px;
+  }
+  .bottom .right .text{
+    width: 740px;
+  }
+  .bottom .right .label{
+    display: block;
+  }
+  .bottom li{
+    width: 100%
+  }
+  .bottom .contact-info .bottom-right li{
+    width: auto;
   }
 }
