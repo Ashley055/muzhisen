@@ -975,8 +975,8 @@ body {
     min-height:auto;
   }
   .bottom .right .text{
-    width: auto;
-    padding: 0 10px;
+    width: 100vw;
+    box-sizing: content-box;
   }
   .bottom li.right li .date, .bottom li.right li .divider, .bottom li.right li .label{
     display: none;
