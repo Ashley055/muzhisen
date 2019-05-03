@@ -263,9 +263,21 @@
 
             .top-info {
                 .info {
-                    top: 100px;
+                    top: 169px;
                     right: 110px;
+                    li{
+                        font-size: 20px;
+                        width: 22px;
+                        margin-left: 25px;
+                        &:last-child{
+                            font-size: 30px;
+                            margin-left: 25px;
+                        }
+                    }
                 }
+            }
+            .news{
+                display: none;
             }
         }
 
@@ -285,13 +297,20 @@
                 position: static;
                 width: 100%;
                 height: auto;
-
+                padding-top: 95px;
+                padding-bottom: 75px;
+                background: url(../images/fiveSp3.jpg) right top no-repeat;
+                background-size: 100% 100%;
                 .inner {
                     padding-top: 145px;
                     margin-top: 0;
                     min-height: auto;
                     padding: 0 10px;
                     width: auto;
+                    .text{
+                        height: 210px;
+                        overflow-y: auto;
+                    }
                 }
             }
         }
@@ -301,6 +320,13 @@
 
             li.item {
                 margin-right: 0;
+                padding-bottom: 65px;
+            }
+            .bg{
+                height: 219px;
+            }
+            .flex-control-nav{
+                display: none;
             }
         }
 
@@ -502,5 +528,28 @@
                 height: 350px;
             }
         }
+    }
+    .five-thousand .five-summery .left .img{
+        width: 100%;
+    }
+    .five-thousand .five-summery .right{
+        background-size: 100%;
+    }
+    .five-thousand .five-summery .right .inner{
+        margin-top: 100px;
+        min-height: auto;
+        padding-left:80px;
+        padding-right: 45px;
+    }
+    .five-thousand .five-summery .right .inner .text{
+        font-size: 14px;
+        height: 220px;
+        overflow: auto;
+    }
+    .five-thousand .five-summery .right p{
+        font-size: 14px;
+    }
+    .five-thousand .five-summery{
+        height: auto;
     }
 }
