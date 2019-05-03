@@ -130,7 +130,14 @@
 </body>
 <script src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript">
-
+    $(function () {
+        $('.control-nav').off('click').click(function () {
+            $('.pop-menu').addClass('show')
+        })
+        $('.close').off('click').click(function () {
+            $('.pop-menu').removeClass('show')
+        })
+    })
 </script>
 
 </html>
