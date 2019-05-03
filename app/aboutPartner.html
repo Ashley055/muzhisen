@@ -36,7 +36,7 @@
             <p class="menu-text control-nav">导 航 菜 单</p>
             <h3 class="label">木之森香文化</h3>
             <p class="des">始于
-                <span>2007</span>年</p>
+                <span class="rotate90">2007</span>年</p>
             <ul class="menus">
                 <li><a>木之森沉香</a></li>
                 <li><a>木之森美学馆</a></li>
@@ -150,17 +150,31 @@
                 <div class="left">
                     <img src="images/zsp3.jpg" alt="">
                 </div>
-                <div class="right">
-                    <ul class="advantages">
-                        <li>•卐• 良好的预备机制</li>
-                        <li>•卐• 产地化、规模化的生产</li>
-                        <li>•卐• 完善的培训指导模式 </li>
-                        <li>•卐• 成熟的运营模式</li>
-                        <li>•卐• 统一的营销模式</li>
-                        <li>经营优势：</li>
-                        <li>加盟优势</li>
+                <div class="right flexslider">
+                    <ul class="slides">
+                        <li>
+                            <ul class="advantages">
+                                <li>•卐• 良好的预备机制</li>
+                                <li>•卐• 产地化、规模化的生产</li>
+                                <li>•卐• 完善的培训指导模式 </li>
+                                <li>•卐• 成熟的运营模式</li>
+                                <li>•卐• 统一的营销模式</li>
+                                <li>经营优势：</li>
+                                <li>加盟优势</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="advantages">
+                                <li>•卐• 良好的预备机制</li>
+                                <li>•卐• 产地化、规模化的生产</li>
+                                <li>•卐• 完善的培训指导模式 </li>
+                                <li>•卐• 成熟的运营模式</li>
+                                <li>•卐• 统一的营销模式</li>
+                                <li>经营优势：</li>
+                                <li>加盟优势</li>
+                            </ul>
+                        </li>
                     </ul>
-                    <div class="decor"><img src="images/decor.png" alt=""></div>
                 </div>
             </div>
             <div class="map">
@@ -200,6 +214,19 @@
             </div>
         </div>
         <!--底部 end-->
+        <div class="min-nav">
+            <div class="web-link">
+                <a href="">
+                    <img class="mt0" src="images/icon-cart.png" alt="">
+                    <span>官方商城</span>
+                </a>
+            </div>
+            <ul class="menus">
+                <li><a>木之森沉香</a></li>
+                <li><a>木之森美学馆</a></li>
+                <li><a>伍仟香业</a></li>
+            </ul>
+        </div>
     </div>
 </body>
 <!-- build:js js/app.lib.js -->
@@ -214,6 +241,13 @@
         $('.close').off('click').click(function () {
             $('.pop-menu').removeClass('show')
         })
+        //flash
+        $('.flexslider').flexslider({
+            animation: 'slide',
+            pauseOnHover: true,
+            directionNav: false,
+            slideshowSpeed: 3000
+        });
     });
 </script>
 
