@@ -1,67 +1,83 @@
-.content{
-    .title{
+.logo{
+    display: none;
+}
+.content {
+    .title {
         position: relative;
         border-bottom: none;
-        &::after{
+
+        &::after {
             position: absolute;
             width: 50px;
             height: 2px;
             left: 50%;
             bottom: 0;
-            margin-left: -25px;;
+            margin-left: -25px;
+            ;
             content: '';
             background-color: #cfa972;
         }
     }
-    .desc{
+
+    .desc {
         margin-top: 30px;
         padding-bottom: 65px;
-        p{
+
+        p {
             text-align: center;
             line-height: 30px;
             font-size: 14px;
             color: #999;
         }
     }
-    .jobs-wrap{
-        .jobs{
-            .job{
+
+    .jobs-wrap {
+        .jobs {
+            .job {
                 padding: 36px 0;
                 border-top: 1px dotted #8b8b8b;
-                li{
+
+                li {
                     display: inline-block;
                     width: 24%;
                     font-size: 0;
                     line-height: 28px;
                     vertical-align: top;
-                    dl{
+
+                    dl {
                         line-height: 30px;
-                        dt{
+
+                        dt {
                             font-size: 22px;
                             color: #010101;
                         }
-                        dd{
+
+                        dd {
                             margin-top: 5px;
                             font-size: 14px;
                             color: #666;
                         }
                     }
-                    div{
+
+                    div {
                         font-size: 14px;
                         color: #999;
                     }
                 }
-                .requirement{
+
+                .requirement {
                     margin-top: 30px;
                     padding-left: 24%;
-                    .til{
+
+                    .til {
                         position: relative;
                         margin-bottom: 10px;
                         line-height: 30px;
-                        font-family:"SimSun";
+                        font-family: "SimSun";
                         font-size: 14px;
                         color: #666;
-                        .expend{
+
+                        .expend {
                             position: absolute;
                             right: 0;
                             cursor: pointer;
@@ -69,17 +85,158 @@
                             color: #cfa972;
                         }
                     }
-                    .detail{
-                        p{
+
+                    .detail {
+                        p {
                             line-height: 30px;
                             font-size: 14px;
                             color: #999;
                         }
-                        &.hide{
+
+                        &.hide {
                             display: none;
                         }
                     }
                 }
+            }
+        }
+        &.min-jobs-wrap{
+            display: none;
+        }
+    }
+    .link{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .about-talent {
+        padding-left: 0;
+        .nav-bar p.menu-text {
+            color: #999;
+        }
+        .top-left{
+            display: none;
+        }
+        .logo {
+            display: block;
+            height: 100px;
+            padding: 23px;
+            box-sizing: border-box;
+            -moz-box-shadow: 2px 2px 5px #c6c6c6;
+            -webkit-box-shadow: 2px 2px 5px #c6c6c6;
+            box-shadow: 2px 2px 5px #c6c6c6;
+
+            img {
+                width: 160px;
+                height: 48px;
+            }
+        }
+        .content{
+            margin-top: 50px;
+            width: 100%;
+            padding: 0 15px;
+            box-sizing: border-box;
+            .title{
+                padding-bottom: 5px;
+            }
+            .jobs-wrap{
+                display: none;
+                &.min-jobs-wrap{
+                    display: block;
+                    .jobs{
+                        .job{
+                            ul{
+                                display: flex;
+                                font-size: 0;
+                            }
+                            li{
+                                &.left{
+                                    width: 115px;
+                                }
+                                &.right{
+                                    flex: 1;
+                                }
+                                div{
+                                    font-size: 12px;
+                                }
+                                dl{
+                                    dt{
+                                        font-size: 16px;
+                                    }
+                                    dd{
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                            .requirement{
+                                padding-left: 0;
+                                .link{
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer{
+            padding-right: 0;
+            .left{
+                width: 100%;
+                text-align: center;
+            }
+            .right{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+    .about-talent {
+        padding-left: 0;
+        .nav-bar p.menu-text {
+            color: #999;
+        }
+        .top-left{
+            display: none;
+        }
+        .logo {
+            display: block;
+            height: 100px;
+            padding: 23px;
+            box-sizing: border-box;
+            -moz-box-shadow: 2px 2px 5px #c6c6c6;
+            -webkit-box-shadow: 2px 2px 5px #c6c6c6;
+            box-shadow: 2px 2px 5px #c6c6c6;
+
+            img {
+                width: 160px;
+                height: 48px;
+            }
+        }
+        .content{
+            margin-top: 50px;
+            width: 100%;
+            padding-right: 70px;
+            padding-left: 60px;
+            box-sizing: border-box;
+            .title{
+                padding-bottom: 5px;
+            }
+            .link{
+                text-align: left;
+            }
+        }
+        .footer{
+            padding-right: 0;
+            .left{
+                width: 100%;
+                text-align: center;
+            }
+            .right{
+                display: none;
             }
         }
     }

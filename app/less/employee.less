@@ -1,53 +1,72 @@
-form{
+.employee {
+    .logo {
+        display: none;
+    }
+}
+
+form {
     margin-top: 60px;
-    .form-item{
+
+    .form-item {
         position: relative;
         min-height: 50px;
-        &.mh80{
+
+        &.mh80 {
             min-height: 80px;
         }
-        &.btn-area{
+
+        &.btn-area {
             margin: 80px 0;
             text-align: center;
         }
-        .left, .right{
+
+        .left,
+        .right {
             position: absolute;
             display: inline-block;
             width: 45%;
-            .item-content{
+
+            .item-content {
                 width: 80%;
             }
         }
-        .right{
+
+        .right {
             left: 50%;
         }
-        .item-label{
+
+        .item-label {
             display: inline-block;
             width: 90px;
             font-size: 16px;
             color: #333;
         }
-        .item-content{
+
+        .item-content {
             position: absolute;
             left: 100px;
-            width: 100%;
+            width: 86%;
             height: 30px;
             line-height: 30px;
             border: 1px solid #c5c5c5;
-            &.border-none{
+
+            &.border-none {
                 border: none;
             }
         }
-        textarea.item-content{
+
+        textarea.item-content {
             height: auto;
         }
-        .btn{
-            padding: 15px;
+
+        .btn {
+            padding: 10px 30px;
             color: #333;
             font-size: 18px;
             background: #fff;
             border: 1px solid #adadad;
-            &.dark{
+
+            &.dark {
                 margin-right: 13px;
                 background: #000;
                 color: #fff;
@@ -56,6 +75,97 @@ form{
         }
     }
 }
-.employee{
+
+.employee {
     padding-left: 20px;
+}
+
+.top-left {
+    display: none;
+}
+@media screen and (max-width: 980px){
+    .employee {
+        padding-left: 0;
+        .nav-bar p.menu-text{
+            color: #999;
+        }
+        .logo {
+            display: block;
+            height: 100px;
+            padding: 23px;
+            box-sizing: border-box;
+            -moz-box-shadow: 2px 2px 5px #c6c6c6;
+            -webkit-box-shadow: 2px 2px 5px #c6c6c6;
+            box-shadow: 2px 2px 5px #c6c6c6;
+
+            img {
+                width: 160px;
+                height: 48px;
+            }
+        }
+        .content{
+            margin-top: 55px;
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+        }
+        form{
+            .form-item{
+                .left, .right{
+                    .item-content{
+                        left: 30%;
+                        width: 70%;
+                        label{
+                            font-size: 16px;
+                            line-height: 32px;
+                        }
+                    }
+                }
+                .item-label{
+                    height: 32px;
+                    line-height: 32px;
+                }
+                .item-content{
+                    left: 25%;
+                    width: 70%;
+                }
+            }
+        }
+        .footer{
+            padding-right: 0;
+            .left{
+                width: 100%;
+                left: 0;
+            }
+            .right{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+    .employee {
+        padding-left: 0;
+        .nav-bar p.menu-text{
+            color: #999;
+        }
+        .logo {
+            display: block;
+            height: 100px;
+            padding: 23px;
+            box-sizing: border-box;
+            -moz-box-shadow: 2px 2px 5px #c6c6c6;
+            -webkit-box-shadow: 2px 2px 5px #c6c6c6;
+            box-shadow: 2px 2px 5px #c6c6c6;
+
+            img {
+                width: 160px;
+                height: 48px;
+            }
+        }
+        .content{
+            margin-top: 65px;
+        }
+    }
 }
