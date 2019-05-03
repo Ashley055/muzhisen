@@ -1163,7 +1163,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1920px) {
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
   .nav-bar{
     position: fixed;
   }
@@ -1431,5 +1431,15 @@ body {
   }
   .bottom .contact-info .bottom-right li{
     width: auto;
+  }
+  .introduction .part.chenx-culture .pic-text{
+    width: 1729px;
+    height: 535px;
+    overflow: hidden;
+  }
+  .introduction .part.introd1{
+    width: 1729px;
+    height: 650px;
+    overflow: hidden;
   }
 }
