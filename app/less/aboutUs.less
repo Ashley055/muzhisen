@@ -1,6 +1,11 @@
 .about-us {
     overflow: hidden;
-
+    .nav-bar{
+        right: 0;
+    }
+    .top-info{
+        height: 100%;
+    }
     .navs {
         position: absolute;
         width: 100%;
@@ -30,14 +35,20 @@
                 background: url(../images/down.png) center no-repeat;
             }
         }
+        .talent{
+            background: transparent;
+        }
     }
-
+    .introduction{
+        margin-top: 0;
+        background: #fff;
+    }
     .brand {
         position: relative;
-        margin-left: 23px;
+        padding-left: 23px;
         margin-right: 120px;
         padding-top: 150px;
-
+        background: #fff;
         .title {
             text-align: center;
             font-size: 32px;
@@ -125,11 +136,10 @@
     }
 
     .brand-culture {
-        margin-top: 55px;
-        padding-top: 50px;
+        padding-top: 100px;
         margin-right: 120px;
         background: url(../images/culture.bg.png) left top no-repeat;
-
+        background-color: #fff;
         .title-wrap {
             position: relative;
             margin-left: 400px;
@@ -196,13 +206,16 @@
     }
 
     .masters {
+        position: relative;
         margin-right: 120px;
-        margin-bottom: 30px;
+        margin-top: -30px;
+        padding-bottom: 30px;
         padding-top: 170px;
+        padding-left: 15px;
         font-size: 0;
         overflow: hidden;
         white-space: nowrap;
-
+        background: #fff;
         &.min-masters {
             display: none;
         }
@@ -288,7 +301,13 @@
     }
 
     .link {
-        margin-bottom: 145px;
+        margin-top: 0;
+        margin-right: 120px;
+        padding-bottom: 145px;
+        background: #fff;
+        &.pt10{
+            padding-top: 10px;
+        }
     }
 
     .common-introduce {
@@ -310,14 +329,14 @@
 
     .talent {
         position: relative;
-        margin-top: 190px;
-        margin-left: 15px;
+        padding-top: 190px;
+        padding-left: 15px;
         margin-right: 120px;
-        margin-bottom: 35px;
+        padding-bottom: 35px;
         padding-left: 15px;
         padding-right: 30px;
         text-align: center;
-
+        background: #fff;
         .title {
             font-size: 32px;
             color: #020202;
@@ -325,7 +344,7 @@
 
             &:before {
                 position: absolute;
-                top: -130px;
+                top: 30px;
                 left: 50%;
                 width: 1px;
                 height: 110px;
@@ -426,9 +445,12 @@
                 margin-bottom: 0;
                 width: 100%;
                 text-align: center;
-
+                background: transparent;
                 a {
                     color: #fff;
+                }
+                &.pb0{
+                    padding-bottom: 0;
                 }
             }
         }
@@ -853,10 +875,6 @@
 
 @media screen and (min-width: 1200px) and (max-width: 1910px) {
     .about-us {
-        .navs {
-            top: auto;
-        }
-
         .brand {
             .brand-info {
                 .right {
@@ -879,7 +897,7 @@
         .brand-culture {
             background-size: 235px 239px;
             line-height: 38px;
-
+            min-height: 500px;
             .culture-content {
                 height: auto;
 
@@ -901,7 +919,7 @@
                     top: -30px;
 
                     img {
-                        widows: 566px;
+                        width: 566px;
                         height: 308px;
                     }
                 }
