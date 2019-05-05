@@ -1,8 +1,19 @@
+.zsp1, .fix-bg{
+    height: 100vh;
+    overflow: hidden;
+}
 .page-top{
     overflow: hidden;
-    .zsp1{
-        // height: 679px;
-    }
+    height: 100vh;
+}
+.page-content{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    overflow: auto;
+    top: 0;
+    padding-bottom: 80px;
 }
 .top-info{
     position: absolute;
@@ -338,6 +349,7 @@
     }
 }
 .bottom{
+    margin-right: 120px;
     .contact-info{
         .bottom-left,.bottom-right{
             display: none;
