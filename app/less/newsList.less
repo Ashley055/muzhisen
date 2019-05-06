@@ -1,9 +1,11 @@
 .news-list {
+    overflow: hidden;
+    .zsp1-640{
+        display: none;
+    }
     .page-top {
-        .zsp1-640{
-            display: none;
-        }
         .top-info {
+            height: 100vh;
             .title {
                 .links {
                     margin-top: 20px;
@@ -36,12 +38,15 @@
             }
         }
     }
+    .nav-bar{
+        right: 0;
+    }
 
     .news-content {
-        margin-left: 23px;
-        margin-top: 15px;
+        padding-left: 23px;
+        padding-top: 15px;
         margin-right: 120px;
-
+        background: #fff;
         .hot {
             li {
                 position: relative;
@@ -192,21 +197,24 @@
         padding-top: 25px;
     }
     .news-list {
+        .zsp1{
+            display: none;
+        }
+        .zsp1-640{
+            display: block;
+        }
         .page-top{
             position: relative;
-            .zsp1{
-                display: none;
-            }
-            .zsp1-640{
-                display: block;
-            }
             .top-info{
                 height: 100%;
             }
         }
         .news-content {
-            margin-right: 15px;
-            margin-left: 15px;
+            padding-top: 15px;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin: 0;
+            background: #fff;
             .hot {
                 display: none;
             }

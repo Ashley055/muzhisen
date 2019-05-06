@@ -90,13 +90,16 @@
         }
     }
     .diproma{
-        width: 805px;
-        margin: 0 auto;
         padding-right: 120px;
         font-size: 16px;
         color: #333;
+        background: #fff;
+        .inner{
+            width: 805px;
+            margin: 0 auto;
+        }
         h3{
-            margin-top: 40px;
+            padding-top: 40px;
             font-size: 30px;
         }
         p{
@@ -105,9 +108,10 @@
         }
     }
     .link{
-        width: 805px;
-        margin: 90px auto;
+        padding: 90px;
+        margin-top: 0;
         padding-right: 120px;
+        background: #fff;
         a{
             margin-right: 60px;
             &:last-child{
@@ -118,6 +122,9 @@
 }
 @media screen and (max-width: 980px) {
     .master-detail{
+        .nav-bar{
+            right: 0;
+        }
         .lunbo{
             .lunbo-box{
                 img{
@@ -150,10 +157,13 @@
             padding-left: 45px;
             padding-right: 47px;
             width: auto;
+            .inner{
+                width: auto;
+            }
         }
         .link{
             width: 100%;
-            padding: 0 15px;
+            padding: 15px;
             box-sizing: border-box;
             a{
                 margin-right: 25px;
