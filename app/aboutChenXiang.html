@@ -10,26 +10,6 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <script>
-        // rem
-        (function (doc, win) {
-            var docEl = doc.documentElement,
-                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-                recalc = function () {
-                    var clientWidth = docEl.clientWidth;
-                    if (!clientWidth) return;
-                    if (clientWidth >= 750) {
-                        docEl.style.fontSize = '100px';
-                    } else {
-                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
-                    }
-                };
-
-            if (!doc.addEventListener) return;
-            win.addEventListener(resizeEvt, recalc, false);
-            doc.addEventListener('DOMContentLoaded', recalc, false);
-        })(document, window);
-    </script>
     <!-- build:css css/common.min.css -->
     <link rel="stylesheet" type="text/css" href="css/common.css" />
     <!-- endbuild -->
@@ -123,24 +103,26 @@
             <div class="introduction">
                 <ul>
                     <li class="part min-pr15 pl15 pr15">
-                        <img src="images/int-pic1-1920.jpg" alt="">
-                        <div class="shadow"></div>
-                        <ul class="text">
-                            <li>※ 解更多详细</li>
-                            <li>木之森是专业从事沉香文化的多元化企业</li>
-                            <li>公司董事会成员均有数十年沉香行业从业经验</li>
-                            <li>公司以东南亚为原料基地、</li>
-                            <li>广西为加工地、福建厦门为销售中心，</li>
-                            <li> 汇集了业内总众多采香、车珠、雕刻、制香大师</li>
-                            <li>依托别具一格的沉香技艺</li>
-                            <li>在国内外沉香行业中影响甚广</li>
-                            <li> 累计客户超过50万，销售业绩破亿</li>
-                            <li>连续数年荣获全国十大知名沉香品牌</li>
-                            <li>木之森香文化</li>
-                        </ul>
+                        <div class="inner">
+                            <img src="images/int-pic1-1920.jpg" alt="">
+                            <div class="shadow"></div>
+                            <ul class="text">
+                                <li>※ 解更多详细</li>
+                                <li>木之森是专业从事沉香文化的多元化企业</li>
+                                <li>公司董事会成员均有数十年沉香行业从业经验</li>
+                                <li>公司以东南亚为原料基地、</li>
+                                <li>广西为加工地、福建厦门为销售中心，</li>
+                                <li> 汇集了业内总众多采香、车珠、雕刻、制香大师</li>
+                                <li>依托别具一格的沉香技艺</li>
+                                <li>在国内外沉香行业中影响甚广</li>
+                                <li> 累计客户超过50万，销售业绩破亿</li>
+                                <li>连续数年荣获全国十大知名沉香品牌</li>
+                                <li>木之森香文化</li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
-                <div class="part mt105 pb110">
+                <div class="part mt105 pb110 h727">
                     <div class="left"><img class="ml0 mt0" src="images/chenxiangp2.jpg" alt=""></div>
                     <div class="right">
                         <div><img class="ml0 mt0" src="images/chenxiangp3.jpg" alt=""></div>
@@ -149,9 +131,11 @@
                     <div class="gray"></div>
                 </div>
                 <div class="part pl15 pr15">
-                    <div class="title">视频雅集</div>
-                    <p class="en-title">Video jin set</p>
-                    <video src="images/video.mp4" controls="controls"></video>
+                    <div class="inner">
+                        <div class="title">视频雅集</div>
+                        <p class="en-title">Video jin set</p>
+                        <video src="images/video.mp4" controls="controls"></video>
+                    </div>
                 </div>
                 <div class="link text-center"><a href="">更多视频雅集<img src="images/arrow-right.png" alt=""></a> </div>
             </div>

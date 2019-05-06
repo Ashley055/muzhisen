@@ -1,10 +1,5 @@
 .about-chenxiang {
     overflow: hidden;
-
-    .nav-bar {
-        right: 15px;
-    }
-
     .page-top {
         position: relative;
     }
@@ -14,9 +9,20 @@
     }
 
     .introduction {
+        width: auto;
         padding-left: 0;
-
+        margin-right: 120px;
         .part {
+            .inner{
+                padding-left: 15px;
+                height: 100%;
+                img{
+                    width: 100%;
+                }
+                .text{
+                    margin-left: 15px;
+                }
+            }
             video {
                 width: 100%;
                 margin-bottom: 60px;
@@ -47,12 +53,15 @@
                 width: 99%;
                 height: 99%;
             }
-
+            &.h727{
+                height: 721px;
+            }
             .left {
+                position: absolute;
                 max-width: 902px;
                 height: 721px;
-                margin-left: 60px;
-
+                margin-left: 107px;
+                z-index: 1;
                 img {
                     width: 100%;
                 }
@@ -62,8 +71,8 @@
                 position: absolute;
                 top: 0;
                 width: 30.7%;
-                right: 70px;
-
+                right: 119px;
+                z-index: 1;
                 .mt39 {
                     margin-top: 39px;
                 }
@@ -78,10 +87,10 @@
                 position: absolute;
                 left: 0;
                 bottom: 0;
-                height: 460px;
+                height: 693px;
                 width: 100%;
                 background: #eaeaea;
-                z-index: -1;
+                z-index: 0;
             }
         }
     }
@@ -96,6 +105,12 @@
 }
 
 @media screen and (max-width: 980px) {
+    .about-chenxiang .introduction .part .inner{
+        padding-left: 0;
+    }
+    .about-chenxiang .introduction .part.h727{
+        height: 190px;
+    }
     .top-info .logo {
         padding-left: 22px;
         padding-top: 25px;
@@ -246,14 +261,30 @@
 
 @media screen and (min-width: 980px) and (max-width: 1200px) {
     .about-chenxiang {
+        .nav-bar{
+            position: absolute;
+        }
         .introduction {
             padding-right: 0;
-
+            margin-right: 0;
             .part {
                 padding-left: 20px;
-
-                &.min-pr15 {
+                &.h727{
+                    height: 400px;
+                }
+                .inner{
+                    padding-left: 0;
+                    width: 100%;
                     padding-right: 15px;
+                    box-sizing: border-box;
+                    .text{
+                        width: 90%;
+                    }
+                    img{
+                        margin-left: 0;
+                        margin-top: 0;
+                        width: 100%;
+                    }
                 }
 
                 .left {
@@ -267,6 +298,8 @@
                 }
 
                 .right {
+                    right: 25px;
+                    width: auto;
                     .mt39 {
                         margin-top: 25px;
                     }
@@ -287,6 +320,19 @@
             .left {
                 img {
                     width: 50%;
+                }
+            }
+            .right{
+                height: 370px;
+                padding-bottom: 15px;
+                box-sizing: border-box;
+                overflow: hidden;
+                .flex-viewport{
+                    height: 100%;
+                }
+                .lunbo .flex-direction-nav{
+                    width: 90%;
+                    top: 50%;
                 }
             }
         }
@@ -314,9 +360,15 @@
 @media screen and (min-width: 1200px) and (max-width: 1919px) {
     .about-chenxiang {
         .introduction {
+            padding-right: 0;
             .part {
                 padding-left: 0;
-
+                &.h727{
+                    height: 430px;
+                }
+                .inner{
+                    padding-right: 15px;
+                }
                 .left {
                     height: auto;
 
@@ -327,6 +379,7 @@
                 }
 
                 .right {
+                    right: 73px;
                     img {
                         width: 338px;
                         height: 206px;
@@ -344,11 +397,26 @@
         }
 
         .qulity {
+            height: 463px;
             .left {
                 img {
                     width: 50%;
                 }
             }
+            .right{
+                height: 100%;
+                overflow: hidden;
+                .title{
+                    margin-top: 45px;
+                    margin-bottom: 0;
+                }
+                .text{
+                    margin-top: 0;
+                }
+            }
+        }
+        .lunbo .flex-direction-nav{
+            left: 50px;
         }
     }
 }
@@ -356,11 +424,5 @@
 @media screen and (min-width: 1920px) {
     .introduction .part .left img {
         height: auto;
-    }
-
-    .about-chenxiang {
-        .nav-bar {
-            right: 15px;
-        }
     }
 }
