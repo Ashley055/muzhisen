@@ -379,16 +379,15 @@
                 top: 0;
                 left: 25px;
                 right: 55px;
-                padding-top: 81px;
-                padding-bottom: 140px;
+                height: 100%;
                 white-space: nowrap;
-
                 li {
-                    position: relative;
                     display: inline-block;
                     width: 25%;
                     padding-left: 25px;
                     padding-right: 20px;
+                    padding-top: 80px;
+                    padding-bottom: 140px;
                     height: 100%;
                     overflow: hidden;
                     white-space: normal;
@@ -398,11 +397,35 @@
                     text-align: left;
                     line-height: 28px;
                     vertical-align: middle;
-
-                    &.active {
+                    &:hover {
                         background: rgba(0, 0, 0, 0.2);
                     }
-
+                    .inner{
+                        position: relative;
+                        height: 100%;
+                        &:after {
+                            position: absolute;
+                            right: -19px;
+                            top: 0;
+                            height: 100%;
+                            content: '';
+                            border-right: 1px dotted #fff;
+                        }
+                        .text{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            width: 100%;
+                            text-align: center;
+                            transform: translate(-50%, -50%);
+                            font-size: 30px;
+                            .img{
+                                padding-right: 0;
+                                text-align: center;
+                                margin-bottom: 35px;
+                            }
+                        }
+                    }
                     .img {
                         padding-right: 20px;
                         text-align: center;
@@ -424,15 +447,6 @@
                             padding-right: 0;
                             margin-bottom: 28px;
                         }
-                    }
-
-                    &:after {
-                        position: absolute;
-                        right: 0;
-                        top: 0;
-                        height: 100%;
-                        content: '';
-                        border-right: 1px dotted #fff;
                     }
 
                 }
@@ -759,10 +773,12 @@
 
 @media screen and (min-width: 980px) and (max-width: 1200px) {
     .about-us {
-        .navs {
-            top: 30%;
+        .nav-bar{
+            position: absolute;
         }
-
+        .navs{
+            top: 55%;
+        }
         .brand {
             padding-top: 15px;
             margin-right: 0;
@@ -853,7 +869,7 @@
         }
 
         .talent {
-            margin-top: 120px;
+            padding-top: 120px;
             margin-left: 0;
             margin-right: 0;
 
@@ -944,5 +960,23 @@
             padding-left: 15px;
             padding-right: 15px;
         }
+    }
+    .about-us .talent .info img.bg{
+        width: 100%;
+        height: auto;
+    }
+    .about-us .talent .info ul{
+        padding-right: 268px;
+    }
+    .about-us .talent .info ul li{
+        padding-top: 92px;
+        padding-bottom: 240px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .about-us .talent .info ul li .title{
+        margin-bottom: 62px;
+        margin-top: 25px;
+        font-size: 36px;
     }
 }

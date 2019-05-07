@@ -98,7 +98,53 @@
     // .contact-info {
     //     background: url(../images/chenxiangp1) left top no-repeat；
     // }
-
+    .qulity{
+        .right{
+            padding: 0 125px;
+            box-sizing: border-box;
+            .title{
+                padding-top: 85px;
+                text-align: center;
+                font-size: 32px;
+                color: #020202;
+            }
+            .sub-title{
+                margin-top: 5px;
+                margin-bottom: 35px;
+                font-size: 14px;
+                color: #979899;
+                text-align: center;
+            }
+            .lunbo{
+                position: relative;
+                width: 100%;
+                padding: 0 80px;
+                box-sizing: border-box;
+                white-space: nowrap;
+                li{
+                    span{
+                        display: inline-block;
+                        width: 25px;
+                        height: 100%;
+                        white-space: normal;
+                        font-size: 24px;
+                        em{
+                            color: #b1834e;
+                        }
+                    }
+                }
+            }
+            .lunbo .flex-direction-nav{
+                width: 100%;
+                left: 0px;
+                top: 155px;
+            }
+        }
+        li{
+            font-size: 24px;
+            color: #333;
+        }
+    }
     .link {
         padding-bottom: 15px;
     }
@@ -133,17 +179,53 @@
         top: 175px;
     }
 
-    .qulity {
+    .about-chenxiang .qulity {
         margin-right: 0;
-
-        .left img {
-            width: 100%;
+        .left {
+            height: 100%;
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
         }
-    }
-
-    .qulity .right {
-        position: relative;
-        width: 100%;
+        .right{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            padding-bottom: 15px;
+            font-size: 17px;
+            box-sizing: border-box;
+            overflow: hidden;
+            .title{
+                padding-top: 45px;
+                margin-bottom: 0;
+            }
+            .sub-title{
+                margin-bottom: 5px;
+            }
+            .text{
+                margin-top: 0;
+            }
+            .lunbo{
+                padding: 0 30px;
+                height: 267px;
+                overflow: hidden;
+            }
+            .lunbo li:last-child{
+                color: #ac793c;
+            }
+            .lunbo li span{
+                font-size: 17px;
+            }
+            .flex-viewport{
+                height: 100%;
+            }
+            .lunbo .flex-direction-nav{
+                width: 90%;
+                top: 50%;
+            }
+        }
     }
 
     .about-chenxiang {
@@ -317,16 +399,35 @@
         }
 
         .qulity {
+            height: 370px;
             .left {
+                height: 100%;
+                overflow: hidden;
                 img {
                     width: 50%;
                 }
             }
             .right{
-                height: 370px;
+                height: 100%;
+                padding: 0;
                 padding-bottom: 15px;
                 box-sizing: border-box;
                 overflow: hidden;
+                .title{
+                    padding-top: 45px;
+                    margin-bottom: 0;
+                }
+                .sub-title{
+                    margin-bottom: 5px;
+                }
+                .text{
+                    margin-top: 0;
+                }
+                .lunbo{
+                    padding: 0 30px;
+                    height: 267px;
+                    overflow: hidden;
+                }
                 .flex-viewport{
                     height: 100%;
                 }
@@ -397,21 +498,32 @@
         }
 
         .qulity {
-            height: 463px;
+            height: 420px;
             .left {
+                height: 100%;
+                overflow: hidden;
                 img {
                     width: 50%;
                 }
             }
             .right{
                 height: 100%;
+                padding: 0;
                 overflow: hidden;
                 .title{
-                    margin-top: 45px;
+                    padding-top: 45px;
                     margin-bottom: 0;
+                }
+                .sub-title{
+                    margin-bottom: 5px;
                 }
                 .text{
                     margin-top: 0;
+                }
+                .lunbo{
+                    padding: 0 30px;
+                    height: 267px;
+                    overflow: hidden;
                 }
             }
         }
